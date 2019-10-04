@@ -53,8 +53,8 @@ The scintillating fibre trackers operate by registering digits above a given NPE
 \subsubsection{Track Finding Efficiency}
 \label{trackers:performance:efficiency}
 %Track selection/Kalman, efficiency (from all data runs plotted by pt and if all equal just 10mm can be shown) resolution (from MC), reference MAUS and Tracker SW paper, 1 page, Chris H.
-Data were analysed in order to determine the track and spacepoint finding efficiency of the detectors during running conditions. A time-of-flight cut was used to ensure that each measured track had a time-of-flight consistent with a muon throughout the entire experimental apparatus. A hit was therefore required in each of the TOF1 and TOF2 detectors, which ensured that the particle must have been successfully transmitted through the cooling channel, crossing both tracking detectors. These requirements ensure that there is a better then 99.9\% probability that a particle will have traversed a tracking detector. The number of events missing a track is therefore measured and used to estimate the efficiency of the detector.
-
+Data were analysed in order to determine the track and spacepoint finding efficiency of the detectors during running conditions. A time-of-flight cut was used to ensure that each measured track had a time-of-flight consistent with a muon throughout the entire experimental apparatus. A hit was therefore required in each of the TOF1 and TOF2 detectors, which ensured that the particle must have been successfully transmitted through the cooling channel, crossing both tracking detectors. These requirements ensure that there is a better then 99.9\% probability that a particle will have traversed a tracking detector.
+The number of events missing a track is therefore measured and used to estimate the efficiency of the detector.
 The results of the efficiency analysis are tabulated in Table~\ref{Table:tracker_efficiency_results} for a range of momentum and nominal emittances. A track-finding efficiency of 98.70\% is reported for the upstream tracker and 98.93\% for the downstream tracker, averaged over field and beam conditions. Additionally, assuming a track is found, the probability of successfully finding each spacepoint is summarized in Table~\ref{Table:tracker_spacepoint_efficiency_results}. The overall efficiency of both trackers is sufficient to not present any significant systematic uncertainties in the analysis, however it is lower than the ideal expectation, 99.9\% efficiency, due to the presence of dead channels, an unavoidable feature of the construction process.
 
 \begin{table}[ht]
@@ -128,7 +128,9 @@ Results are presented in Fig.~\ref{trackers:performance:resolutions:up} for the 
 
 \subsection{Efficiency evolution}
 
-The efficiency of the tracker was processed over the lifetime of its use during the data taking. The analysis used in section~\ref{trackers:performance:efficiency} was repeated and automated for runs starting in 2015. The evolution of the helical track finding efficiency in the upstream and downstream trackers is shown in Fig.~\ref{fig:trackers:performance:historical}.
+The efficiency of the tracker was processed over the lifetime of its use during the data taking. The analysis used in section~\ref{trackers:performance:efficiency} was repeated and automated for runs starting in 2015.
+The selection included two more constraints: is required a spacepoint to be reconstructed within the tracker volume using a radial cut and that only a single spacepoint is reconstructed in each of the stations, as generally required in most of the analysis.
+ The evolution of the straight and helical track finding efficiency in the upstream and downstream trackers is shown in Fig.~\ref{fig:trackers:performance:historical}, showing efficiencies generally above 99.0\%.
 
 %\begin{figure}
 %  \centering
