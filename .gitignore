@@ -1,5 +1,6 @@
 *.aux
 *.tex~
+*/.tex~
 Systems-performance.log
 Systems-performance.out
 Systems-performance.bbl
