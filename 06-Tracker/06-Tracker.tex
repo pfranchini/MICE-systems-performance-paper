@@ -4,19 +4,19 @@
 \label{Sect:Tracker}
 
 \subsection{Introduction}
-MICE is equipped with two identical, high precision scintillating-fibre trackers, described in~\cite{Ellis:2010bb}. Each tracker is placed in a superconducting solenoid designed to provide a uniform magnetic field over the tracking volume. One tracker, TKU, is upstream of the cooling cell, the other, TKD, is downstream, the mirror image of TKU as in Fig.~\ref{fig:BL}.
+MICE is equipped with two identical, high precision scintillating-fibre trackers, described in~\cite{Ellis:2010bb}. Each tracker is placed in a superconducting solenoid designed to provide a uniform magnetic field over the tracking volume. One tracker, TKU, is upstream of the cooling cell, the other, TKD, is downstream, the mirror image of TKU as shown in figure~\ref{fig:BL}.
 
-The trackers are 110\,cm in length and 30\,cm in diameter (see Fig.~\ref{Figure:FullTracker}). There are five stations per tracker (labelled 1 to 5, with station 1 being closest to the cooling cell) held in position using a carbon-fibre space-frame. The stations sit at varying separations in $z$ (beam axis) of 20--35\,cm: this ensures that the azimuthal rotation of track position from one station to the next differs, difference being important in resolving ambiguities at the pattern-recognition stage. Each tracker is instrumented with an internal LED calibration system for calibration and four 3-axis Hall probes to monitor the field.
+The trackers are 110\,cm in length and 30\,cm in diameter (see figure~\ref{Figure:FullTracker}). There are five stations per tracker (labelled 1 to 5, with station 1 being closest to the cooling cell) held in position using a carbon-fibre space-frame. The stations sit at different distances in $z$ (beam axis) of 20--35\,cm: this ensures that the azimuthal rotation of track position from one station to the next differs, difference being important in the resolving ambiguities at the pattern-recognition stage. Each tracker is instrumented with an internal LED calibration system and four 3-axis Hall probes to monitor the field.
 
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.6\textwidth,keepaspectratio=true,]{FullTracker.png}
 \end{center}
-\caption{Photograph of one of the MICE Trackers, showing the five stations and the three doublet planes of scintillating fibres, each plane at 120$^\circ$ angles to the next (the central fibres of plane can be seen as darker lines traversing the station). Bundles of seven 350$\mu m$ fibres are grouped together, to be read out by 1\,mm scintillating fibre light guides.}
+\caption{Photograph of one of the MICE Trackers, showing the five stations and the three doublet planes of scintillating fibres, each plane at 120$^\circ$ angles to the next (the central fibres of plane can be seen as darker lines traversing the station). Bundles of seven 350~$\mu$m fibres are grouped together, to be read out by 1\,mm scintillating fibre light guides.}
 \label{Figure:FullTracker}
 \end{figure}
 
-The tracker stations consists of three doublet layers of 350$\mu m$ scintillating fibres, these layers are arranged such that each is at an angle of 120$^\circ$ to the next. This arrangement ensures that there are no inactive regions between adjacent fibres. Bundles of seven fibres are grouped into a single readout channel (this reduces the number of readout channels, while maintaining position resolution). The trackers have a spatial resolution per doublet layer of 470$\mu m$ and an expected light yield of $\sim$ 10 photo-electrons.
+The tracker stations consists of three doublet layers of 350~$\mu$m scintillating fibres, these layers are arranged such that each is at an angle of 120$^\circ$ with respect to the next. This arrangement ensures that there are no inactive regions between adjacent fibres. Bundles of seven fibres are grouped into a single readout channel (this reduces the number of readout channels, while maintaining position resolution). The trackers have a spatial resolution per doublet layer of 470~$\mu$ m and an expected light yield of approximately 10 photo-electrons.
 
 The light from the seven scintillating fibres passes into a single clear fibre, which takes it to a visible light photon counter (VLPC) which operate at 9\,k. The signals from the VLPCs are digitised using electronics developed by the D0 collaboration~\cite{Abazov:2005pn}.
 
@@ -33,7 +33,7 @@ The clustering algorithm loops over every combination of pairs of digits in a si
 %\end{center}
 %\caption{Cluster}
 %\label{Figure:Clusters}
-\%end{figure}
+%\%end{figure}
 
 For each station the constituent planes are searched for clusters that can be used to form a spacepoint.
 Spacepoints are constructed from clusters from all three planes (a triplet spacepoint) or from any two out of the three planes (a doublet spacepoint).
@@ -55,7 +55,7 @@ The scintillating fibre trackers operate by registering digits above a given NPE
 %Track selection/Kalman, efficiency (from all data runs plotted by pt and if all equal just 10mm can be shown) resolution (from MC), reference MAUS and Tracker SW paper, 1 page, Chris H.
 Data were analysed in order to determine the track and spacepoint finding efficiency of the detectors during running conditions. A time-of-flight cut was used to ensure that each measured track had a time-of-flight consistent with a muon throughout the entire experimental apparatus. A hit was therefore required in each of the TOF1 and TOF2 detectors, which ensured that the particle must have been successfully transmitted through the cooling channel, crossing both tracking detectors. These requirements ensure that there is a better then 99.9\% probability that a particle will have traversed a tracking detector.
 The number of events missing a track is therefore measured and used to estimate the efficiency of the detector.
-The results of the efficiency analysis are tabulated in Table~\ref{Table:tracker_efficiency_results} for a range of momentum and nominal emittances. A track-finding efficiency of 98.70\% is reported for the upstream tracker and 98.93\% for the downstream tracker, averaged over field and beam conditions. Additionally, assuming a track is found, the probability of successfully finding each spacepoint is summarized in Table~\ref{Table:tracker_spacepoint_efficiency_results}. The overall efficiency of both trackers is sufficient to not present any significant systematic uncertainties in the analysis, however it is lower than the ideal expectation, 99.9\% efficiency, due to the presence of dead channels, an unavoidable feature of the construction process.
+The results of the efficiency analysis are tabulated in Table~\ref{Table:tracker_efficiency_results} for a range of momentum and nominal emittances. A track-finding efficiency of 98.70\% is reported for the upstream tracker and 98.93\% for the downstream tracker, averaged over field and beam conditions. Additionally, assuming a track is found, the probability of successfully finding each spacepoint is summarised in Table~\ref{Table:tracker_spacepoint_efficiency_results}. The overall efficiency of both trackers is sufficient to not present any significant systematic uncertainties in the analysis, however it is lower than the ideal expectation, 99.9\% efficiency, due to the presence of dead channels, an unavoidable feature of the construction process.
 
 \begin{table}[ht]
 	\centering
@@ -101,7 +101,7 @@ The results of the efficiency analysis are tabulated in Table~\ref{Table:tracker
 \subsubsection{Track Fit Predicted Performance}
 
 Monte Carlo simulation used with realistic field and beam conditions in order to estimate the reconstruction performance. Run number 09964 was used (140~MeV/c, 10~mm nominal emittance), representing a typical data set used for the study of emittance evolution.
-Results are presented in Fig.~\ref{trackers:performance:resolutions:up} for the upstream tracker and Fig.~\ref{trackers:performance:resolutions:down} for the downstream tracker.
+Results are presented in figure~\ref{trackers:performance:resolutions:up} for the upstream tracker and figure~\ref{trackers:performance:resolutions:down} for the downstream tracker.
 
 \begin{figure}[ht]
 	\centering
@@ -130,7 +130,7 @@ Results are presented in Fig.~\ref{trackers:performance:resolutions:up} for the 
 
 The efficiency of the tracker was processed over the lifetime of its use during the data taking. The analysis used in section~\ref{trackers:performance:efficiency} was repeated and automated for runs starting in 2015.
 The selection included two more constraints: is required a spacepoint to be reconstructed within the tracker volume using a radial cut and that only a single spacepoint is reconstructed in each of the stations, as generally required in most of the analysis.
- The evolution of the straight and helical track finding efficiency in the upstream and downstream trackers is shown in Fig.~\ref{fig:trackers:performance:historical}, showing efficiencies generally above 99.0\%.
+ The evolution of the straight and helical track finding efficiency in the upstream and downstream trackers is shown in figure~\ref{fig:trackers:performance:historical}, showing efficiencies generally above 99.0\%.
 
 %\begin{figure}
 %  \centering
