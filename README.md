@@ -29,7 +29,7 @@ v0.5: liquid hydrogen absorber included
 
 --------------------------------------------------
 
-v 0.9:
+v0.9:
 - all contributions apart from:
   - full PID
   - energy loss in lH2
@@ -42,6 +42,6 @@ v 0.9:
 ==================================================
 
 Draft 0.3:
- - comments from Ken
- - new KL plots still missed
+ - implemented comments from Ken
+ - new KL plots
 
