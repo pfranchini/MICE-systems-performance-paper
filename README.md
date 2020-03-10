@@ -2,6 +2,9 @@
 MICE Systems Performance Paper
 ==============================
 
+Updates pre-draft:
+=================
+
 v0.1: Add detectors descriptions from the system paper
 
 v0.2: first contributions
@@ -34,3 +37,11 @@ v 0.9:
 - New plots for EMR and Detector alignment, all done with MAUS-v3.2.0
 - Updated TOF plots
 - New LH2 temperature plot for the steady state
+
+
+==================================================
+
+Draft 0.3:
+ - comments from Ken
+ - new KL plots still missed
+
