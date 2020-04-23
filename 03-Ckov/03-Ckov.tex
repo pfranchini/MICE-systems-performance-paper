@@ -7,7 +7,7 @@
 \label{SubSect:Ckov_Intro}
 % Lucien Cremaldi (and David Sander) reviewed this
 
-The MICE threshold Cherenkov detectors, measuring velocity, are primarily designed to provide $\pi$-$\mu$ separation in the higher momentum ranges, where TOF peaks separation is not sufficient for conclusive particle identification.
+The MICE threshold Cherenkov detectors, measuring velocity, are primarily designed to provide $\pi$-$\mu$ separation in the higher momentum ranges, where TOF separation of the two species peaks is not sufficient for conclusive particle identification.
 
 In order to provide separation over a large range of momenta, two high-density silica aerogel Cherenkov detectors (CkovA and CkovB) with refractive indices $n$=1.07 and $n$=1.12 are used.
 Light is collected in each counter by four 9354KB eight-inch UV-enhanced PMTs and recorded by CAEN V1731 FADCs (500~MS/s).
@@ -30,6 +30,7 @@ For unambiguous identification of particle species the Cherenkov detectors would
 \label{SubSect:Ckov_Performance}
 
 A wide range beam momenta (including alignment runs) has been used in order to cover the full spectra of particles that could have been measured by the Cherenkov detectors.
+The asymptotic light yield (for $\beta$=$v$/$c$=$1$) in each counter were measured using the electron peaks, giving $16\pm1$ photoelectrons (NPE) in CkovA and $19\pm1$ in CkovB.
 
 %\begin{table}
 %  \begin{center}
@@ -49,15 +50,13 @@ A wide range beam momenta (including alignment runs) has been used in order to c
 %  \end{center}
 %\end{table}
 
-The asymptotic light yield (for $\beta$=$v$/$c$=$1$) in each counter were measured using the electron peaks, giving $16\pm1$ photoelectrons (NPE) in CkovA and $19\pm1$ in CkovB.
-
 The photoelectrons yields versus momentum for muons and pions in CkovA and CkovB are displayed in figure~\ref{fig:ckov2}, using the time of flight between TOF0 and TOF1 to select the species and to estimate the momentum.
-The distributions of NPEs as a function of the momentum P were fitted with the function
+The distributions $N(P)$ of NPEs as a function of the momentum P were fitted with the function
 
 \begin{equation}
-NPE(P) = NPE_0 + NPE_{\beta=1}\left(1-\left(\frac{P_0}{P}\right)^2\right)
+N(P) = N_0 + N_{\beta=1}\left(1-\left(\frac{P_0}{P}\right)^2\right)
 \end{equation}
-where $NPE_0$ is the number of background photoelectrons, $NPE_{\beta=1}$ is the asymptotic light yield and $P_0$ is the momentum threshold.
+where $N_0$ is the number of background photoelectrons, $N_{\beta=1}$ is the asymptotic light yield and $P_0$ is the momentum threshold.
 
 %\begin{figure}[htb!]
 %  \begin{center}
