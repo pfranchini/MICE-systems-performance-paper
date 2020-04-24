@@ -1,6 +1,6 @@
 \graphicspath{{08-Track-matching/Figures/}}
 
-\section{Global Track Matching reconstruction}
+\section{Global Track Matching Reconstruction}
 \label{Sect:TM}
 
 
@@ -17,26 +17,37 @@ to TKD and TOF2. Where there are materials in the beamline, the energy change on
 passing through the material is estimated using the most probable energy loss. 
 Material thicknesses are approximated by the on-axis thickness. 
 
-Asymmetric effects can be introduced due to scattering from the walls of the
-cooling channel as the beam is not symmetric in the channel. In order to 
-minimise the effects of such scattering, only events whose projected 
-trajectory is  significantly distant from the apertures are considered in this 
-analysis. The following sample selection is considered:
-
+Particles entering the analysis must satisfy the following criteria:
 \begin{itemize}
-\item{Downstream sample:} events must be included in the downstream sample to
-be considered in this analysis
-\item{Aperture cut:} the projected upstream track must be within 100 mm radius 
-from the beam axis at the following apertures: the upstream absorber safety window;
-the upstream absorber window; the absorber centre; the downstream absorber window;
-the downstream absorber safety window; the upstream edge of SSD; the Helium window
-in SSD; the downstream edge of the downstream PRY aperture. This is performed
-even when the lH2 absorber was not installed, for the sake of consistency and
-because in some instances mounting flanges can limit the aperture and consistency.
-\item{1 space point in TOF2:} the event must have exactly one space point in TOF2.
-\item{Successful track extrapolation to TOF2:} the projected upstream track must
-have been successfully extrapolated to TOF2
+\item at least one space point must be reconstructed in TOF2;
+\item one track must be reconstructed in both TKU and TKD. The track in TKD must extrapolate to within the active area of TOF2; and
+\item the track found in TKD must lie within a radius of 100\,mm from the beam axis at the following apertures:
+the upstream absorber safety window; the upstream absorber window; the absorber centre; the downstream absorber window; the downstream absorber safety window; the upstream edge of SSD; the helium window in SSD; the downstream edge of the downstream PRY aperture.
+%... <remnove the last sentence?
 \end{itemize}
+The final cut restricts the sample to events in which particles are contained within the active area of the experiment and ensures that the selection is consistent across the configurations in which data was taken.
+
+
+%Asymmetric effects can be introduced due to scattering from the walls of the
+%cooling channel as the beam is not symmetric in the channel. In order to 
+%minimise the effects of such scattering, only events whose projected 
+%trajectory is  significantly distant from the apertures are considered in this 
+%analysis. The following sample selection is considered:
+
+%\begin{itemize}
+%\item{Downstream sample:} events must be included in the downstream sample to
+%be considered in this analysis
+%\item{Aperture cut:} the projected upstream track must be within 100 mm radius 
+%from the beam axis at the following apertures: the upstream absorber safety window;
+%the upstream absorber window; the absorber centre; the downstream absorber window;
+%the downstream absorber safety window; the upstream edge of SSD; the Helium window
+%in SSD; the downstream edge of the downstream PRY aperture. This is performed
+%even when the lH2 absorber was not installed, for the sake of consistency and
+%because in some instances mounting flanges can limit the aperture and consistency.
+%\item{1 space point in TOF2:} the event must have exactly one space point in TOF2.
+%\item{Successful track extrapolation to TOF2:} the projected upstream track must
+%have been successfully extrapolated to TOF2
+%\end{itemize}
 
 %The sample sizes are shown for data in table \ref{tab:data_cuts_summary_2_0} and
 %\ref{tab:data_cuts_summary_2_1}. The equivalent MC sample sizes are listed in 

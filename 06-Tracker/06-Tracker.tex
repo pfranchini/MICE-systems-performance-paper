@@ -4,7 +4,10 @@
 \label{Sect:Tracker}
 
 \subsection{Introduction}
-MICE is equipped with two identical, high precision scintillating-fibre trackers, described in~\cite{Ellis:2010bb}. Each tracker is placed in a superconducting solenoid designed to provide a uniform magnetic field over the tracking volume. One tracker, TKU, is upstream of the cooling cell, the other, TKD, is downstream, the mirror image of TKU as shown in figure~\ref{fig:BL}.
+MICE is equipped with two identical, high precision scintillating-fibre trackers, described in~\cite{Ellis:2010bb}. One tracker, TKU, is upstream of the cooling cell, the other, TKD, is downstream, the mirror image of TKU as shown in figure~\ref{fig:BL}.
+Each tracker is placed in a superconducting solenoid (SSU and SSD, upstream and downstream respectively) designed to provide a uniform magnetic field over the tracking volume. 
+
+% --> add something about the PRY ????
 
 The trackers are 110\,cm in length and 30\,cm in diameter (see figure~\ref{Figure:FullTracker}). There are five stations per tracker (labelled 1 to 5, with station 1 being closest to the cooling cell) held in position using a carbon-fibre space-frame. The stations sit at different distances in $z$ (beam axis) of 20--35\,cm: this ensures that the azimuthal rotation of track position from one station to the next differs, difference being important in the resolving ambiguities at the pattern-recognition stage. Each tracker is instrumented with an internal LED calibration system and four 3-axis Hall probes to monitor the field.
 
@@ -12,11 +15,11 @@ The trackers are 110\,cm in length and 30\,cm in diameter (see figure~\ref{Figur
 \begin{center}
 \includegraphics[width=0.6\textwidth,keepaspectratio=true,]{FullTracker.png}
 \end{center}
-\caption{Photograph of one of the MICE Trackers, showing the five stations and the three doublet planes of scintillating fibres, each plane at 120$^\circ$ angles to the next (the central fibres of plane can be seen as darker lines traversing the station). Bundles of seven 350~$\mu$m fibres are grouped together, to be read out by 1\,mm scintillating fibre light guides.}
+\caption{Photograph of one of the MICE Trackers, showing the five stations and the three doublet planes of scintillating fibres, each plane at 120$^\circ$ angles to the next (the central fibres of plane can be seen as darker lines traversing the station). Bundles of seven 350\,$\mu$m fibres are grouped together, to be read out by 1\,mm scintillating fibre light guides.}
 \label{Figure:FullTracker}
 \end{figure}
 
-The tracker stations consists of three doublet layers of 350~$\mu$m scintillating fibres, these layers are arranged such that each is at an angle of 120$^\circ$ with respect to the next. This arrangement ensures that there are no inactive regions between adjacent fibres. Bundles of seven fibres are grouped into a single readout channel (this reduces the number of readout channels, while maintaining position resolution). The trackers have a spatial resolution per doublet layer of 470~$\mu$ m and an expected light yield of approximately 10 photo-electrons.
+The tracker stations consists of three doublet layers of 350\,$\mu$m scintillating fibres, these layers are arranged such that each is at an angle of 120$^\circ$ with respect to the next. This arrangement ensures that there are no inactive regions between adjacent fibres. Bundles of seven fibres are grouped into a single readout channel (this reduces the number of readout channels, while maintaining position resolution). The trackers have a spatial resolution per doublet layer of 470\,$\mu$ m and an expected light yield of approximately 10 photo-electrons.
 
 The light from the seven scintillating fibres passes into a single clear fibre, which takes it to a visible light photon counter (VLPC) which operate at 9\,k. The signals from the VLPCs are digitised using electronics developed by the D0 collaboration~\cite{Abazov:2005pn}.
 
@@ -48,14 +51,14 @@ Spacepoints are constructed from clusters from all three planes (a triplet space
 
 \subsubsection{Noise}
 %Noise at electronics level discussion, 1/2 page, and Noise from data, 1/2 page.
-The scintillating fibre trackers operate by registering digits above a given NPE threshold within each fibre plane. Fibres are collected into channels as ganged bundles of 7 for each channel, with digits are registered per channel instead of per fibre. From a coincidence of digit events in 2 or 3 oblique fibres (fibres in differing planes), a spacepoint is reconstructed, from which track reconstruction can occur. We consider noise in the tracker to be those digits registered not from the passage of a beam particle, but instead from other sources, for instance, dark current from thermal electron emission in the PMTs. To isolate noise from signal during beam-on data collection, a strict cut can be made requiring that only events with one fitted track and 5 spacepoints per tracker are selected, with all 5 spacepoints included in the fitted track. All digits corresponding to the track are then removed from the total set of digits for that event, and the remainder are considered noise digits. An in-situ approximation of active channels for the current data-taking period is made, assuming all channels without at least one registered digit in the selected data-taking run are inactive. The average noise rate per channel per event is then calculated as the total number of event digits above the considered NPE threshold in each tracker, divided by both the active channel number and the number of events satisfying the above selection criteria. This gives a value of 0.18\% upstream and 0.06\% downstream for events above 2~NPE. 
+The scintillating fibre trackers operate by registering digits above a given NPE threshold within each fibre plane. Fibres are collected into channels as ganged bundles of 7 for each channel, with digits are registered per channel instead of per fibre. From a coincidence of digit events in 2 or 3 oblique fibres (fibres in differing planes), a spacepoint is reconstructed, from which track reconstruction can occur. We consider noise in the tracker to be those digits registered not from the passage of a beam particle, but instead from other sources, for instance, dark current from thermal electron emission in the PMTs. To isolate noise from signal during beam-on data collection, a strict cut can be made requiring that only events with one fitted track and 5 spacepoints per tracker are selected, with all 5 spacepoints included in the fitted track. All digits corresponding to the track are then removed from the total set of digits for that event, and the remainder are considered noise digits. An in-situ approximation of active channels for the current data-taking period is made, assuming all channels without at least one registered digit in the selected data-taking run are inactive. The average noise rate per channel per event is then calculated as the total number of event digits above the considered NPE threshold in each tracker, divided by both the active channel number and the number of events satisfying the above selection criteria. This gives a value of 0.18\% upstream and 0.06\% downstream for events above 2\,NPE. 
 
 \subsubsection{Track Finding Efficiency}
 \label{trackers:performance:efficiency}
 %Track selection/Kalman, efficiency (from all data runs plotted by pt and if all equal just 10mm can be shown) resolution (from MC), reference MAUS and Tracker SW paper, 1 page, Chris H.
 Data were analysed in order to determine the track and spacepoint finding efficiency of the detectors during running conditions. A time-of-flight cut was used to ensure that each measured track had a time-of-flight consistent with a muon throughout the entire experimental apparatus. A hit was therefore required in each of the TOF1 and TOF2 detectors, which ensured that the particle must have been successfully transmitted through the cooling channel, crossing both tracking detectors. These requirements ensure that there is a better then 99.9\% probability that a particle will have traversed a tracking detector.
 The number of events missing a track is therefore measured and used to estimate the efficiency of the detector.
-The results of the efficiency analysis are tabulated in Table~\ref{Table:tracker_efficiency_results} for a range of momentum and nominal emittances. A track-finding efficiency of 98.70\% is reported for the upstream tracker and 98.93\% for the downstream tracker, averaged over field and beam conditions. Additionally, assuming a track is found, the probability of successfully finding each spacepoint is summarised in Table~\ref{Table:tracker_spacepoint_efficiency_results}. The overall efficiency of both trackers is sufficient to not present any significant systematic uncertainties in the analysis, however it is lower than the ideal expectation, 99.9\% efficiency, due to the presence of dead channels, an unavoidable feature of the construction process.
+The results of the efficiency analysis are tabulated in table~\ref{Table:tracker_efficiency_results} for a range of momentum and nominal emittances. A track-finding efficiency of 98.70\% is reported for the upstream tracker and 98.93\% for the downstream tracker, averaged over field and beam conditions. Additionally, assuming a track is found, the probability of successfully finding each spacepoint is summarised in table~\ref{Table:tracker_spacepoint_efficiency_results}. The overall efficiency of both trackers is sufficient to not present any significant systematic uncertainties in the analysis, however it is lower than the ideal expectation, 99.9\% efficiency, due to the presence of dead channels, an unavoidable feature of the construction process.
 
 \begin{table}[ht]
 	\centering
@@ -72,14 +75,14 @@ The results of the efficiency analysis are tabulated in Table~\ref{Table:tracker
 %      	\multirow{2}{*}{Momentum} & Nominal & \multirow{2}{*}{No. Events} & Upstream & Downstream \\
 %                   & Emittance &  & Tracks Found & Tracks Found \\ \hline
         Momentum & Nominal Emittance & No. Events & Upstream Tracks Found & Downstream Tracks Found \\ \hline
-        200 MeV/c & 6mm  & 221879 & 99.42\% & 96.07\% \\ %H25c 
-        200 MeV/c & 3mm  & 215229 & 98.38\% & 99.19\% \\ %H36aa
-        %\multirow{3}{*}{140 MeV/c} & 3mm & 215229 & 98.38\% & 99.19\% \\ %H36aa
-        140 MeV/c & 6mm  & 180283 & 98.37\% & 99.16\% \\ %H36c
-        140 MeV/c & 10mm & 130859 & 98.47\% & 98.93\% \\ \hline \hline %H36d
+        200 MeV/$c$ & 6mm  & 221879 & 99.42\% & 96.07\% \\ %H25c 
+        200 MeV/$c$ & 3mm  & 215229 & 98.38\% & 99.19\% \\ %H36aa
+        %\multirow{3}{*}{140 MeV/$c$} & 3mm & 215229 & 98.38\% & 99.19\% \\ %H36aa
+        140 MeV/$c$ & 6mm  & 180283 & 98.37\% & 99.16\% \\ %H36c
+        140 MeV/$c$ & 10mm & 130859 & 98.47\% & 98.93\% \\ \hline \hline %H36d
         \multicolumn{2}{c |}{Averaged} & 748250 & 98.70\% & 98.21\%
     \end{tabular}
-    \caption{\label{Table:tracker_efficiency_results}The track finding efficiency for the upstream and downstream trackers for 140~MeV/c and 200~MeV/c beams, and for 3, 6 and 10~mm nominal emittances.}
+    \caption{\label{Table:tracker_efficiency_results}The track finding efficiency for the upstream and downstream trackers for 140\,MeV/$c$ and 200\,MeV/$c$ beams, and for 3, 6 and 10\,mm nominal emittances.}
 \end{table}
 
 \begin{table}[ht]
@@ -88,19 +91,19 @@ The results of the efficiency analysis are tabulated in Table~\ref{Table:tracker
 %   	\multirow{2}{*}{Momentum} & Nominal & \multirow{2}{*}{No. Events} & Upstream & Downstream \\
 %                   & Emittance &  & Spacepoints Found & Spacepoints Found \\ \hline
        Momentum & Nominal Emittance & No. Events & Upstream Spacepoints Found & Downstream Spacepoints Found \\ \hline
-        200 MeV/c & 6mm  & 221879 & 99.41\% & 94.63\% \\ %H25c 
-%        \multirow{3}{*}{140 MeV/c} & 3mm & 215229 & 98.04\% & 97.41\% \\ %H36aa
-        200 MeV/c & 3mm  & 215229 & 98.04\% & 97.41\% \\ %H36aa
-        140 MeV/c & 6mm  & 180283 & 97.99\% & 99.16\% \\ %H36c
-        140 MeV/c & 10mm & 130859 & 98.07\% & 97.44\% \\ \hline \hline %H36d
+        200 MeV/$c$ & 6mm  & 221879 & 99.41\% & 94.63\% \\ %H25c 
+%        \multirow{3}{*}{140 MeV/$c$} & 3mm & 215229 & 98.04\% & 97.41\% \\ %H36aa
+        200 MeV/$c$ & 3mm  & 215229 & 98.04\% & 97.41\% \\ %H36aa
+        140 MeV/$c$ & 6mm  & 180283 & 97.99\% & 99.16\% \\ %H36c
+        140 MeV/$c$ & 10mm & 130859 & 98.07\% & 97.44\% \\ \hline \hline %H36d
         \multicolumn{2}{c |}{Averaged} & 748250 & 98.44\% & 97.01\%
     \end{tabular}
-    \caption{\label{Table:tracker_spacepoint_efficiency_results}The spacepoint finding efficiency, assuming the presence of a track, for the upstream and downstream trackers for 140~MeV/c and 200~MeV/c beams, and for 3, 6 and 10~mm nominal emittances.}
+    \caption{\label{Table:tracker_spacepoint_efficiency_results}The spacepoint finding efficiency, assuming the presence of a track, for the upstream and downstream trackers for 140\,MeV/$c$ and 200\,MeV/$c$ beams, and for 3, 6 and 10\,mm nominal emittances.}
 \end{table}
 
 \subsubsection{Track Fit Predicted Performance}
 
-Monte Carlo simulation used with realistic field and beam conditions in order to estimate the reconstruction performance. Run number 09964 was used (140~MeV/c, 10~mm nominal emittance), representing a typical data set used for the study of emittance evolution.
+Monte Carlo simulation used with realistic field and beam conditions in order to estimate the reconstruction performance. Run number 09964 was used (140\,MeV/$c$, 10\,mm nominal emittance), representing a typical data set used for the study of emittance evolution.
 Results are presented in figure~\ref{trackers:performance:resolutions:up} for the upstream tracker and figure~\ref{trackers:performance:resolutions:down} for the downstream tracker.
 
 \begin{figure}[ht]
