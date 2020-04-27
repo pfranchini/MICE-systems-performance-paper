@@ -45,3 +45,6 @@ Draft 0.3:
  - implemented comments from Ken
  - new KL plots
 
+
+Draft 1.0:
+ - implemented all Ken's comments
