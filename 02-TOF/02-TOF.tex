@@ -23,10 +23,10 @@
 % \item \hilite{Overall slab DT}
 % \item Space-point creation efficiency per pixel/slab
 %   \begin{itemize}\it
-%   \item this is tricky, the only inefficiency comes from time mismatch
+%   \item this was tricky, the only inefficiency comes from time mismatch
 %   \item it can point to a fact that some slabs/pixels have something
 %     wrong with them
-%   \item it is not measure of performance per se
+%   \item it was not measure of performance per se
 %   \end{itemize}
 % \item Particle detection efficiency
 %   \begin{itemize} \it
@@ -55,7 +55,7 @@ TOF1~\cite{NOTE145}\cite{NOTE241}\cite{2010NIMPA.615...14B} were
 placed upstream of the cooling channel, and TOF2~\cite{NOTE286} was
 downstream of the channel, mounted in front of the KL, as shown
 in~figure~\ref{fig:BL}.  The time of flight between two TOF stations
-provides particle identification information and can also be used for
+provided particle identification information and can also be used for
 momentum measurement. TOF1 served most of the time also as an
 experimental trigger. They operated smoothly during the 
 running periods of the MICE experiment and were essential for all the
@@ -98,7 +98,7 @@ The PMTs were connected to a $50\%-50\%$ passive splitter using RG213 signal cab
 the leading-edge CAMAC Lecroy 4115 discriminator followed by CAEN
 V1290 TDC for time measurement. The second half of the signal went to
 CAEN V1724 FADC for pulse-height measurement. Pulse height
-measurement is essential for time-walk corrections. Each electronic
+measurement was essential for time-walk corrections. Each electronic
 issued a local readout trigger if signals in both PMTs attached to a
 slab crossed a specific threshold. All three stations were read out when
 TOF1 station issued a local trigger. This readout trigger was also
@@ -115,13 +115,13 @@ used for the rest of the MICE detector systems.
 
 All stations were exposed to residual magnetic fields: TOF0 was placed in a relatively low residual field produced by the last quadrupole magnet of the beam line  (which had mirror plates installed), while the other two TOF stations were exposed to the stray fields of the cooling channel solenoids. A shielding structure was adopted covering all PMTs at each side of the stations~\cite{2010NIMPA.615...14B}.
 
-%All three stations were exposed to residual magnetic fields. TOF0 station was placed in a relatively low residual field ($\le 5\,\Gauss$) produced by the last quadrupole magnet of the beam line.  The PMTs in this station used 1-mm thick $\mu$-metal shielding \malert{(we don't seem to have any reference)}. The other two TOF stations (TOF1/TOF2) were exposed to the stray fields of the cooling channel solenoids that were only partially shielded by 10\,mm thick annular iron plates \malert{(need to have a reference, possibly described earlier in the  paper)}. The residual magnetic fields were up to 0.13~T (with a component along the PMTs axis up to 0.04~T). Box-shaped soft iron shielding is more effective than cylindrical one.
+%All three stations were exposed to residual magnetic fields. TOF0 station was placed in a relatively low residual field ($\le 5\,\Gauss$) produced by the last quadrupole magnet of the beam line.  The PMTs in this station used 1-mm thick $\mu$-metal shielding \malert{(we don't seem to have any reference)}. The other two TOF stations (TOF1/TOF2) were exposed to the stray fields of the cooling channel solenoids that were only partially shielded by 10\,mm thick annular iron plates \malert{(need to have a reference, possibly described earlier in the  paper)}. The residual magnetic fields were up to 0.13~T (with a component along the PMTs axis up to 0.04~T). Box-shaped soft iron shielding was more effective than cylindrical one.
 
 % too much about the shielding, removed.
 %This idea, pioneered in the D0 experiment \malert{(citation needed, or remove altogether)}, has been
 %tested in the case of MICE using different geometrical configurations
 %of the iron shielding boxes and different iron materials (e.g. Fe360,
-%ARMCO\footnote{ARMCO steel from AkSteel is a pure iron with a maximal
+%ARMCO\footnote{ARMCO steel from AkSteel was a pure iron with a maximal
 %  carbon content of $0.025\%$ and very high magnetic
 %  saturation},~etc) \cite{2012NIMPA.693..130B}.
 % Systematic studies were
@@ -134,7 +134,7 @@ All stations were exposed to residual magnetic fields: TOF0 was placed in a rela
 %each side of the station. The bars were 15~cm deep, and 5.7~cm or
 %6.6~cm thick for TOF1 or TOF2, respectively.  \malert{(Original text
 %  stated 6$\times$6~cm$^2$ anfd 5.6$\times$5.6~cm$^2$, 15~cm
-%  long. This is with contradiction with the design drawings in MICE
+%  long. This was with contradiction with the design drawings in MICE
 %  note 455 (TOF1) and the drawing provided in this paper (TOF2))}
 %figure~\ref{fig:TOF1} shows the design drawing of the shielding at the
 %TOF2 station detailing individual parts. There was an extra shielding
@@ -153,7 +153,7 @@ All stations were exposed to residual magnetic fields: TOF0 was placed in a rela
 %  \end{center}
 %\end{figure}
 
-% \malert{The following paragraph is summarising the performance. It
+% \malert{The following paragraph was summarising the performance. It
 %   states overly optimistic performance.}
 % \malert{reformulate ---} For what attains performances\malert{---},
 % TOF0, TOF1, and TOF2 had timing resolutions around 50-60 ps
@@ -175,14 +175,14 @@ All stations were exposed to residual magnetic fields: TOF0 was placed in a rela
 %   \end{center}
 % \end{figure}
 
-% \malert{What is currently the main purpose of TOFs? This determines
+% \malert{What was currently the main purpose of TOFs? This determines
 %   the requirements on the performance. Will need to tell that current
 %   T-o-F measurement has sufficient resolution, which appears to be
 %   $\sim$100-120~ps}
 
 The purpose of the TOF system was to discriminate particle species
 based on time-of-flight measurement. The main components in the
-MICE beam are muons, pions, and positrons. The time resolution needed
+MICE beam were muons, pions, and positrons. The time resolution needed
 to be sufficiently good to effectively discriminate between these
 types. At 240\,MeV/$c$, the time-of-flight difference between muon and
 pion was about 1.3\,ns between TOF0 and TOF1 stations. With 200\,ps
@@ -197,22 +197,22 @@ resolution, one reached near 100\% discrimination efficiency~\cite{Bogomilov:201
 % \item Describe the method. Based on MICE note 251.
 % \item \malert{TOF NIMA paper says that measured time resolution of the
 %     CAEN TDC was 22~ps/count, as opposed  to declared 25~ps!}
-% \item  Some description of the calibration method is also described in the
+% \item  Some description of the calibration method was also described in the
 %   paper.
 % \item  \malert{There's a short description of the method also in Rayner's
-%     Thesis, Section 3.2.1 and Appendix B (this is improved method to
+%     Thesis, Section 3.2.1 and Appendix B (this was improved method to
 %     extract more calibration constants for proper x,y measurements,
 %     Rayner claims $\sim$1~cm resolution; our current resolution = slab
 %     width / sqrt(12) $\sim 1.2 - 1.7$ ).}
 % \end{itemize}
 
-Measurement of time traversal of a particle through a TOF station is
+Measurement of time traversal of a particle through a TOF station was
 influenced by several factors at the hardware level. When a particle
-crosses the plastic scintillator, there is a short delay in light
+crossed the plastic scintillator, there was a short delay in light
 production, with a characteristic decay time of 1.8\,ns.
 
 After generation, scintillation light propagates to the ends of each
-scintillator slab where it is detected by photomultiplier tubes. The
+scintillator slab where it was detected by photomultiplier tubes. The
 light-travel time depends on the distance of the particle crossing
 from the PMT. The lengths of slabs in TOF0, TOF1, and TOF2 were 40\,cm,
 40\,cm, and 60\,cm, respectively. This translates to about 3.0\,ns, 3.1\,ns,
@@ -228,7 +228,7 @@ This introduced bias in the measured time dependent on the total charge of the s
 
 Signal times of each channel were recorded in TDC boards. Readout of
 the whole system was triggered by having a signal in TOF1. The
-readout trigger signal is distributed to all TDC boards and is used as
+readout trigger signal was distributed to all TDC boards and was used as
 a reference time. Which PMT channel's threshold crossing caused the
 readout was dependent on where the particle crossed through the TOF1
 station. As a consequence, the reference time had a bias dependent on
@@ -236,7 +236,7 @@ the position of the TOF1 crossing, an effect referred to here as trigger
 delay. To compensate this, the final time measurement in each station was determined as an average of the times of individual channels.
 %This way, different distances from the point of crossing to each side of the scintillator slabs does not matter anymore, because the average of the times of the 2 PMTs does not depend on it.
 
-Corrections which need to be made to the measured times are then the
+Corrections which needed to be made to the measured times were then the
 time-walk correction, the PMT channel specific delay time and
 a correction for the reference trigger time delay~\cite{NOTE251}.
 
@@ -277,7 +277,7 @@ determined as the average of times of the 2 matched slabs.
 % \item Slab DT - selected slabs/counters + overall TOFs
 % \item ToF10 - + detail of electron peak
 %   \begin{itemize} \it
-%   \item will need to argue why the peak is broader than stated
+%   \item will need to argue why the peak was broader than stated
 %     resolution
 %   \item the effect of electron's flight path due to focusing fields is
 %     non-negligible - use estimates from Rayner's thesis
@@ -296,7 +296,7 @@ determined as the average of times of the 2 matched slabs.
 %       particle crosses by the edge of the slab -- see Rayner's
 %       thesis/presentations
 %     \item two particles share one slab - earlier particle's hit only
-%       considered - but this is not considered in these plots (only 2
+%       considered - but this was not considered in these plots (only 2
 %       slab hits recorded)
 %     \end{itemize}
 %   \end{itemize}
@@ -310,10 +310,10 @@ determined as the average of times of the 2 matched slabs.
 % \item \malert{(?)}Efficiency
 % \end{itemize}
 
-Resolution of time-of-flight measurement is given by time resolution
+Resolution of time-of-flight measurement was given by time resolution
 of each station.
-The time associated to each TOF is determined from the average of the times when the two slabs (horizontal and vertical) are crossed by a particle.
-The resolution of the average is a half of the spread of their difference. Therefore, looking at slab \DT{} allows the time-of-flight
+The time associated to each TOF was determined from the average of the times when the two slabs (horizontal and vertical) were crossed by a particle.
+The resolution of the average was a half of the spread of their difference. Therefore, looking at slab \DT{} allowed the time-of-flight
 resolution to be determined.
 
 %Due to the errors in calibrations, especially in the underpopulated
@@ -332,9 +332,9 @@ Figure~\ref{fig:TOF_peaks} shows an example of measurement of time of
 flight between the first two stations, TOF0 and TOF1. Times of electrons,
 muons, and pions are clearly separated, creating peaks from left to
 right, respectively. The observed width of the electron peak of
-approximately~0.11\,ns is about 30\%~larger than the calculated spread from a
+approximately~0.11\,ns was about 30\%~larger than the calculated spread from a
 naive addition of slab \DT{} of the individual TOF stations.
-This difference is attributed to contributions to the resolution of
+This difference was attributed to contributions to the resolution of
 individual stations which cancel out in the slab \DT{} measurement,
 and to variations in the travelled path length of the electrons between
 stations TOF0 and TOF1.
@@ -343,16 +343,16 @@ stations TOF0 and TOF1.
   \begin{center}
   \includegraphics[width=0.9\columnwidth]{07_overall_slab_dt} \\
   \caption{Overall slab \DT{} distributions. Total width of the
-    distribution is due to the resolution of individual pixels and due to
+    distribution was due to the resolution of individual pixels and due to
     the offsets in their \DT{} distributions.}
   \label{fig:SlabDtAll}
   \end{center}
 \end{figure}
 
-% Error of the time-of-flight measurement is a combination of intrinsic
+% Error of the time-of-flight measurement was a combination of intrinsic
 % resolution of each TOF station and errors in the calibrations of
 % individual \malert{scintillation counters}. The total error of t-o-f
-% as measured by stations $i$ and $j$ is considered as:
+% as measured by stations $i$ and $j$ was considered as:
 % %
 % \begin{equation}
 %   \label{eq:tof:err}
@@ -366,7 +366,7 @@ stations TOF0 and TOF1.
 % stations.
 
 % The reconstruction of a pixel by matching of 2 slabs from different
-% planes of each station is dependent on the slab \DT{}. The 4~ns time
+% planes of each station was dependent on the slab \DT{}. The 4~ns time
 % window for the matching was chosen to cover the errors of the
 % calibrations. Yet, there were times when there were signals in slabs
 % in each plane of a station, but they were never matched. These events
@@ -377,7 +377,7 @@ stations TOF0 and TOF1.
 %Figure~\ref{fig:SpEffByPixel} shows fractions of events where
 %there were signals in two perpendicular slabs and they were
 %time-matched. One can see lower efficiency/fraction in the peripheral
-%pixels which is associated with the larger fraction of multiple
+%pixels which was associated with the larger fraction of multiple
 %particle crossings with giving signal in one slab only.
 
 
