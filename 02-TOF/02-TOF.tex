@@ -53,56 +53,52 @@ installed at RAL in 2008 and 2009 to measure the position and the time
 of crossing particles.  TOF0 and
 TOF1~\cite{NOTE145}\cite{NOTE241}\cite{2010NIMPA.615...14B} were
 placed upstream of the cooling channel, and TOF2~\cite{NOTE286} was
-downstream of the channel, mounted in front of the KL, as shown
-in~figure~\ref{fig:BL}.  The time of flight between two TOF stations
+located downstream of the channel, mounted in front of the KLOE-Light pre-shower detector, as shown
+in~figure~\ref{fig:BL}.  The time of flight between the first pair of TOF stations (figure~\ref{fig:TOF_peaks})
 provided particle identification information and can also be used for
-momentum measurement. TOF1 served most of the time also as an
-experimental trigger. They operated smoothly during the 
+momentum measurement. For most of the running, TOF1 served as an experimental trigger.
+They operated smoothly during the 
 running periods of the MICE experiment and were essential for all the
-measurements done~\cite{Rajaram:2015bra}\cite{2015ehep.confE.521B}.
+measurements that were performed~\cite{Rajaram:2015bra}\cite{2015ehep.confE.521B}.
 
 \begin{figure}[!ht]
   \begin{center}
     \includegraphics[width=0.8\columnwidth]{BL.png}
-    \caption{MICE experiment, showing the full beam line starting from the target position on the proton synchrotron) with the full set of quadrupoles and dipoles (Q1 to Q9, D1/2), the Decay Solenoid, and cooling channel elements with all the detectors.}
+    \caption{MICE, showing the full beam line starting from the target position on the proton synchrotron) with the full set of quadrupoles and dipoles (Q1 to Q9, D1/2), the Decay Solenoid, and cooling channel elements with all the detectors. The liquid-hydrogen absorber vessel inside the Focus Coil is shown in figure~\ref{Fig:AbsorberVessel:Diag}}.
     \label{fig:BL}
   \end{center}
 \end{figure}
 
-The good performances of the TOF detectors, over an extended period of time,
-enabled the MICE experiment to characterise fully its muon beams during
+The good performance of the TOF and KL detectors, over an extended period of time,
+enabled the MICE experiment to fully characterise its muon beams during
 the early stages of data-taking, by measuring their emittance~\cite{2013arXiv1306.1509T} and assessing their pion contamination~\cite{2016JInst..11P3001A}.
 
-Each TOF station was made of two planes of 1'' scintillator
-bars oriented along X and Y directions, respectively. The bars were
-made of BC404 plastic scintillator. A simple fishtail light-guide was used to attach each end of each bar to R4998 Hamamatsu fast photomultiplier tubes.  R4998 PMTs were delivered by Hamamatsu in assemblies (H6533MOD) that included the PMT tube, the voltage divider
-chain and a 1\,mm thick $\mu$-metal shield, extending 30\,mm beyond the
-photocathode surface.  To increase the count-rate stability, active
-dividers were used. Illustration of a TOF detector is shown in
-figure~\ref{fig:tof:schematic} together with an exploded view of a
-slab.
+Each TOF station was made of two planes of 1'' scintillator bars oriented along X and Y directions, respectively.
+The bars were made of BC-404 plastic scintillator. A simple fishtail light-guide was used to attach each end of each bar to R4998 Hamamatsu fast photomultiplier tubes,
+enclosed in assemblies that included the voltage divider chain and a 1\,mm thick $\mu$-metal shield. To increase the count-rate stability, active
+dividers were used. The TOF detector is illustrated in figure~\ref{fig:tof:schematic}.
+
+%%%%Mu-metal is a nickel–iron soft ferromagnetic alloy with very high permeability, which is used for shielding sensitive electronic equipment against static or low-frequency magnetic fields.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=8cm]{tof_diagram2}
   \includegraphics[height=3cm]{slab_design2}
-  \caption{Design of the TOF detector structure showing the horizontal and vertical layers of slabs (left) and details of each slab showing one scintillator with on each side the light-guides and the PMTs (right)~\cite{NOTE145}.}
+  \caption{Design of the TOF detector structure showing the horizontal and vertical layers of slabs (left) and exploded view of each slab showing one scintillator with the light-guides and the PMTs (right) on each side~\cite{NOTE145}.}
   \label{fig:tof:schematic}
 \end{figure}
 
-The stations TOF0, TOF1, and TOF2 had active areas of
+The three stations TOF0, TOF1, and TOF2 had active areas of
 40$\times$40\,cm$^2$, 42$\times$42\,cm$^2$, and 60$\times$60\,cm$^2$
 respectively.  Each of the planes in TOF0 had 10, 4\,cm wide, scintillator slabs.
 Stations TOF1 and TOF2 were composed by 7 and 10 scintillator slabs in each plane, respectively.
-The PMTs were connected to a $50\%-50\%$ passive splitter using RG213 signal cable. One half of the signal was fed to
-the leading-edge CAMAC Lecroy 4115 discriminator followed by CAEN
-V1290 TDC for time measurement. The second half of the signal went to
-CAEN V1724 FADC for pulse-height measurement. Pulse height
-measurement was essential for time-walk corrections. Each electronic
-issued a local readout trigger if signals in both PMTs attached to a
-slab crossed a specific threshold. All three stations were read out when
-TOF1 station issued a local trigger. This readout trigger was also
-used for the rest of the MICE detector systems.
+The PMTs were connected to a passive splitter.
+One half of the signal was fed to the leading-edge CAMAC Lecroy 4115 discriminator followed by a CAEN
+V1290 TDC for time measurement and the second half of the signal went to a CAEN V1724 FADC for pulse-height measurement.
+%Pulse height measurement was essential for time-walk corrections.
+Each electronic channel issued a local readout trigger if signals in both PMTs attached to a
+slab crossed a specific threshold. All three stations were read out when the TOF1 station issued a local trigger.
+This readout trigger was also used for the rest of the MICE detector systems.
 
 % Pulse heights and times of the signals were recorded if
 %\malert{Do we want to include this?:}
@@ -113,7 +109,7 @@ used for the rest of the MICE detector systems.
 
 % \malert{Unnecessary: Their delay have been individually measured in laboratory, before installation in the experimental hall.  Time  calibration of individual counters has been done with impinging beam  particles by using the detector X/Y redundancy~\cite{NOTE251}. }
 
-All stations were exposed to residual magnetic fields: TOF0 was placed in a relatively low residual field produced by the last quadrupole magnet of the beam line  (which had mirror plates installed), while the other two TOF stations were exposed to the stray fields of the cooling channel solenoids. A shielding structure was adopted covering all PMTs at each side of the stations~\cite{2010NIMPA.615...14B}.
+All stations were exposed to residual magnetic fields: TOF0 was placed in a relatively low residual field produced by the last quadrupole magnet of the beam line (which had mirror plates installed), while the other two TOF stations were exposed to the stray fields of the cooling channel solenoids. A shielding structure was adopted covering all PMTs at each side of the stations~\cite{2010NIMPA.615...14B}.
 
 %All three stations were exposed to residual magnetic fields. TOF0 station was placed in a relatively low residual field ($\le 5\,\Gauss$) produced by the last quadrupole magnet of the beam line.  The PMTs in this station used 1-mm thick $\mu$-metal shielding \malert{(we don't seem to have any reference)}. The other two TOF stations (TOF1/TOF2) were exposed to the stray fields of the cooling channel solenoids that were only partially shielded by 10\,mm thick annular iron plates \malert{(need to have a reference, possibly described earlier in the  paper)}. The residual magnetic fields were up to 0.13~T (with a component along the PMTs axis up to 0.04~T). Box-shaped soft iron shielding was more effective than cylindrical one.
 
@@ -184,9 +180,9 @@ The purpose of the TOF system was to discriminate particle species
 based on time-of-flight measurement. The main components in the
 MICE beam were muons, pions, and positrons. The time resolution needed
 to be sufficiently good to effectively discriminate between these
-types. At 240\,MeV/$c$, the time-of-flight difference between muon and
-pion was about 1.3\,ns between TOF0 and TOF1 stations. With 200\,ps
-resolution, one reached near 100\% discrimination efficiency~\cite{Bogomilov:2012sr}.
+types. At 240\,MeV/$c$, the time-of-flight difference between a muon and
+a pion was about 1.3\,ns between the TOF0 and the TOF1 stations. With 200\,ps
+resolution, we reached near 100\% discrimination efficiency~\cite{Bogomilov:2012sr}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -206,11 +202,11 @@ resolution, one reached near 100\% discrimination efficiency~\cite{Bogomilov:201
 %     width / sqrt(12) $\sim 1.2 - 1.7$ ).}
 % \end{itemize}
 
-Measurement of time traversal of a particle through a TOF station was
-influenced by several factors at the hardware level. When a particle
-crossed the plastic scintillator, there was a short delay in light
-production, with a characteristic decay time of 1.8\,ns.
+Determination of time stamp of a particle through a TOF station was
+influenced by several factors at the hardware level.
 
+When a particle crossed the plastic scintillator, there was a short delay in light
+production, with a characteristic decay time of 1.8\,ns.
 After generation, scintillation light propagates to the ends of each
 scintillator slab where it was detected by photomultiplier tubes. The
 light-travel time depends on the distance of the particle crossing
@@ -310,7 +306,7 @@ determined as the average of times of the 2 matched slabs.
 % \item \malert{(?)}Efficiency
 % \end{itemize}
 
-Resolution of time-of-flight measurement was given by time resolution
+The resolution of the time-of-flight measurement was given by time resolution
 of each station.
 The time associated to each TOF was determined from the average of the times when the two slabs (horizontal and vertical) were crossed by a particle.
 The resolution of the average was a half of the spread of their difference. Therefore, looking at slab \DT{} allowed the time-of-flight
@@ -329,7 +325,7 @@ distributions. The plots in figure~\ref{fig:SlabDtAll} show that they
 all centre approximately at 0\,ns and they exhibit very similar
 resolutions, with TOF1 having the largest spread.
 Figure~\ref{fig:TOF_peaks} shows an example of measurement of time of
-flight between the first two stations, TOF0 and TOF1. Times of electrons,
+flight between the first two stations, TOF0 and TOF1. Flight times of electrons,
 muons, and pions are clearly separated, creating peaks from left to
 right, respectively. The observed width of the electron peak of
 approximately~0.11\,ns was about 30\%~larger than the calculated spread from a
