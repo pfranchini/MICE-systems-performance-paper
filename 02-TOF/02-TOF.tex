@@ -54,9 +54,10 @@ of crossing particles.  TOF0 and
 TOF1~\cite{NOTE145}\cite{NOTE241}\cite{2010NIMPA.615...14B} were
 placed upstream of the cooling channel, and TOF2~\cite{NOTE286} was
 located downstream of the channel, mounted in front of the KLOE-Light pre-shower detector, as shown
-in~figure~\ref{fig:BL}.  The time of flight between the first pair of TOF stations (figure~\ref{fig:TOF_peaks})
-provided particle identification information and can also be used for
-momentum measurement. For most of the running, TOF1 served as an experimental trigger.
+in~figure~\ref{fig:BL}.
+The time of flight between the first pair of TOF stations (figure~\ref{fig:TOF_peaks})
+provided particle identification information and, assuming particles mass, can also be used to infer the momentum.
+For most of the running, TOF1 served as an experimental trigger.
 They operated smoothly during the 
 running periods of the MICE experiment and were essential for all the
 measurements that were performed~\cite{Rajaram:2015bra}\cite{2015ehep.confE.521B}.
@@ -182,7 +183,7 @@ MICE beam were muons, pions, and positrons. The time resolution needed
 to be sufficiently good to effectively discriminate between these
 types. At 240\,MeV/$c$, the time-of-flight difference between a muon and
 a pion was about 1.3\,ns between the TOF0 and the TOF1 stations. With 200\,ps
-resolution, we reached near 100\% discrimination efficiency~\cite{Bogomilov:2012sr}.
+resolution, together with momentum information, we reached near 100\% discrimination efficiency~\cite{Bogomilov:2012sr}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -239,7 +240,7 @@ a correction for the reference trigger time delay~\cite{NOTE251}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Reconstruction}
 
-A particle crossing a TOF station must have crossed 2 orthogonal slabs
+A particle crossing a TOF station must have crossed at least 2 orthogonal slabs
 in the station's 2 planes.  The time and approximate position of
 a particle crossing a TOF station was reconstructed from the PMT signals
 in the two slabs. Each slab with at least one recorded signal in each
@@ -328,7 +329,7 @@ Figure~\ref{fig:TOF_peaks} shows an example of measurement of time of
 flight between the first two stations, TOF0 and TOF1. Flight times of electrons,
 muons, and pions are clearly separated, creating peaks from left to
 right, respectively. The observed width of the electron peak of
-approximately~0.11\,ns was about 30\%~larger than the calculated spread from a
+approximately~0.10\,ns was about 30\%~larger than the calculated spread from a
 naive addition of slab \DT{} of the individual TOF stations.
 This difference was attributed to contributions to the resolution of
 individual stations which cancel out in the slab \DT{} measurement,
