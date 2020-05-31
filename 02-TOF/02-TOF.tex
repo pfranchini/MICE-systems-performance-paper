@@ -62,7 +62,7 @@ They operated smoothly during the
 running periods of the MICE experiment and were essential for all the
 measurements that were performed~\cite{Rajaram:2015bra}\cite{2015ehep.confE.521B}.
 
-\begin{figure}[!ht]
+\begin{figure}[!htb]
   \begin{center}
     \includegraphics[width=0.8\columnwidth]{BL.png}
     \caption{MICE, showing the full beam line starting from the target position on the proton synchrotron) with the full set of quadrupoles and dipoles (Q1 to Q9, D1/2), the Decay Solenoid, and cooling channel elements with all the detectors. The liquid-hydrogen absorber vessel inside the Focus Coil is shown in figure~\ref{Fig:AbsorberVessel:Diag}}.
@@ -81,7 +81,7 @@ dividers were used. The TOF detector is illustrated in figure~\ref{fig:tof:schem
 
 %%%%Mu-metal is a nickel–iron soft ferromagnetic alloy with very high permeability, which is used for shielding sensitive electronic equipment against static or low-frequency magnetic fields.
 
-\begin{figure}[!ht]
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=8cm]{tof_diagram2}
   \includegraphics[height=3cm]{slab_design2}
@@ -240,7 +240,7 @@ a correction for the reference trigger time delay~\cite{NOTE251}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Reconstruction}
 
-A particle crossing a TOF station must have crossed at least 2 orthogonal slabs
+A particle crossing a TOF station must have crossed 2 orthogonal slabs
 in the station's 2 planes.  The time and approximate position of
 a particle crossing a TOF station was reconstructed from the PMT signals
 in the two slabs. Each slab with at least one recorded signal in each
@@ -329,14 +329,14 @@ Figure~\ref{fig:TOF_peaks} shows an example of measurement of time of
 flight between the first two stations, TOF0 and TOF1. Flight times of electrons,
 muons, and pions are clearly separated, creating peaks from left to
 right, respectively. The observed width of the electron peak of
-approximately~0.10\,ns was about 30\%~larger than the calculated spread from a
-naive addition of slab \DT{} of the individual TOF stations.
-This difference was attributed to contributions to the resolution of
-individual stations which cancel out in the slab \DT{} measurement,
-and to variations in the travelled path length of the electrons between
-stations TOF0 and TOF1.
+approximately~0.10\,ns was about 25\%~larger than the calculated spread from a
+naive quadrature addition of slab \DT{} of the individual TOF stations.
+%This difference was attributed to contributions to the resolution of
+%individual stations which cancel out in the slab \DT{} measurement,
+%and to variations in the travelled path length of the electrons between
+%stations TOF0 and TOF1.
 
-\begin{figure}
+\begin{figure}[htb!]
   \begin{center}
   \includegraphics[width=0.9\columnwidth]{07_overall_slab_dt} \\
   \caption{Overall slab \DT{} distributions. Total width of the
