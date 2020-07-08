@@ -9,6 +9,12 @@ Systems-performance.fdb_latexmk
 Systems-performance.fls
 Systems-performance.synctex.gz
 Systems-performance.toc
+*.log
+*.out
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
 .gitignore~
 .gitignore
 .directory

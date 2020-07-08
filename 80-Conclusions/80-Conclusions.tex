@@ -4,23 +4,48 @@
 \label{Sect:Conclusions}
 
 A complete set of particle detectors has permitted the full characterisation and study of the evolution of the phase space of a muon beam through a section of a cooling channel, leading to the first measurement of ionization cooling with a unique level of precision and detail.
-The PID performance of the detectors is summarised in table~\ref{tab:pid}.
-
+The PID performance of the detectors is summarised in table~\ref{tab:pid1} and table~\ref{tab:pid2}.
 
 \begin{table}[htb!]
 	\centering
 	\begin{tabular}{c|c|c}
 	  Detector              & characteristic            & performance \\
 		\hline
-    Time-of-Flight        & time resolution           & 0.10\,ns \\
-    Cherenkov             & ?? &\\
-    KLOE-Light            & ?? &\\
-    Electron Muon Ranger  & electron PID efficiency   & 98.6\%  \\
-    Trackers              & track finding efficiency  & $>$98\% \\
+    Time-of-Flight        & time resolution           & 0.10\,ns    \\
+%   Cherenkov             & ??                        & ??          \\
+    KLOE-Light            & muon PID efficiency       & ~99\%       \\
+    Electron Muon Ranger  & electron PID efficiency   & 98.6\%      \\
+    Trackers              & track finding efficiency  & $>$98\%     \\
   \end{tabular}
 	\caption{Summary of the MICE detectors PID.}
-	\label{tab:pid}
+	\label{tab:pid1}
 \end{table}
 
+\begin{table}[htb!]
+\begin{tabular}{c|ccc|cc|cc|cc|cc}
+ &
+  \multicolumn{3}{c|}{\textbf{KL efficiency}} &
+  \multicolumn{2}{c|}{\textbf{EMR efficiency}} &
+  \multicolumn{6}{c}{\textbf{Track finding efficiency}} \\ 
+  \hline
+ &
+  \multirow{2}{*}{electrons} &
+  \multirow{2}{*}{muons} &
+  \multirow{2}{*}{pions} &
+  \multirow{2}{*}{electrons} &
+  \multirow{2}{*}{muons} &
+  \multicolumn{2}{c|}{3 mm} &
+  \multicolumn{2}{c|}{6 mm} &
+  \multicolumn{2}{c}{10 mm} \\  
+             &      &      &      &       &      & US   & DS   & US   & DS   & US   & DS   \\ \hline
+\textbf{140} & 95\% & 97\% & n.a. & 98\%  & 35\% &      &      & 98\% & 99\% & 98\% & 99\% \\ \hline
+\textbf{170} & 95\% & 99\% & 89\% & 99\%  & 99\% &      &      &      &      &      &      \\ \hline
+\textbf{200} & 94\% & 99\% & 95\% & 100\% & 99\% & 99\% & 96\% & 99\% & 96\% &      &      \\ \hline
+\textbf{240} & 96\% & 99\% & 97\% & 99\%  & 99\% &      &      &      &      &      &      \\ \hline
+\textbf{300} & 95\% & 99\% & 98\% & n.a.  & 99\% &      &      &      &      &      &     
+\end{tabular}
+	\caption{Summary of the MICE detectors PID for different beam settings.}
+	\label{tab:pid2}
+\end{table}
 All the different elements of the MICE instrumentation have been used to characterise the beam and the measurement of the cooling performance for a different variety of beam momenta, emittance, and absorbers.
 The experiment has thus demonstrated a technique critical for a muon collider and a neutrino factory and therefore brings those facilities one step closer.

@@ -32,10 +32,10 @@ The detector has been used to estimate the level of pion contamination within th
 The study of the KL response to different particle types (muons, pions and electrons) at different momenta was based on particle identification obtained by the time-of-flight detector, as shown in the example of~figure~\ref{fig:TOF_peaks}, by applying time cuts on the time-of-flight spectrum across the peaks of the different species. The performance is presented for beamline settings with nominal 140, 170, 200, 240 and 300\,MeV/$c$ momenta. The results presented below are obtained from the straight tracks runs (i.e. without magnetic fields in the trackers or focus coil). The KL response to muons, pions and electrons for all available momenta is presented in~figure~\ref{fig:KL3}. It is clear in the cases of muons and pions that they were below the minimum ionizing particle momenta since energy deposition decreases with momentum increasing. Actually the energy deposition is defined as the sum of ADC products from all cells in KL above a given threshold. The ADC product on the other hand is the product of the left and the right side of one slab divided by the sum of left and right side: $\text{ADC}_{\text{prod}} = 2 \times \text{ADC}_{\text{left}} \times \text{ADC}_{\text{right}} / (\text{ADC}_{\text{left}} + \text{ADC}_{\text{right}})$. The factor of 2 is present for normalisation. The product of two sides compensates the effect of attenuation.
   \begin{figure}[htb!]
 	\begin{center}
-  		\includegraphics[width=0.32\columnwidth]{./04-KL/Figures/muon.png}
-  		\includegraphics[width=0.32\columnwidth]{./04-KL/Figures/pion.png}
-  		\includegraphics[width=0.32\columnwidth]{./04-KL/Figures/electron.png}
-  		\caption{KL response to muons (left), pions (centre) and electrons (right) for all available momenta. The charge deposited by particles in KL in arbitrary units is shown. All histograms are normalised to unity.}
+  		\includegraphics[width=0.49\columnwidth]{./04-KL/Figures/muon.png}
+  		\includegraphics[width=0.49\columnwidth]{./04-KL/Figures/pion.png}
+  		\includegraphics[width=0.49\columnwidth]{./04-KL/Figures/electron.png}
+  		\caption{KL response to muons (top left), pions (top right) and electrons (bottom) for all available momenta. The charge deposited by particles in KL in arbitrary units is shown. All histograms are normalised to unity.}
   		\label{fig:KL3}
   	\end{center}
   \end{figure}
@@ -71,7 +71,6 @@ This pion behaviour has been used to estimate its contamination in muon samples~
   \begin{table}[!htb]
   	\begin{center}
   		\begin{tabular}{c|c|c|c|c|c} 
-  			\hline
   			\textbf{Species} &\textbf{140 MeV/$c$} & \textbf{170 MeV/$c$} & \textbf{200 MeV/$c$}	&\textbf{240 MeV/$c$} &\textbf{300 MeV/$c$}\\
   			\hline
   			\textbf{electrons} & 0.95 $\pm$ 0.02  & 0.95 $\pm$ 0.01 & 0.94 $\pm$ 0.03 &  0.96 $\pm$ 0.02 &  0.95 $\pm$ 0.02 \\
@@ -79,7 +78,6 @@ This pion behaviour has been used to estimate its contamination in muon samples~
   			\textbf{muons} &  0.97$\pm$ 0.02 & 0.99 $\pm$ 0.01  & 0.99 $\pm$  0.01 & 0.99 $\pm$ 0.01 & 0.99$\pm$ 0.01\\
   			\hline
   			\textbf{pions} &  n/a  & 0.89 $\pm$ 0.03  & 0.95 $\pm$ 0.03 & 0.97 $\pm$ 0.03 & 0.98$\pm$ 0.01\\
-  			\hline
   		\end{tabular}
   		\caption{Efficiency of KL for electrons, muons and pions as a function of particle momentum. The conditions required the existence of a TOF track and signal in KL above the threshold. The uncertainties are statistical.}
   		\label{tab:KL_eff}
