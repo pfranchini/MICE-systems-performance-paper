@@ -50,3 +50,8 @@ Draft 1.0:
  
 Draft 2.0:
  - first round of comments from the review meeting (CR, LT, AB)
+
+Draft 3.0:
+ - second round of comments from LT
+ - created "Tracking" section 
+ - Ckov section changes (new plot with betagamma)
