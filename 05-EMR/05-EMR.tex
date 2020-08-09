@@ -7,7 +7,10 @@
 \label{SubSect:EMR_Intro}
 
 The Electron-Muon Ranger (EMR) was a fully-active scintillator detector~\cite{2016JInst..11T10007}. It could be classified as a tracking-calorimeter, as its granularity allowed for track reconstruction. The EMR consisted of extruded triangular scintillator bars arranged in planes. One plane contained 59 bars and covered an area of 1.27\,m$^2$.
-A cross-section of bars and their arrangement in a plane is shown in figure~\ref{fig:EMR}. This configuration did not leave dead areas in the detector for particles crossing a plane with angles that would not exceed $45^{\circ}$ with respect to the beam axis. Each plane was rotated through $90^{\circ}$ with respect to the previous one, such that hits in a pair of neighbour planes defined a horizontal and vertical $(x, y)$ interaction coordinate. The light, produced when a particle crossed a bar, was collected by a wave-length shifting (WLS) fibre glued inside the bar. At both ends, the WLS fibre was coupled to clear fibres that transport the light to a PMT. Signals produced in a plane were read out collectively on one end by a single-anode PMT (SAPMT) for an integrated charge measurement and separately on the other by multi-anode PMTs (MAPMT) for individual bar hit reconstruction. The full detector was composed of 24 X--Y modules for a total active volume of approximately~1\,m$^3$.
+A cross-section of bars and their arrangement in a plane is shown in figure~\ref{fig:EMR}.
+%This configuration did not leave dead areas in the detector for particles crossing a plane with angles that would not exceed $45^{\circ}$ with respect to the beam axis.
+Triangular bars were chosen rather than rectangular bars so that tracks moving parallel to the detector axis could not travel along the gaps between bars.
+Each plane was rotated through $90^{\circ}$ with respect to the previous one, such that hits in a pair of neighbour planes defined a horizontal and vertical $(x, y)$ interaction coordinate. The scintillating light was collected by a wave-length shifting (WLS) fibre glued inside the bar. At both ends, the WLS fibre was coupled to clear fibres that transported the light to a PMT. Signals produced in a plane were read out collectively on one end by a single-anode PMT (SAPMT) for an integrated charge measurement and separately on the other by multi-anode PMTs (MAPMT) for individual bar hit reconstruction. The full detector was composed of 24 X--Y modules for a total active volume of approximately~1\,m$^3$.
 
 \begin{figure}[htb!]
 	\begin{center}
@@ -19,7 +22,7 @@ A cross-section of bars and their arrangement in a plane is shown in figure~\ref
 	\end{center}
 \end{figure}
 
-An array of analyses were conducted to characterise the hardware of the EMR and determine whether the detector performed to specifications~\cite{Drielsma:2017doj}. The clear fibres coming from the bars were shown to transmit the desired amount of light, and only four dead channels were identified. The level of crosstalk was within acceptable values for the type of multi-anode photomultiplier used with an average of $0.20\pm0.03$\,\% probability of occurrence in adjacent channels and a mean amplitude equivalent to $4.5\pm0.1$\,\% of the primary signal intensity. The efficiency of the signal acquisition, defined as the probability of recording a signal in a plane when a particle goes through it in beam conditions, was~$99.73\pm0.02$\,\%~\cite{2016JInst..11T10007}.
+Analyses were conducted to characterise the hardware of the EMR and determine whether the detector performed to specifications~\cite{Drielsma:2017doj}. The clear fibres coming from the bars were shown to transmit the desired amount of light, and only four dead channels were identified. The level of crosstalk was within acceptable values for the type of multi-anode photomultiplier used with an average of $0.20\pm0.03$\,\% probability of occurrence in adjacent channels and a mean amplitude equivalent to $4.5\pm0.1$\,\% of the primary signal intensity. The efficiency of the signal acquisition, defined as the probability of recording a signal in a plane when a particle goes through it in beam conditions, was~$99.73\pm0.02$\,\%~\cite{2016JInst..11T10007}.
 
 The primary purpose of the EMR was to distinguish between muons and their decay products, identifying muons that have crossed the entire cooling channel. Muons and electrons exhibited distinct behaviours in the detector. A muon followed a single straight track before either stopping or exiting the scintillating volume. Electrons showered in the lead of the KL and created a broad cascade of secondary particles. Two main geometric variables, the plane density and the shower spread, were used to differentiate them. The detector was capable of identifying electrons with an efficiency of 98.6\,\%, providing a purity for the MICE beam that exceeds 99.8\,\%. The EMR also proved to be a powerful tool for the reconstruction of muon momenta in the range 100--280\,MeV/$c$~\cite{2015JInst..10P2012A}.
 
@@ -28,11 +31,11 @@ The primary purpose of the EMR was to distinguish between muons and their decay 
 
 The performance of the EMR detector was assessed at three levels of resolution with data acquired during different periods of data taking.
 %the 2017/02 and 2017/03 ISIS user cycles.
-The performance of the hardware itself was evaluated by analysing the characteristics of raw photomultiplier signals. The reconstruction efficiency was assessed. The performance of the detector as an electron tagging device was measured.
+The performance of the hardware itself was evaluated by analysing the characteristics of raw photomultiplier signals. The reconstruction efficiency was determined. The performance of the detector as an electron tagging device was measured.
 
 \subsubsection{Hardware efficiencies}
 %The data sets used to evaluate the detector hardware efficiencies are summarised in table~\ref{tab:emr_eff_data_sets}.
-The MICE beam line was tuned to the highest attainable momentum to maximise the transmission to the EMR detector and increase the range of particles in the detector (approximately 400 MeV/$c$). In this configuration the beam line produces pions and muons in comparable quantities, along with positrons. The particle species were identified by evaluating their time-of-flight between TOF1 and TOF2.
+The MICE beamline was tuned to the highest attainable momentum to maximise the transmission to the EMR detector and increase the range of particles in the detector (approximately 400 MeV/$c$). In this configuration the beamline produces pions and muons in comparable quantities, along with positrons. The particle species were identified by evaluating their time-of-flight between TOF1 and TOF2.
 %The time-of-flight distribution for muons, pions and positrons is represented in figure~\ref{fig:emr_eff_tof}. The muons and pions peaks are fitted with a sum of two Gaussians of the form
 %\begin{equation}
 %f_{\mu,\pi}(t_{12}) = \frac{A_{\mu,\pi}}{\sqrt{2\pi}\sigma_{\mu,\pi}} \exp\left[-\frac{(t_{12}-t_{\mu,\pi})^2}{2\sigma_{\mu,\pi}^2}\right].
@@ -56,16 +59,16 @@ Only the particles with a time-of-flight between 28 and 28.75\,ns, i.e. compatib
 %\begin{figure}[htb!]
 %    \begin{center}
 %    	\includegraphics[width=0.7\columnwidth]{tof12.pdf}  		
-%    	\caption{Time-of-flight of positrons, muons and pions for the 400\,MeV/$c$ pionic beam line used in the EMR efficiency analysis. The blue band represents the selected %range.}
+%    	\caption{Time-of-flight of positrons, muons and pions for the 400\,MeV/$c$ pionic beamline used in the EMR efficiency analysis. The blue band represents the selected %range.}
 %    	\label{fig:emr_eff_tof}
 %    \end{center}
 %\end{figure}
 
-A muon that makes it into the analysis sample has a momentum larger than 350\,MeV/$c$ right before TOF2. It was expected to cross both TOF2 and the KL without stopping and penetrate the EMR. In practice, the probability of creating an EMR event, i.e. to produce hits in the detector was $99.62\pm0.03\,\%$. The minor inefficiency may be attributed to pions in the muon sample that experienced hadronic interactions in the KL. If hits were produced in the detector, space points were reconstructed $98.56\pm0.06\,\%$ of the times.
-The inefficiency may be associated with muons that decay between TOF2 and the EMR and produced scarce hits in the detector.
+A muon that makes it into the analysis sample has a momentum larger than 350\,MeV/$c$ right before TOF2 and was expected to cross both TOF2 and the KL without stopping and penetrate the EMR. In practice, the probability of creating an EMR event, i.e. to produce hits in the detector was $99.62\pm0.03\,\%$. The minor inefficiency may be attributed to pions in the muon sample that experienced hadronic interactions in the KL. If hits were produced in the detector, space points were reconstructed $98.56\pm0.06\,\%$ of the time.
+The inefficiency may be associated with muons that decayed between TOF2 and the EMR producing low hits in the detector.
 
-To evaluate the efficiency of the scintillator planes and their readouts, only the muons which penetrated the entire detector were used. If a signal was recorded in the most downstream plane, it was expected that at least one bar will be hit in each plane on its path and that a signal will be recorded in the single anode PMT.
-In $3.26\pm0.02\,\%$ of cases, on average, a plane traversed by a muon will be not produce a signal in its MAPMT and that the most probable amount of bars hit was one, while a track was missed by an SAPMT $1.88\pm0.01\,\%$ of the time. 
+To evaluate the efficiency of the scintillator planes, only the muons which penetrated the entire detector were used. If a signal was recorded in the most downstream plane, it was expected that at least one bar will be hit in each plane on its path and that a signal will be recorded in the single anode PMT.
+In $3.26\pm0.02\,\%$ of cases, on average, a plane traversed by a muon will not produce a signal in its MAPMT and the most probable number of bars with a hit was one, while a track was missed by an SAPMT in approximately $1.88\pm0.01\,\%$ of the cases. 
 
 %Figure~\ref{fig:emr_plane_eff} shows the probability of recording a signal in individual MAPMTs and the SAPMTs for each of the 48 planes, given a muon that crosses the whole detector. The most inefficient PMTs miss the track $\sim10\,\%$ of the time.
 %
@@ -80,10 +83,10 @@ In $3.26\pm0.02\,\%$ of cases, on average, a plane traversed by a muon will be n
 %\end{figure}
 
 \subsubsection{Electron rejection}
-The main purpose of the EMR was to tag and reject the muons that have decayed in flight inside the experimental apparatus. A broad range of beam line momentum settings
+The main purpose of the EMR was to tag and reject the muons that have decayed in flight inside the experimental apparatus. A broad range of beamline momentum settings
 %summarised in table~\ref{tab:emr_analysis_data_sets}
-was used to characterise the muon selection efficiency. The particle species were characterised upstream of the detector by using the time-of-flight between TOF1 and TOF2 as shown before.
-The limits of the peaks were fitted to each setting in order to separate the muons and positrons into two templates upstream of the EMR. Particles that fell above the upper limit of the muon peak were either pions or slow muons and were rejected from this analysis.
+was used to characterise the muon selection efficiency. The particle species were characterised upstream of the detector using the time-of-flight between TOF1 and TOF2.
+The peaks were fitted to each setting in order to separate the muons and positrons into two templates upstream of the EMR. Particles that fell above the upper limit of the muon peak were either pions or slow muons and were rejected from this analysis.
 
 %\begin{table}[htb!]
 %	\centering
@@ -121,7 +124,7 @@ The limits of the peaks were fitted to each setting in order to separate the muo
 %\end{table}
 
 MICE was a single-particle experiment, i.e. the signals associated with a trigger originated from a single particle traversing the detector. The multi-anode readout of each detector plane provided an estimate of the position of the particle track in the $xz$ or the $yz$ projection, depending on the orientation of the scintillator bars.
-Inside the detector the muon exhibited a clean straight track while the positron showers inside the lead of the KL and produces a disjointed and spread-out signature. 
+Inside the detector muon exhibits a clean straight track while positron produced shower inside the lead of the KL and produces a disjointed and spread-out signature. 
 Two particle identification variables based on these distinct characteristics can be defined. One is the plane density, $\rho_p$, defined as
 \begin{equation}
 \rho_p = \frac{N_p}{Z_p+1},
@@ -130,7 +133,7 @@ where $N_p$ is the number of planes hit and $Z_p$ the number of the most downstr
 \begin{equation}
 \hat{\chi}^2=\frac{1}{N-4}\sum_{i=1}^{N}\frac{\text{res}_{x,i}^2+\text{res}_{y,i}^2}{\sigma_x^2+\sigma_y^2},
 \end{equation}
-where $N$ is the number of space points (one per bar hit), $\text{res}_{q,i}$ the residual of the space point with respect to the track in the $qz$ projection and $\sigma_q$ the uncertainty on the space point in the $qz$ projection, $q=x,\,y$~\cite{Drielsma:thesis}. The number of degrees of freedom is $N-4$, as a three-dimensional straight track has four parameters. This quantity represents the transverse spread of the particle's signature. A muon follows a single track and is expected to have a $\hat{\chi}^2$ close to one, while an electron shower is expected to produce a larger value.
+where $N$ is the number of space points (one per bar hit), $\text{res}_{q,i}$ the residual of the space point with respect to the track in the $qz$ projection and $\sigma_q$ the uncertainty on the space point in the $qz$ projection, $q=x,\,y$~\cite{Drielsma:thesis}. The number of degrees of freedom is $N-4$, as a three-dimensional straight track has four parameters. This quantity represents the transverse spread of the particle's signature in the EMR. A muon follows a single track and is expected to have a $\hat{\chi}^2$ close to one, while an electron shower is expected to produce a larger value.
 The two discriminating variables can be combined to form a statistical test on the particle hypothesis.
 %Given an unknown particle species, consider a set of cuts, $(\rho_c,\hat{\chi}^2_c)$, such that
 %\begin{equation}
