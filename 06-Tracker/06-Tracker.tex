@@ -42,7 +42,7 @@ The clustering algorithm looped over every combination of pairs of digits in a s
 %\end{center}
 %\caption{Cluster}
 %\label{Figure:Clusters}
-%\%end{figure}
+%\end{figure}
 
 For each station the constituent planes were searched for clusters that can be used to form a spacepoint.
 Spacepoints were constructed from clusters from all three planes (a triplet spacepoint) or from any two out of the three planes (a doublet spacepoint)~\cite{Dobbs:2016ejn}.
@@ -57,7 +57,7 @@ Spacepoints were constructed from clusters from all three planes (a triplet spac
 
 \subsubsection{Noise}
 %Noise at electronics level discussion, 1/2 page, and Noise from data, 1/2 page.
-The scintillating fibre trackers operated by registering digits above a given NPE threshold within each fibre plane. Fibres were collected into channels as ganged bundles of 7 for each channel, with digits registered per channel instead of per fibre. From a coincidence of digit events in 2 or 3 oblique channels (fibres in different planes), a spacepoint was reconstructed, from which track reconstruction was initiated. We considered noise in the tracker to be those digits registered not from the passage of a beam particle, but instead from other sources, for instance, dark current from thermal electron emission in the VLPCs. To isolate noise from signal during beam-on data collection, a strict cut can be made requiring that only events with one fitted track and 5 spacepoints per tracker were selected, with all 5 spacepoints included in the fitted track. All digits corresponding to the track were then removed from the total set of digits for that event, and the remainder were considered noise digits. An in-situ approximation of active channels for the current data-taking period was made, assuming all channels without at least one registered digit in the selected data-taking run were inactive. The average noise rate per channel per event was then calculated as the total number of event digits above the considered NPE threshold in each tracker, divided by both the number of active channel and the number of events satisfying the above selection criteria. This gave a value of 0.18\,\% upstream and 0.06\,\% downstream for events above 2\,NPE. 
+The scintillating fibre trackers operated by registering digits above a given NPE threshold within each fibre plane. Fibres were collected into channels as ganged bundles of 7 for each channel, with digits registered per channel instead of per fibre. From a coincidence of digit events in 2 or 3 oblique channels (fibres in different planes), a spacepoint was reconstructed, from which track reconstruction was initiated. We considered noise in the tracker to be those digits registered not from the passage of a beam particle, but instead from other sources, for instance, dark current from thermal electron emission in the VLPCs. To isolate noise from signal during beam-on data collection, a strict cut can be made requiring that only events with one fitted track and 5 spacepoints per tracker were selected, with all 5 spacepoints included in the fitted track. All digits corresponding to the track were then removed from the total set of digits for that event, and the remainder were considered noise digits. An in-situ approximation of active channels for the current data taking period was made, assuming all channels without at least one registered digit in the selected data taking run were inactive. The average noise rate per channel per event was then calculated as the total number of event digits above the considered NPE threshold in each tracker, divided by both the number of active channel and the number of events satisfying the above selection criteria. This gave a value of 0.18\,\% upstream and 0.06\,\% downstream for events above 2\,NPE. 
 
 \subsubsection{Track Finding Efficiency}
 \label{trackers:performance:efficiency}
@@ -77,32 +77,32 @@ The results of the efficiency analysis are tabulated in table~\ref{Table:tracker
 %        09964 & 892 & 98.09\,\% & 850 & 99.29\,\% \\
 %        10510 & 3676 & 99.54\,\% & 2911 & 99.48\,\% 
 %    \end{tabular}
-    \begin{tabular}{c | c | c | c | c}
+    \begin{tabular}{c | c | c | c }
 %      	\multirow{2}{*}{Momentum} & Nominal & \multirow{2}{*}{No. Events} & Upstream & Downstream \\
 %                   & Emittance &  & Tracks Found & Tracks Found \\ \hline
-        Momentum & Nominal Emittance & No. Events & Upstream Tracks Found & Downstream Tracks Found \\ \hline
-        200 MeV/$c$ & 6\,mm  & 221879 & 99.42\,\% & 96.07\,\% \\ %H25c 
-        200 MeV/$c$ & 3\,mm  & 215229 & 98.38\,\% & 99.19\,\% \\ %H36aa
+        \textbf{Momentum} & \textbf{Nominal Emittance} & \textbf{Upstream Tracks Found} & \textbf{Downstream Tracks Found} \\ \hline
+        200 MeV/$c$ & 6\,mm  & 99.42\,\% & 96.07\,\% \\ %H25c 
+        200 MeV/$c$ & 3\,mm  & 98.38\,\% & 99.19\,\% \\ %H36aa
         %\multirow{3}{*}{140 MeV/$c$} & 3mm & 215229 & 98.38\,\% & 99.19\,\% \\ %H36aa
-        140 MeV/$c$ & 6\,mm  & 180283 & 98.37\,\% & 99.16\,\% \\ %H36c
-        140 MeV/$c$ & 10\,mm & 130859 & 98.47\,\% & 98.93\,\% \\ \hline \hline %H36d
-        \multicolumn{2}{c |}{Averaged} & 748250 & 98.70\,\% & 98.21\,\%
+        140 MeV/$c$ & 6\,mm  & 98.37\,\% & 99.16\,\% \\ %H36c
+        140 MeV/$c$ & 10\,mm & 98.47\,\% & 98.93\,\% \\ \hline \hline %H36d
+        \multicolumn{2}{c |}{Averaged} & 98.70\,\% & 98.21\,\%
     \end{tabular}
     \caption{\label{Table:tracker_efficiency_results}The track finding efficiency for the upstream and downstream trackers for 140\,MeV/$c$ and 200\,MeV/$c$ beams, and for 3, 6 and 10\,mm nominal emittances.}
 \end{table}
 
 \begin{table}[ht]
 	\centering
-    \begin{tabular}{c | c | c | c | c}
+    \begin{tabular}{c | c | c | c }
 %   	\multirow{2}{*}{Momentum} & Nominal & \multirow{2}{*}{No. Events} & Upstream & Downstream \\
 %                   & Emittance &  & Spacepoints Found & Spacepoints Found \\ \hline
-       Momentum & Nominal Emittance & No. Events & Upstream Spacepoints Found & Downstream Spacepoints Found \\ \hline
-        200 MeV/$c$ & 6\,mm  & 221879 & 99.41\,\% & 94.63\,\% \\ %H25c 
+       \textbf{Momentum} & \textbf{Nominal Emittance} & \textbf{Upstream Spacepoints Found} & \textbf{Downstream Spacepoints Found} \\ \hline
+        200 MeV/$c$ & 6\,mm  & 99.41\,\% & 94.63\,\% \\ %H25c 
 %        \multirow{3}{*}{140 MeV/$c$} & 3mm & 215229 & 98.04\,\% & 97.41\,\% \\ %H36aa
-        200 MeV/$c$ & 3\,mm  & 215229 & 98.04\,\% & 97.41\,\% \\ %H36aa
-        140 MeV/$c$ & 6\,mm  & 180283 & 97.99\,\% & 99.16\,\% \\ %H36c
-        140 MeV/$c$ & 10\,mm & 130859 & 98.07\,\% & 97.44\,\% \\ \hline \hline %H36d
-        \multicolumn{2}{c |}{Averaged} & 748250 & 98.44\,\% & 97.01\,\%
+        200 MeV/$c$ & 3\,mm  & 98.04\,\% & 97.41\,\% \\ %H36aa
+        140 MeV/$c$ & 6\,mm  & 97.99\,\% & 99.16\,\% \\ %H36c
+        140 MeV/$c$ & 10\,mm & 98.07\,\% & 97.44\,\% \\ \hline \hline %H36d
+        \multicolumn{2}{c |}{Averaged} & 98.44\,\% & 97.01\,\%
     \end{tabular}
     \caption{\label{Table:tracker_spacepoint_efficiency_results}The spacepoint finding efficiency, assuming the presence of a track, for the upstream and downstream trackers for 140\,MeV/$c$ and 200\,MeV/$c$ beams, and for 3, 6 and 10\,mm nominal emittances.}
 \end{table}
@@ -115,10 +115,10 @@ Results are presented in figure~\ref{trackers:performance:resolutions:up} for th
 \begin{figure}[ht]
 	\centering
     \begin{tabular}{cc}
-	    \includegraphics[width=0.5\textwidth]{upstream_p_bias_p.pdf} &	
-        \includegraphics[width=0.5\textwidth]{upstream_p_resolution_p.pdf} \\
-        \includegraphics[width=0.5\textwidth]{upstream_pt_bias_p.pdf} &
-        \includegraphics[width=0.5\textwidth]{upstream_pt_resolution_p.pdf}
+	    \includegraphics[width=0.5\textwidth]{upstream_p_bias_p_logo.pdf} &	
+        \includegraphics[width=0.5\textwidth]{upstream_p_resolution_p_logo.pdf} \\
+        \includegraphics[width=0.5\textwidth]{upstream_pt_bias_p_logo.pdf} &
+        \includegraphics[width=0.5\textwidth]{upstream_pt_resolution_p_logo.pdf}
     \end{tabular}
 	\caption{\label{trackers:performance:resolutions:up} Predicted momentum reconstruction bias (left) and resolution (right) for the total momentum (top) and transverse momentum component (bottom) in the upstream tracker.}
 \end{figure}
@@ -126,10 +126,10 @@ Results are presented in figure~\ref{trackers:performance:resolutions:up} for th
 \begin{figure}[ht]
 	\centering
     \begin{tabular}{cc}
-	    \includegraphics[width=0.5\textwidth]{downstream_p_bias_p.pdf} &	
-        \includegraphics[width=0.5\textwidth]{downstream_p_resolution_p.pdf} \\
-        \includegraphics[width=0.5\textwidth]{downstream_pt_bias_p.pdf} &
-        \includegraphics[width=0.5\textwidth]{downstream_pt_resolution_p.pdf}
+	    \includegraphics[width=0.5\textwidth]{downstream_p_bias_p_logo.pdf} &	
+        \includegraphics[width=0.5\textwidth]{downstream_p_resolution_p_logo.pdf} \\
+        \includegraphics[width=0.5\textwidth]{downstream_pt_bias_p_logo.pdf} &
+        \includegraphics[width=0.5\textwidth]{downstream_pt_resolution_p_logo.pdf}
     \end{tabular}
 	\caption{\label{trackers:performance:resolutions:down} Predicted momentum reconstruction bias (left) and resolution (right) for the total momentum (top) and transverse momentum component (bottom) in the downstream tracker.}
 \end{figure}

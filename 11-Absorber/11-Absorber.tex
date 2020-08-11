@@ -43,7 +43,7 @@ ${90}^{\circ}$ and a final two at a further rotation of ${45}^{\circ}$ to be at 
 
 Cooldown and liquefaction were completed slowly over eight days at a pressure of 1.15\,Bar after which the vessel's pressure was lowered to 1.085\,Bar~\cite{1748-0221-13-09-T09008}. The vessel then remained in this steady-state equilibrium until the venting process began. During this process the cryocooler was switched off and the heaters were switched on, delivering a nominal power of 50\,Watt to the absorber vessel. This resulted in an increase in pressure and temperature until the temperature stabilised at the boiling point. A rapid increase in temperature was observed once all the liquid-hydrogen had boiled off.
 
-The sensors have a typical accuracy of $\mathrm{\pm}$\,9\,mK and a long-term stability of $\mathrm{\pm}$\,12\,mK at 20\,K. The magnetic-field dependent temperature error at 2.5\,T is 0.04\%, $\Delta$T/T, equivalent to $\mathrm{\pm}$\,8\,mK at 20\,K~\cite{CernoxRTDs}\cite{TemperatureMeasurement}. These are the quoted uncertainties given by the manufacturer of the sensors. The importance of magnetic fields on temperature measurements is that they cause reversible calibration shifts: when the magnetic field is removed, the sensors return to their original calibration.
+The sensors have a typical accuracy of $\mathrm{\pm}$\,9\,mK and a long-term stability of $\mathrm{\pm}$\,12\,mK at 20\,K. The magnetic-field dependent temperature error at 2.5\,T is 0.04\,\%, $\Delta$T/T, equivalent to $\mathrm{\pm}$\,8\,mK at 20\,K~\cite{CernoxRTDs}\cite{TemperatureMeasurement}. These are the quoted uncertainties given by the manufacturer of the sensors. The importance of magnetic fields on temperature measurements is that they cause reversible calibration shifts: when the magnetic field is removed, the sensors return to their original calibration.
 
 To reduce the uncertainty in the liquid-hydrogen density a calibration procedure was devised using the boiling point: the corrected temperature reading was found by applying a cut-off correction, a magnetic field correction based on the focus coil current and polarity, a correction for the non-linearity of the sensors, and a boiling point scaling factor~\cite{NOTE524}. 
 %\begin{table}
@@ -94,8 +94,8 @@ Al-6061 as it is cooled from 293K is given by:
   \alpha =-4.1277\times {10}^{-3}\mathrm{T}-3.0389\times {10}^{-6}\mathrm{T}^2+8.7696\times {10}^{-8}\mathrm{T}^3-9.9821\times {10}^{-11}\mathrm{T}^4
 \end{equation}
 where T is the operating temperature~\cite{Hardin}. The equation is a line of best fit of data collated by NIST
-(National Institute of Standards and Technology) and has an associated curve fit error of 4\%.
-At the MICE operating temperature, this corresponds to a linear contraction of the vessel along each plane of 0.415\%,
+(National Institute of Standards and Technology) and has an associated curve fit error of 4\,\%.
+At the MICE operating temperature, this corresponds to a linear contraction of the vessel along each plane of 0.415\,\%,
 resulting in a warm bore length (350\,mm) contraction of (1.45\,$\mathrm{\pm}$\,0.05)\,mm. The vessel was held suspended in place, meaning the vessel was free to contract within the warm bore of the focus coil along each plane without restriction.
 
 \subsubsection{Deflection of absorber vessel windows due to internal pressure}
@@ -107,9 +107,9 @@ It was necessary for the liquid-hydrogen circuit to be pressurised above atmosph
 The vessel must also be capable of handling up to 1.5 Bar, the relief valve set pressure.
 
 These pressures resulted in a deflection of the absorber windows and were modelled using
-ANSYS~\cite{NOTE155}. The uncertainty in the model's window deflection was 20\%. It showed a linear
+ANSYS~\cite{NOTE155}. The uncertainty in the model's window deflection was 20\,\%. It showed a linear
 expansion of the window deflection with pressure up to 2 Bar when the windows begin to yield.
-The pressure sensors were accurate to $\mathrm{\pm}$\,5\,mBar (0.25\% of 2\,Bar). At (1085\,$\mathrm{\pm}$\,5)\,mBar, the typical MICE operating pressure, this corresponded to a deflection of (0.5374\,$\mathrm{\pm}$\,0.1076)\,mm (model uncertainty) $\mathrm{\pm}$\,0.0022\,mm (sensor uncertainty) at the centre of
+The pressure sensors were accurate to $\mathrm{\pm}$\,5\,mBar (0.25\,\% of 2\,Bar). At (1085\,$\mathrm{\pm}$\,5)\,mBar, the typical MICE operating pressure, this corresponded to a deflection of (0.5374\,$\mathrm{\pm}$\,0.1076)\,mm (model uncertainty) $\mathrm{\pm}$\,0.0022\,mm (sensor uncertainty) at the centre of
 the absorber window.
 
 
@@ -120,7 +120,7 @@ The amount of energy loss and cooling experienced by a muon passing through the 
 aluminium and liquid-hydrogen traversed. There were four windows, two absorber wall windows of the vessel and two safety windows.
 %(Windows 002, 003, 009 and 012 from table \ref{tab:summary}) 
 
-At the centre of the absorber, the total amount of aluminium the muon beam passes through was (785\,$\mathrm{\pm}$\,13)\,$\mu$m, a variance of 1.68\%. However, as the windows were thin, the effects on energy loss were negligible. A 200\,MeV/$c$ muon passing along the central axis of an empty absorber loses 0.345\,MeV, which introduces a 0.006\,MeV uncertainty on energy loss.
+At the centre of the absorber, the total amount of aluminium the muon beam passes through was (785\,$\mathrm{\pm}$\,13)\,$\mu$m, a variance of 1.68\,\%. However, as the windows were thin, the effects on energy loss were negligible. A 200\,MeV/$c$ muon passing along the central axis of an empty absorber loses 0.345\,MeV, which introduces a 0.006\,MeV uncertainty on energy loss.
 
 
 \subsubsection{Total Systematic Uncertainty on Energy Loss}
@@ -147,7 +147,7 @@ The energy loss is momentum dependent. Tables \ref{tab:Aluminium} and \ref{tab:H
   \begin{center}
     \begin{tabular}{c|c|c|c|c}
     
-Momentum [MeV/$c$] & 100 & 140 & 200 & 277     \rule{0pt}{14pt} \\
+\textbf{Momentum} & \textbf{100\,MeV/$c$} & \textbf{140\,MeV/$c$} & \textbf{200\,MeV/$c$} & \textbf{277\,MeV/$c$}     \rule{0pt}{14pt} \\
 \hline
 {Mass Stopping Power [MeVg${}^{-1}$cm${}^{2}$] } & 1.798 & 1.688 & 1.630 & 1.615
 \\
@@ -164,7 +164,7 @@ Momentum [MeV/$c$] & 100 & 140 & 200 & 277     \rule{0pt}{14pt} \\
   \label{tab:Hydrogen}
   \begin{center}
     \begin{tabular}{c|c|c|c|c}
-Momentum [MeV/$c$] & 100 & 140 & 200 & 344     \rule{0pt}{14pt} \\
+\textbf{Momentum} & \textbf{100\,MeV/$c$} & \textbf{140\,MeV/$c$} & \textbf{200\,MeV/$c$} & \textbf{344\,MeV/$c$}     \rule{0pt}{14pt} \\
 \hline
 {Mass Stopping Power [MeVg${}^{-1}$cm${}^{2}$] } & 4.568 & 4.267 & 4.104 & 4.034 \\
 {Stopping Power [MeVcm${}^{-1}$] }(at $\rho$=0.0703)\textbf{} & 0.3211 & 0.29997 & 0.2885 & 0.28359\\
@@ -178,7 +178,7 @@ Momentum [MeV/$c$] & 100 & 140 & 200 & 344     \rule{0pt}{14pt} \\
 
 During the MICE data taking, muon beam of momentum 140, 170, 200 and 240\,MeV/$c$ were used. The energy loss and its uncertainty were calculated. The calculation used a central bore length of (349.6\,$\mathrm{\pm}$\,0.2)\,mm, a total window thickness of (0.785\,$\mathrm{\pm}$\,0.013)\,mm and a liquid-hydrogen density of (70.53\,$\mathrm{\pm}$\,0.08)\,kg/m$^{3}$ for a particle travelling straight through the centre of the absorber.
 
-For a 140\,MeV/$c$ muon particle this corresponds to an energy loss of (10.88\,$\mathrm{\pm}$\,0.02)\,MeV, while for a 200\,MeV/$c$ muon particle this corresponds to an energy loss of (10.44\,$\mathrm{\pm}$\,0.02)\,MeV. In terms of energy loss, the systematic error is 0.2\%. This is for a particle travelling along the central axis of the absorber. A muon travelling through the absorber in the presence of a magnetic field would take a different path and thus would traverse a different length of aluminium and liquid-hydrogen.
+For a 140\,MeV/$c$ muon particle this corresponds to an energy loss of (10.88\,$\mathrm{\pm}$\,0.02)\,MeV, while for a 200\,MeV/$c$ muon particle this corresponds to an energy loss of (10.44\,$\mathrm{\pm}$\,0.02)\,MeV. In terms of energy loss, the systematic error is 0.2\,\%. This is for a particle travelling along the central axis of the absorber. A muon travelling through the absorber in the presence of a magnetic field would take a different path and thus would traverse a different length of aluminium and liquid-hydrogen.
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55 
 % Scott's section 
