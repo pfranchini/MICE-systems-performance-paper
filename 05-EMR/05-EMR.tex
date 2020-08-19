@@ -24,13 +24,12 @@ Each plane was rotated through $90^{\circ}$ with respect to the previous one, su
 
 Analyses were conducted to characterise the hardware of the EMR and determine whether the detector performed to specifications~\cite{Drielsma:2017doj}. The clear fibres coming from the bars were shown to transmit the desired amount of light, and only four dead channels were identified. The level of crosstalk was within acceptable values for the type of multi-anode photomultiplier used with an average of $0.20\pm0.03$\,\% probability of occurrence in adjacent channels and a mean amplitude equivalent to $4.5\pm0.1$\,\% of the primary signal intensity. The efficiency of the signal acquisition, defined as the probability of recording a signal in a plane when a particle goes through it in beam conditions, was~$99.73\pm0.02$\,\%~\cite{2016JInst..11T10007}.
 
-The primary purpose of the EMR was to distinguish between muons and their decay products, identifying muons that have crossed the entire cooling channel. Muons and electrons exhibited distinct behaviours in the detector. A muon followed a single straight track before either stopping or exiting the scintillating volume. Electrons showered in the lead of the KL and created a broad cascade of secondary particles. Two main geometric variables, the plane density and the shower spread, were used to differentiate them. The detector was capable of identifying electrons with an efficiency of 98.6\,\%, providing a purity for the MICE beam that exceeds 99.8\,\%. The EMR also proved to be a powerful tool for the reconstruction of muon momenta in the range 100--280\,MeV/$c$~\cite{2015JInst..10P2012A}.
+The primary purpose of the EMR was to distinguish between muons and their decay products, identifying muons that have crossed the entire manetic channel. Muons and electrons exhibited distinct behaviours in the detector. A muon followed a single straight track before either stopping or exiting the scintillating volume. Electrons showered in the lead of the KL and created a broad cascade of secondary particles. Two main geometric variables, the plane density and the shower spread, were used to differentiate them. The detector was capable of identifying electrons with an efficiency of 98.6\,\%, providing a purity for the MICE beam that exceeds 99.8\,\%. The EMR also proved to be a powerful tool for the reconstruction of muon momenta in the range 100--280\,MeV/$c$~\cite{2015JInst..10P2012A}.
 
 \subsection{Performance}
 \label{SubSect:EMR_Performance}
 
-The performance of the EMR detector was assessed at three levels of resolution with data acquired during different periods of data taking.
-%the 2017/02 and 2017/03 ISIS user cycles.
+Performance of the detector and the reconstruction algorithms were already described~\cite{2015JInst..10P2012A}; here the performance of the EMR detector was assessed at three levels of resolution with data acquired during different periods of data taking over the course of the experiment.
 The performance of the hardware itself was evaluated by analysing the characteristics of raw photomultiplier signals. The reconstruction efficiency was determined. The performance of the detector as an electron tagging device was measured.
 
 \subsubsection{Hardware efficiencies}
@@ -129,7 +128,7 @@ Two particle identification variables based on these distinct characteristics ca
 \begin{equation}
 \rho_p = \frac{N_p}{Z_p+1},
 \end{equation}
-where $N_p$ is the number of planes hit and $Z_p$ the number of the most downstream plane. A muon deposits energy in every plane it crosses until it stops, producing a plane density close to one. A positron shower contains photons that may produce hits deep inside the fiducial volume without leaving a trace on their path, reducing the plane density. The second variable is the normalised chi squared, $\hat{\chi}^2$, of the fitted straight track, i.e.
+where $N_p$ is the number of planes hit and $Z_p$ the number of the most downstream plane~\cite{2015JInst..10P2012A}. A muon deposits energy in every plane it crosses until it stops, producing a plane density close to one. A positron shower contains photons that may produce hits deep inside the fiducial volume without leaving a trace on their path, reducing the plane density. The second variable is the normalised chi squared, $\hat{\chi}^2$, of the fitted straight track, i.e.
 \begin{equation}
 \hat{\chi}^2=\frac{1}{N-4}\sum_{i=1}^{N}\frac{\text{res}_{x,i}^2+\text{res}_{y,i}^2}{\sigma_x^2+\sigma_y^2},
 \end{equation}
