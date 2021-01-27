@@ -1,23 +1,36 @@
-\graphicspath{{04-KL/Figures/}}
+\graphicspath{ {04-KL/Figures/} }
 
 \section{KLOE-Light Calorimeter}
 \label{Sect:KL}
 
-\subsection{Introduction}
-\label{SubSect:KL_Intro}
-% v2 - Domizia Orestano reviewed this (Ludovico Tortora and Mariyan Bogomilov in cc)
-
-The KLOE-Light (KL) pre-shower sampling calorimeter was composed of extruded lead foils in which scintillating fibres were placed. The volume ratio of scintillator to lead was approximately 2 to 1, ``lighter'' than ratio used in the KLOE experiment calorimeter~(1 to 1)~\cite{Ambrosino:2009zza}.
-
-The fibres were 1\,mm diameter BICRON BCF-12, scintillating in the blue, spaced 1.35\,mm from each other within a layer. The distance between two layers was 0.98\,mm, one layer being shifted by half the fibre pitch with respect to the next.
-Scintillation light was guided from each slab into a total of six PMTs (three on each side). Iron shields were fitted to each photomultiplier to
-eventually mitigate against large stray fields from the magnetic channel. The signal from each PMT was sent to a shaping amplifier (SA) module, which shapes and stretches the signal in time in order to match the sampling rate of the flash ADCs (figure~\ref{fig:KL2} shows the design of a single slab).
-A total of 7 slabs forms the whole detector, which has an active volume of 93\,cm$\times$93\,cm$\times$4\,cm.
-
-With its 2.5 radiation lengths, the KL was used to distinguish muons from decay electrons providing energy deposition and timing information.
-%acting as pre-shower in front of the EMR.
-The detector has been used to estimate the level of pion contamination within the MICE muon beams to be around~1\,\%~\cite{2016JInst..11P3001A}.
-\begin{figure}[htb!]
+The KLOE-Light (KL) pre-shower sampling calorimeter was composed of
+extruded lead foils in which scintillating fibres were placed.
+At normal incidence the thickness of the detector was 2.5 radiaation
+lengths.
+The detector provided energy deposition and timing information and was
+used to distinguish muons from decay
+electrons~\cite{2016JInst..11P3001A}.
+The KL consisted of a series of layers of 1\,mm diameter BICRON BCF-12
+scintillating fibres embedded in an appropriately shaped lead sheet
+(see figure~\ref{fig:KL2}).
+Each fibre was separataed by 1.35\,mm from its neighbours within a
+layer and the distance between the centres of the fibres in adjacent
+layers were separated by 0.98\,mm, one layer being shifted by half the
+fibre pitch with respect to the next.
+The volume ratio of scintillator to lead was approximately 2:1,
+``lighter'' than ratio of 1:1 used in the calorimater of the KLOE
+experiment~\cite{Ambrosino:2009zza}. 
+Lead/scintillater layers were stacked into slabs, 40\,mm in depth.
+A total of 7 slabs forms the whole detector, which has an active
+volume of 93\,cm$\times$93\,cm$\times$4\,cm.
+Scintillation light was guided from each slab into a total of six PMTs
+(three on each side).
+Iron shields were fitted to each photomultiplier to mitigate against
+stray magnetic fields.
+The signal from each PMT was sent to a shaping amplifier (SA) module
+that stretched the signal in time thereby matching the sampling rate
+of the flash ADCs.
+\begin{figure}
   \begin{center}
     \includegraphics[width=0.8\columnwidth]{./04-KL/Figures/KL2.png}
     \caption{Single slab design of MICE KLOE-Light Calorimeter.}
@@ -29,79 +42,86 @@ The detector has been used to estimate the level of pion contamination within th
 
 \subsection{Performance}
 \label{SubSect:KL_Performance}
-
-The study of the KL response to different particle types (muons, pions and electrons) at different momenta was based on particle identification obtained by the time-of-flight detector, as shown in the example of~figure~\ref{fig:TOF_peaks}, by applying time cuts on the time-of-flight spectrum across the peaks of the different species. The performance is presented for beamline settings with momentum distribution centred at 140, 170, 200, 240 and 300\,MeV/$c$. The results presented below are obtained from runs without magnetic fields in the trackers or focus coil. The KL response to muons, pions and electrons for all available momenta is presented in~figure~\ref{fig:KL3}.
-Muons and pions were below the minimum ionizing particle momenta, since the energy deposition is inversely proportional to the momentum.
-Actually the energy deposition is approximately proportional to the sum of ADC products from all cells in KL above a given threshold. The ADC product on the other hand is the product of the left and the right side of one slab divided by the sum of left and right side: $\text{ADC}_{\text{prod}} = 2 \times \text{ADC}_{\text{left}} \times \text{ADC}_{\text{right}} / (\text{ADC}_{\text{left}} + \text{ADC}_{\text{right}})$. The factor of 2 is present for normalisation. The product of two sides compensates the effect of attenuation.
-  \begin{figure}[htb!]
-	\begin{center}
-  		\includegraphics[width=0.49\columnwidth]{./04-KL/Figures/muon.pdf}
-  		\includegraphics[width=0.49\columnwidth]{./04-KL/Figures/pion.pdf}
-  		\includegraphics[width=0.49\columnwidth]{./04-KL/Figures/electron.pdf}
-  		\caption{KL response to muons (top left), pions (top right) and electrons (bottom) for all available momenta. The charge deposited by particles in KL in arbitrary units is shown. All histograms are normalised to unity.}
-  		\label{fig:KL3}
-  	\end{center}
-  \end{figure}
+The response of the KL to muons, pions, and electrons is shown for
+various beam momentum settings in~figure~\ref{fig:KL3}.
+For this analysis the particle momentum was determined from the
+measured time-of-flight between TOF0 and TOF1.
+To compensate for the effect of attenuation the performance was
+evaluated in terms of the '`ADC product'' given by:
+\begin{equation}
+  \text{ADC}_{\text{prod}} = 2 \times
+    \text{ADC}_{\text{left}} \times \text{ADC}_{\text{right}} /
+    (\text{ADC}_{\text{left}} + \text{ADC}_{\text{right}})\,;
+\end{equation}
+where ADC$_{\text{left}}$ and ADC$_{\text{right}}$ are the signals
+from the two ends of a slab and the factor of 2 is present for
+normalisation.
+Data was taken with no field in the spectrometer solenoids or the
+focus coils at beam-momentum settings chosen to span the range of
+momenta used during MICE running.
+The resulting beam-momentum distributions were centred at 140, 170,
+200, 240, and 300\,MeV/$c$.
+The results presented below are obtained from runs without magnetic
+fields in the trackers or focus coil.
+The response of the KL to muons and pions is seen to increase with
+beam momentum.
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/muon.pdf}
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/pion.pdf}
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/electron.pdf}
+  \end{center}
+  \caption{
+    KL response to muons (top left), pions (top right) and electrons
+    (bottom) for all available momenta.
+    The charge deposited by particles in KL in arbitrary units is
+    shown.
+    All histograms are normalised to unity.
+  }
+  \label{fig:KL3}
+\end{figure}
   
-The comparison of ADC products of muon, pions and electrons for a fixed momentum is presented in~figure~\ref{fig:KL4}. 
-For example 300 MeV/$c$~(figure~\ref{fig:KL4}, bottom) muons and pions have almost the same distribution, while moving to lower energies pions have a broader distribution, experiencing hadronic interactions and loosing more energy.
-%In the case of 300 MeV/c (figure~\ref{fig:KL_mu_to_pi}), where muons and pions have almost the same distribution, the tail of pions is fatter than muon one.
-%This is due to the fact that pions experience strong interaction as well.
-This pion behaviour has been used to estimate its contamination in muon samples~\cite{2016JInst..11P3001A}. 
-
-%The number of fired KL cells by a single muon, electron or pion is given in ~figure~\ref{fig:KL_mult} for 240 MeV/c beam. For muons we expect one, in some cases two and almost never more fired cells depending on track inclination. Pions and electrons create avalanches in KL and electron ones is much wider than the pion ones as visible of number of KL cell hits. The same figure shows number of events when if there is a reconstructed TOF track, but no signal in KL above the threshold. This can be used to calculate efficiency of KL for the three species as a function of momentum. The results are presented in ~Table~\ref{tab:KL_eff} and shows that efficiency for muon registration is close to 99$\%$.
-
-\begin{figure}[htb!]
- 	\begin{center}
-		\includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_e_140MEV.pdf}
- 		\includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_170MEV.pdf} 
- 		\includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_200MEV.pdf} 		
- 		\includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_240MEV.pdf}  	
- 		\includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_300MEV.pdf}
- 		\caption{Comparison of ADC products of muons, pions and electrons at 140 MeV/$c$ (top left), 170 MeV/$c$ (top right), 200 MeV/$c$ (middle left), 240 MeV/$c$ (middle right) and 300 MeV/$c$ (bottom).}
- 		\label{fig:KL4}
- 	\end{center}
+Figure~\ref{fig:KL4} presents a comparison of the response to muon,
+pions and electrons for various beam momentum settings.
+At high momentum, for example 300\,MeV/$c$ the ADC~product
+distributions for muons and pions are similar.
+At lower momentum the the distributions become incresingly disimilar,
+the pions having a broader distribution arrising hadronic
+interactions.
+The difference between the detector's response to pions and muons has
+been exploited to determine the pion contamination in the muon beams
+used for the MICE cooling measurements~\cite{2016JInst..11P3001A}.  
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_e_140MEV.pdf}
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_170MEV.pdf} 
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_200MEV.pdf}
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_240MEV.pdf}  	
+    \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_300MEV.pdf}
+  \end{center}
+  \caption{
+    Comparison of ADC products of muons, pions and electrons at 140
+    MeV/$c$ (top left), 170 MeV/$c$ (top right), 200 MeV/$c$ (middle
+    left), 240 MeV/$c$ (middle right) and 300 MeV/$c$ (bottom).
+  }
+  \label{fig:KL4}
 \end{figure}
 
-%\begin{figure}
-%    	\begin{center}
-%    		\includegraphics[width=0.4\columnwidth]{./04-KL/Figures/multiplicity_240MEV.png}  		
-%    		\caption{Particle multiplicity for 240 MeV/c, i.e. number of KL cells fired.}
-%    		\label{fig:KL_mult}
-%    	\end{center}
-%\end{figure}
-       
-  \begin{table}[!htb]
-  	\begin{center}
-  		\begin{tabular}{c|c|c|c|c|c} 
-  			                   & \textbf{140 MeV/$c$} & \textbf{170 MeV/$c$} & \textbf{200 MeV/$c$}	&\textbf{240 MeV/$c$} &\textbf{300 MeV/$c$}\\
-  			\hline
-  			\textbf{electrons} & 0.95 $\pm$ 0.02  & 0.95 $\pm$ 0.01 & 0.94 $\pm$ 0.03 &  0.96 $\pm$ 0.02 &  0.95 $\pm$ 0.02 \\
-  			\hline
-  			\textbf{muons}     & 0.97$\pm$ 0.02 & 0.99 $\pm$ 0.01  & 0.99 $\pm$  0.01 & 0.99 $\pm$ 0.01 & 0.99$\pm$ 0.01\\
-  			\hline
-  			\textbf{pions}     & n/a  & 0.89 $\pm$ 0.03  & 0.95 $\pm$ 0.03 & 0.97 $\pm$ 0.03 & 0.98$\pm$ 0.01\\
-  		\end{tabular}
-  		\caption{Efficiency of KL for electrons, muons and pions as a function of particle momentum. The conditions required the existence of a TOF track and signal in KL above the threshold. The uncertainties are statistical.}
-  		\label{tab:KL_eff}
-  	\end{center}
-  \end{table}
-
-In~figure~\ref{fig:KL_mc_vs_data} we show a simulation of KL response to 300 MeV/$c$ muons and pions and the distributions are compared with data.
-The simulation takes into account the distribution of the photons in the scintillator fibres, the subsequent creation of photoelectrons on photomultiplier photocathodes and the response of the photomultipliers (where gain was around $2 \times 10^6$).
-The agreement between data and simulation is very good.
-
-%The simulation is done via following steps:
-%\begin{itemize}
-%	\item Smearing of produced photons in scintillator fibres. They obtain Poisson statistic so such is applied. In principal one can replace it with Gaussian because the number of photons created is  large enough for such an approximation.
-%	\item Photoelectrons created on photomultiplier photocathode also have Poisson statistics. It cannot be replaced here with normal distribution because the number of photoelectrons is small enough so such an approximation is illegal.
-%	\item Photomultiplier gain obtains also statistical properties but it is neither Poisson nor gauss. Nevertheless it turns out that for simplicity one can use Gaussian distribution with mean value equals to PMT gain and sigma of distribution equals to half of the gain. KL photomultipliers have gain $\sim 2 \times 10^6$, so their sigma was simply $10^6$.
-%\end{itemize}
-
-   \begin{figure}[htb!]
-   	\begin{center}
-   		\includegraphics[width=0.4\columnwidth]{./04-KL/Figures/muon_mc_vs_data_edited.png}  		\includegraphics[width=0.4\columnwidth]{./04-KL/Figures/pion_mc_vs_data_edited.png}
-   		\caption{Comparison between data and Monte Carlo simulation of KL response to muons (left) and pions (right) at 300 MeV/$c$.}
-   		\label{fig:KL_mc_vs_data}
-   	\end{center}
-   \end{figure}
+The ADC~product distribution measured using a 400\,MeV/c beam is
+compared to the MAUS simulation of the detector response in
+figure~\ref{fig:KL_mc_vs_data}.
+The simulation takes into account the photo-statisics in the
+scintillating fibres, the response of the PMTs for which the gain was
+approximately $2 \times 10^6$). 
+The data is well described by the simulation.
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.4\columnwidth]{./04-KL/Figures/muon_mc_vs_data_edited.png}
+    \includegraphics[width=0.4\columnwidth]{./04-KL/Figures/pion_mc_vs_data_edited.png}
+  \end{center}
+  \caption{
+    Comparison between data and Monte Carlo simulation of KL response
+    to muons (left) and pions (right) at 300 MeV/$c$.
+  } 
+  \label{fig:KL_mc_vs_data}
+\end{figure}
