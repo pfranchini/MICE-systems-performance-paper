@@ -53,7 +53,7 @@ The level of crosstalk was within acceptable values for the type of
 multi-anode photomultiplier used, with an average of $0.20\pm0.03$\%
 probability of occurrence in adjacent channels and a mean amplitude
 equivalent to $4.5\pm0.1$\,\% of the primary signal intensity.
-Only four dead channels were identified.
+Only four dead bars were identified.
 
 The primary purpose of the EMR was to distinguish between muons and
 their decay products, identifying muons that have crossed the entire
@@ -165,11 +165,15 @@ fraction, $\alpha$, of the the muon sample that is rejected, and the
 contamination, $\beta$, the fraction of the electron sample that is
 selected. 
 
-The downstream tracker allows the reconstruction of particle momentum
-upstream of the EMR. 
-To assess the influence of momentum on contamination and loss, their
-values were calculated in 10\,MeV/$c$ momentum bins in the range
-100--300\,MeV/$c$.
+%The downstream tracker allows the reconstruction of particle momentum
+%upstream of the EMR. 
+%To assess the influence of momentum on contamination and loss, their
+%values were calculated in 10\,MeV/$c$ momentum bins in the range
+%100--300\,MeV/$c$.
+
+The momentum of the particles was measured by the downstream tracker 
+and this information used to determine the momentum dependence of the 
+contamination and loss in the range 100--300\,MeV/$c$.
 Figure~\ref{fig:emr_pid_mom} shows the loss, $\alpha$, and the
 contamination, $\beta$, as a function of the momentum measured in
 TKD.
@@ -185,7 +189,8 @@ reach the EMR.
     Percentage of electron contamination, $\beta$, and muon loss,
     $\alpha$, for different ranges of momentum measured in the
     downstream tracker, $p_d$.
-    The error bars are based on the statistical uncertainty in a bin.
+    The error bars are based on the statistical uncertainty in a bin,
+    and the bin width set by the resolution of the measurement.
   }
   \label{fig:emr_pid_mom}
 \end{figure}

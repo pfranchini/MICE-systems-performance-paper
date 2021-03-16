@@ -2,6 +2,33 @@
 MICE Systems Performance Paper
 ==============================
 
+Draft 4.2:
+ - edited by KL
+ - comments from PK
+
+Draft 4.1:
+ - partially edited by KL
+
+Draft 4.0:
+ - no new plots
+ - comments from KL, CR
+
+Draft 3.0:
+ - second round of comments from LT
+ - created "Tracking" section 
+ - Ckov section changes (new plot with betagamma)
+ 
+Draft 2.0:
+ - first round of comments from the review meeting (CR, LT, AB)
+
+Draft 1.0:
+ - implemented all Ken's comments
+
+Draft 0.3:
+ - implemented comments from Ken
+ - new KL plots
+
+ 
 Updates pre-draft:
 =================
 
@@ -27,8 +54,8 @@ v0.4: Ckov plots
 
 v0.5: liquid hydrogen absorber included
 
---------------------------------------------------
-
+==================================================
+    
 v0.9:
 - all contributions apart from:
   - full PID
@@ -39,24 +66,5 @@ v0.9:
 - New LH2 temperature plot for the steady state
 
 
-==================================================
 
-Draft 0.3:
- - implemented comments from Ken
- - new KL plots
 
-Draft 1.0:
- - implemented all Ken's comments
- 
-Draft 2.0:
- - first round of comments from the review meeting (CR, LT, AB)
-
-Draft 3.0:
- - second round of comments from LT
- - created "Tracking" section 
- - Ckov section changes (new plot with betagamma)
-
-Draft 4.0:
- - no new plots
- - comments from KL, CR
- 

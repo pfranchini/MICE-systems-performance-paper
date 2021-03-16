@@ -1,12 +1,12 @@
 \section{Tracking}
 \label{Sect:Tracking}
 
-The MICE instrumentation allowed partices to be tracked from TOF0 to
+The MICE instrumentation allowed particles to be tracked from TOF0 to
 the EMR, a distance of more than 15\,m.
 High-resolution particle tracking was provided by two
 scintillating-fibre trackers (section~\ref{SubSect:Tracker}).
 The precise relative alignment of the time-of-flight hodoscopes and
-the trackers was obtained by combining the measurements of bith
+the trackers was obtained by combining the measurements of both
 detector systems (section~\ref{SubSect:DA}). 
 
 \graphicspath{{06-Tracking/Figures/}}
@@ -36,9 +36,9 @@ stations is shown in figure~\ref{Figure:FullTracker}).
     \includegraphics[width=0.6\textwidth,keepaspectratio=true,]{FullTracker.png}
   \end{center}
   \caption{
-    Photograph of one of the MICE trackers, showing the five stations
-    and the three doublet planes of scintillating fibres, each plane
-    at 120$^\circ$ angles to the next (the central fibres of plane can
+    Photograph of one of the MICE trackers, showing the five stations.
+    Each station has three doublet planes of scintillating fibres, each plane
+    at 120$^\circ$ to the next (the central fibres of plane can
     be seen as darker lines traversing the station).
     Bundles of seven 350\,$\mu$m fibres were grouped together, to be
     read out by 1\,mm light guides.
@@ -64,7 +64,7 @@ by the D0 collaboration~\cite{Abazov:2005pn}. \\
 
 \noindent\textbf{Reconstruction} \\
 \noindent
-The reconstruction software for the trackers is descrined
+The reconstruction software for the trackers is described
 in~\cite{Dobbs:2016ejn}.
 Each of the 15 tracker doublet layers provided 214 readout channels.
 Calibration data taken without beam was used to determine the position
@@ -96,7 +96,7 @@ spacepoint-finding algorithm.
 Noise in the electronics arising from, for example, the thermal
 emission of electrons could give rise to digits passing the threshold.
 Any digit not caused by the passage of a charged particle was
-classidied as noise.
+classified as noise.
 To isolate noise from signal during beam-on data collection, events
 containing a track which included a spacepoint in each of the five
 tracker stations were selected.
@@ -112,7 +112,7 @@ tracker and 0.06\% in the downstream tracker. \\
 \noindent\textbf{Track-finding efficiency} \\
 \label{trackers:performance:efficiency}
 \noindent
-The track-finding efficience was determined using a sample of events
+The track-finding efficiency was determined using a sample of events
 for which the time-of-flight determined using hits found in TOF1 and
 TOF2 was consistent with passage of a muon.
 This requirement ensured that the particle had been transmitted
@@ -133,15 +133,15 @@ The spacepoint finding efficiency is summarised for a range of beam
 conditions in
 table~\ref{Table:tracker_spacepoint_efficiency_results}.
 Overall the high track-finding efficiency was found to be consistent
-with that introduced by the number of dead channels amd did not
-introduce significant sysyematic uncertainties in the analysis of the
+with that introduced by the number of dead channels and did not
+introduce significant systematic uncertainties in the analysis of the
 MICE data.
 \begin{table}
   \begin{center}
     \begin{tabular}{c | c | c | c }
       \textbf{Momentum} & \textbf{Nominal Emittance} & \textbf{Upstream Tracks Found} & \textbf{Downstream Tracks Found} \\ \hline
-        200 MeV/$c$ & 6\,mm  & 99.42\,\% & 96.07\,\% \\ %H25c 
         200 MeV/$c$ & 3\,mm  & 98.38\,\% & 99.19\,\% \\ %H36aa
+        200 MeV/$c$ & 6\,mm  & 99.42\,\% & 96.07\,\% \\ %H25c 
         140 MeV/$c$ & 6\,mm  & 98.37\,\% & 99.16\,\% \\ %H36c
         140 MeV/$c$ & 10\,mm & 98.47\,\% & 98.93\,\% \\ \hline \hline %H36d
         \multicolumn{2}{c |}{Average} & 98.70\,\% & 98.21\,\%
@@ -166,7 +166,7 @@ MICE data.
     \end{tabular}
   \end{center}
   \caption{
-    The spacepoint finding efficiency, assuming the presence of a
+    The spacepoint finding efficiency, in the presence of a
     track, for the upstream and downstream trackers for 140\,MeV/$c$
     and 200\,MeV/$c$ beams, and for 3, 6 and 10\,mm nominal
     emittances.
@@ -191,7 +191,7 @@ magnetic field (``helical'') and with the solenoids turned off
 The data shows that the efficiency was generally greater than 99.0\%.
 Water ingress to the cold end of the VLPC cassettes caused the loss of
 channels and contributed to a reduction in the tracking efficiency.
-This was periodically recovered by warming and drying the VPLCs. \\
+This was periodically recovered by warming and drying the VLPCs. \\
 \begin{figure}
   \begin{center}
     \includegraphics[width=0.80\textwidth]{historical_analysis_plot_logo.png}
@@ -223,36 +223,41 @@ The small bias in reconstructed momentum and transverse momentum is
 \begin{figure}
   \begin{center}
     \begin{tabular}{cc}
-      \includegraphics[width=0.5\textwidth]{upstream_p_bias_p_logo.pdf} &	
-      \includegraphics[width=0.5\textwidth]{upstream_p_resolution_p_logo.pdf} \\
-      \includegraphics[width=0.5\textwidth]{upstream_pt_bias_p_logo.pdf} &
-      \includegraphics[width=0.5\textwidth]{upstream_pt_resolution_p_logo.pdf}
+      \includegraphics[width=0.45\textwidth]{upstream_p_resolution_p_logo.png} &	
+      \includegraphics[width=0.45\textwidth]{upstream_p_bias_p_logo.png} \\
+      \includegraphics[width=0.45\textwidth]{upstream_pt_resolution_p_logo.png} &
+      \includegraphics[width=0.45\textwidth]{upstream_pt_bias_p_logo.png}
     \end{tabular}
   \end{center}
   \caption{
-    Predicted momentum reconstruction bias (left) and resolution
-    (right) for the total momentum (top) and transverse momentum
-    component (bottom) in the upstream tracker.
+    Upstream tracker: from simulated data.
+    %Predicted momentum reconstruction resolution (left) and bias
+    %(right) for the total momentum (top) and transverse momentum
+    %component (bottom) in the upstream tracker.
   }
   \label{trackers:performance:resolutions:up}
 \end{figure}
 \begin{figure}
   \begin{center}
     \begin{tabular}{cc}
-      \includegraphics[width=0.5\textwidth]{downstream_p_bias_p_logo.pdf} &	
-      \includegraphics[width=0.5\textwidth]{downstream_p_resolution_p_logo.pdf} \\
-      \includegraphics[width=0.5\textwidth]{downstream_pt_bias_p_logo.pdf} &
-      \includegraphics[width=0.5\textwidth]{downstream_pt_resolution_p_logo.pdf}
+      \includegraphics[width=0.45\textwidth]{downstream_p_resolution_p_logo.png} &	
+      \includegraphics[width=0.45\textwidth]{downstream_p_bias_p_logo.png} \\
+      \includegraphics[width=0.45\textwidth]{downstream_pt_resolution_p_logo.png} &
+      \includegraphics[width=0.45\textwidth]{downstream_pt_bias_p_logo.png}
     \end{tabular}
   \end{center}
-  \caption{Predicted momentum reconstruction bias (left) and
-    resolution (right) for the total momentum (top) and transverse
-    momentum component (bottom) in the downstream tracker.
+  \caption{
+    Upstream tracker: from simulated data.
+    %Predicted momentum reconstruction resolution (left) and
+    %bias (right) for the total momentum (top) and transverse
+    %momentum component (bottom) in the downstream tracker.
   }
   \label{trackers:performance:resolutions:down}
 \end{figure}
 
 %\graphicspath{{09-Detector-alignment/Figures/}}
+
+
 
 \subsection{Beam-based detector alignment}
 \label{SubSect:DA}
@@ -262,12 +267,12 @@ resolution on the position of the scintillating-fibre trackers
 relative to the time-of-flight hodoscopes.
 The starting point for the beam-based alignment was the geometrical
 survey of the detectors in the MICE Hall which was performed using
-laser telemetry. 
+laser geodesy. 
 Survey monuments on the TOF frames were surveyed with respect to the
 MICE Hall survey network.
 The trackers had been dowelled in position in the bores of the
 spectrometer solenoids.
-The dowells were used to precisely locate the trackers with respect to
+The dowels were used to precisely locate the trackers with respect to
 the axis of the warm bore of the solenoid.
 The position of the trackers along the beam line was inferred from the
 measurement of survey monuments mounted on the spectrometer-solenoid
