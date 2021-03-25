@@ -20,7 +20,7 @@ diameter~\cite{Ellis:2010bb}.
 Each tracker was composed of five stations (labelled 1 to 5, with
 station 1 being closest to the cooling cell) held in position using a
 carbon-fibre space-frame.  
-Adjacent stations were separated by a different distance ranging from
+Adjacent stations were separated by different distances ranging from
 20\,cm to 35\,cm.
 The separations were chosen to ensure that the azimuthal rotation of
 track position does not repeat from one station to the next.
@@ -52,9 +52,10 @@ set at an angle of 120$^\circ$ with respect to the next.
 This arrangement ensured that there were no inactive regions between
 adjacent fibres.
 Bundles of seven fibres were grouped into a single readout channel to
+match the resolution to that imposed by multiple scattering and
 reduce the number of readout channels.
 This resulted in a spatial resolution per doublet layer of 470\,$\mu$m
-and measured light yield of approximately 10
+and a measured light yield of approximately 10
 photo-electron~\cite{Ellis:2010bb}.
 The light from the seven scintillating fibres was coupled into a
 single clear fibre which took it to a visible light photon counter
@@ -76,8 +77,8 @@ The first step in the reconstruction was to record the unique channel
 number associated with each NPE value in a ``digit''.
 Digit profiles were used to identifying hot or dead channels which
 were masked from the reconstruction to reduce the rate of ambiguities
-that had to be resolved in the pattern recognition and to ensure the
-accuracy of calibration.
+that had to be resolved in the pattern recognition, and to ensure the
+accuracy of the calibration.
 The reconstruction proceeded to create ``spacepoints'' from the
 intersection of digits in adjacent double layers.
 Spacepoints were constructed from clusters from all three planes (a
@@ -87,14 +88,14 @@ The pattern-recognition algorithm searched for spacepoints from
 neighbouring stations that were consistent with the helical trajectory
 of a charged particle in the solenoidal field.
 In the final stage of the tracker reconstruction the track parameters
-were estimated using a Kalman filter algorithm. \\
+were estimated using a Kalman filter. \\
 
 \noindent\textbf{Noise}\\
 \noindent
 Digits above a certain NPE threshold were admitted to the
 spacepoint-finding algorithm.
 Noise in the electronics arising from, for example, the thermal
-emission of electrons could give rise to digits passing the threshold.
+emission of electrons, could give rise to digits passing the threshold.
 Any digit not caused by the passage of a charged particle was
 classified as noise.
 To isolate noise from signal during beam-on data collection, events
@@ -134,7 +135,7 @@ conditions in
 table~\ref{Table:tracker_spacepoint_efficiency_results}.
 Overall the high track-finding efficiency was found to be consistent
 with that introduced by the number of dead channels and did not
-introduce significant systematic uncertainties in the analysis of the
+introduce significant systematic uncertainties in analysis of the
 MICE data.
 \begin{table}
   \begin{center}
@@ -158,8 +159,8 @@ MICE data.
   \begin{center}
     \begin{tabular}{c | c | c | c }
       \textbf{Momentum} & \textbf{Nominal Emittance} & \textbf{Upstream Spacepoints Found} & \textbf{Downstream Spacepoints Found} \\ \hline
-        200 MeV/$c$ & 6\,mm  & 99.41\,\% & 94.63\,\% \\ %H25c 
         200 MeV/$c$ & 3\,mm  & 98.04\,\% & 97.41\,\% \\ %H36aa
+        200 MeV/$c$ & 6\,mm  & 99.41\,\% & 94.63\,\% \\ %H25c 
         140 MeV/$c$ & 6\,mm  & 97.99\,\% & 99.16\,\% \\ %H36c
         140 MeV/$c$ & 10\,mm & 98.07\,\% & 97.44\,\% \\ \hline \hline %H36d
         \multicolumn{2}{c |}{Average} & 98.44\,\% & 97.01\,\%
@@ -189,7 +190,7 @@ The efficiency is shown separately for data taken in the presence of a
 magnetic field (``helical'') and with the solenoids turned off
 (``straight'').
 The data shows that the efficiency was generally greater than 99.0\%.
-Water ingress to the cold end of the VLPC cassettes caused the loss of
+Water vapour ingress to the cold end of the VLPC cassettes caused the loss of
 channels and contributed to a reduction in the tracking efficiency.
 This was periodically recovered by warming and drying the VLPCs. \\
 \begin{figure}
@@ -197,8 +198,8 @@ This was periodically recovered by warming and drying the VLPCs. \\
     \includegraphics[width=0.80\textwidth]{historical_analysis_plot_logo.png}
   \end{center}
   \caption{
-    Evolution of the straight and helical track finding efficiency
-    over time for the upstream (left) and downstream (right) trackers
+    Evolution of the straight and helical track finding efficiencies
+    over time for: the upstream (left); and downstream (right) trackers
     during the key periods of data taking since 2015.
   }
   \label{fig:trackers:performance:historical} 
@@ -216,10 +217,10 @@ figure~\ref{trackers:performance:resolutions:up} for the upstream
 tracker and figure~\ref{trackers:performance:resolutions:down} for the
 downstream tracker.
 The resolution in the total momentum and transverse momentum is
-observed to be $\sim 1.1$\,MeV/c independent of momentum in the range
-120\,MeV/c to 160\,MeV/c.
-The small bias in reconstructed momentum and transverse momentum is
-{\color{red} understood to be due to ...?}
+observed to be $\sim 1.1$\,MeV/$c$ independent of momentum in the range
+120\,MeV/$c$ to 160\,MeV/$c$.
+%The small bias in reconstructed momentum and transverse momentum is {\color{red} understood to be due to ...?}
+The small bias in reconstructed momentum and transverse momentum did not have relevant effects in the analysis, being considered in systematic error studies.
 \begin{figure}
   \begin{center}
     \begin{tabular}{cc}
@@ -292,7 +293,7 @@ system was specified using the location of its centre and a set of
 three angles corresponding to rotation about the $x$ axis ($\alpha$),
 the $y$ axis ($\beta$) and the $z$ axis ($\phi$).
 The rotation of the tracker about the $z$ axis has a negligible effect
-on the alignment since the angular location was determined precisely
+on the alignment since $\phi$ was determined precisely
 at installation.
 The position of each tracker along the beamline was determined from
 the survey.

@@ -4,23 +4,21 @@
 \label{Sect:EMR}
 
 The main purpose of the Electron-Muon Ranger (EMR) was to identify
-positrons arising from muon decay within the apparatus.  
+electrons arising from muon decay within the apparatus.  
 The EMR was a fully-active scintillator
 detector~\cite{2016JInst..11T10007} with a granularity that allowed
 for track reconstruction.
 The EMR consisted of extruded triangular scintillator bars arranged in
 planes.
 One plane contained 59 bars and covered an area of 1.27\,m$^2$.
-Figure~\ref{fig:EMR} the bar cross section and the arrangement of the
+Figure~\ref{fig:EMR} shows the bar cross section and the arrangement of the
 bars in a plane.
 Triangular bars were chosen so that tracks moving parallel to the
 detector axis would not travel along the gaps between bars. 
 Planes were mounted such that the angle between successive planes was
-$90^{\circ}$ so that hits in neighbouring planes defined horizontal
-and vertical interaction coordinates.
-A single ``X--Y module'' was composed of an orthogonal pair of
-planes.
-The scintillation light was collected by using a wave-length shifting
+$90^{\circ}$ so that hits in neighbouring planes defined a position.
+A single ``X--Y module'' was a pair of orthogonal planes.
+The scintillation light was collected using a wave-length shifting
 (WLS) fibre glued inside each bar.
 At each end, the WLS fibre was coupled to clear fibres that
 transported the light to a PMT.
@@ -29,7 +27,7 @@ single-anode PMT so that an integrated charge measurement could be
 used to determine the energy deposited in the plane.
 The signals from the fibres emerging from the other edge of the plane
 were recorded individually using multi-anode PMTs (MAPMTs). 
-The full detector was composed of 24 X--Y modules giving a total active 
+The full detector was made up of 24 X--Y modules giving a total active 
 volume of approximately~1\,m$^3$.
 \begin{figure}[htb!]
   \begin{center}
@@ -51,15 +49,13 @@ an efficiency per plane
 of~$99.73\pm0.02$\,\%~\cite{2016JInst..11T10007,Drielsma:2017doj}.
 The level of crosstalk was within acceptable values for the type of
 multi-anode photomultiplier used, with an average of $0.20\pm0.03$\%
-probability of occurrence in adjacent channels and a mean amplitude
-equivalent to $4.5\pm0.1$\,\% of the primary signal intensity.
-Only four dead bars were identified.
+between adjacent channels and a mean amplitude
+equivalent to $4.5\pm0.1$\,\% of the primary signal.
+Only four dead bars were present.
 
-The primary purpose of the EMR was to distinguish between muons and
-their decay products, identifying muons that have crossed the entire
-magnetic channel.
+The primary purpose of the EMR was to distinguish between a muon that crossed  the entire magnetic channel and those which decayed in flight producing an electron.
 Muons and electrons exhibited distinct behaviours in the detector.
-A muon followed a single straight track before either stopping or
+A muon produced a single straight track before either stopping or
 exiting the scintillating volume.
 Electrons showered in the lead of the KL and created a broad cascade
 of secondary particles.
@@ -79,11 +75,11 @@ used may be found in reference~\cite{2015JInst..10P2012A}.
 Here the performance of the EMR detector over the course of the
 experiment is summarised.
 
-To maximise beam transmission to the EMR and to increase the range of
-muons within the detector the MICE beamline was set to deliver a
-nominal momentum of approximately 400\,MeV/$c$.
+To measure the performance of the EMR the MICE beamline was set to
+deliver a nominal momentum of 400\,MeV/$c$, this maximised the muon
+transmission to the EMR and its range in the detector.
 In this configuration the beamline produced pions and muons in
-comparable quantities and positrons.
+comparable quantities and electrons.
 Time-of-flight between TOF1 and TOF2 was used to identify particle
 species and only particles compatible with the muon hypothesis were
 included in the analysis.
@@ -98,7 +94,7 @@ If hits were produced in the detector, an $(x,y)$ pair, defining a
 space point, was reconstructed $98.56\pm0.06\,\%$ of the time.
 
 To evaluate the efficiency of the scintillator planes, only the muons
-that penetrated the entire detector were used.
+that traversed the entire detector were used.
 Muons were selected which produced a hit in the most downstream plane.
 For these events a hit was expected in at least one bar in each plane
 on its path.
@@ -111,25 +107,23 @@ not observed in the SAPMT was $1.88\pm0.01\,\%$. \\
 \noindent
 A broad range of beamline momentum settings was used to characterise
 the electron-rejection efficiency.
-Particle species was characterised upstream of the EMR using the
+Particle species were characterised upstream of the EMR using the
 time-of-flight between TOF1 and TOF2.
-For each momentum setting, a Gaussian fit was carried out to determine
-the position of the muon and positron time-of-flight peaks.
-Events which fell within {\color{red} XX standard deviations} of the
-central value of the muon time-of-flight peak were were accepted into
-a muon-template sample while events which fell within {\color{red} XX
-standard deviations} of the positron peak formed the positron-template
-sample. 
+For each momentum setting, a fit was carried out to determine
+the position of the muon and electron time-of-flight peaks and events were
+selected accordingly, to form muon and electron-template samples.
+%For each momentum setting, a Gaussian fit was carried out to determine
+%the position of the muon and electron time-of-flight peaks.
+%Events which fell within {\color{red} XX standard deviations} of the
+%central value of the muon time-of-flight peak were were accepted into
+%a muon-template sample while events which fell within {\color{red} XX
+%standard deviations} of the electron peak formed the electron-template
+%sample. 
 Particles with a time-of-flight larger than the upper limit of the
 muon sample were either pions or slow muons and were rejected.
 
-The hits produced by a muon in the EMR appear as a clean straight
-track.
-By contrast, an electromagnetic shower was initiated by the passage of
-a positron through the lead of the KL.
-This resulted in a disjointed and spread-out hit signature for
-positrons in the EMR.
-Two particle-identification variables were defined based on these
+To distinguish the muon tracks from the electron induced showers,
+two particle-identification variables were defined based on these
 distinct characteristics.
 The first is the plane density, $\rho_p$
 \begin{equation}
@@ -139,7 +133,7 @@ where $N_p$ is the number of planes hit and $Z_p$ the number of the
 most downstream plane~\cite{2015JInst..10P2012A}.
 A muon deposits energy in every plane it crosses until it stops,
 producing a plane density close to one.
-A positron shower contains photons that may produce hits deep inside
+A electron shower contains photons that may produce hits deep inside
 the fiducial volume without leaving a trace on their path, reducing
 the plane density.
 The second variable is the normalised $\hat{\chi}^2$ of the fitted
@@ -153,13 +147,12 @@ track in the $qz$ projection and $\sigma_q$ the uncertainty on the
 space point in the $qz$ projection, $q=x,\,y$~\cite{Drielsma:thesis}.
 This quantity represents the transverse spread of the hits produced by
 the particle in the EMR.
-A muon produced a single track and was expected to have a
-$\hat{\chi}^2$ close to one, while an electron shower was expected to
-produce a larger value.
+A muon produced a single track giving
+$\hat{\chi}^2$ close to one, while an electron shower produces a larger value.
 The two discriminating variables can be combined to form a statistical
 test on the particle hypothesis. 
 Dense and narrow events will be tagged as muons while non-continuous
-and wide electron showers will not.  
+and wide showers will not.  
 The quality of a test statistic may be characterised in terms of the
 fraction, $\alpha$, of the the muon sample that is rejected, and the 
 contamination, $\beta$, the fraction of the electron sample that is
@@ -177,9 +170,9 @@ contamination and loss in the range 100--300\,MeV/$c$.
 Figure~\ref{fig:emr_pid_mom} shows the loss, $\alpha$, and the
 contamination, $\beta$, as a function of the momentum measured in
 TKD.
-The loss statistic increases towards low muon momentum.
-This is due both to an increase in the decay probability between TOF2
-and the EMR and a decrease in the number of muons that cross the KL to
+$\alpha$ increases towards low muon momentum.
+This is due both: to an increase in the decay probability between TOF2
+and the EMR; and a decrease in the number of muons that cross the KL to
 reach the EMR. 
 \begin{figure}
   \begin{center}

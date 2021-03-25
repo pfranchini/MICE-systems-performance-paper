@@ -23,7 +23,7 @@ pion between TOF0 and TOF1 was about 1.3\,ns.
 The system was therefore designed to measure the TOF with a
 precision of 100\,ps. 
 This allowed the TOF between the first pair of TOF stations 
-to be used to discriminate between pions, muons, and positrons
+to be used to discriminate between pions, muons, and electrons
 contained within the beam with near 100\% efficiency~\cite{2016JInst..11P3001A}.
 In addition, by assuming a particular mass for each particle, the
 TOF measurement was used to infer the particle
@@ -80,11 +80,10 @@ The TOF detector is illustrated in figure~\ref{fig:tof:schematic}.
 
 The active areas of the three hodoscopes are 40$\times$40\,cm$^2$
 (TOF0), 42$\times$42\,cm$^2$ (TOF1), and 60$\times$60\,cm$^2$ (TOF2).
-Each of the planes in TOF0 had ten scintillator slabs.
-Stations TOF1 and TOF2 had respectively 7 and 10 scintillator slabs in each plane.
+Each of the planes in TOF0 and TOF2 had 10 slabs while those in TOF1 had 7.
 A passive splitter was used to take the signal from each of the PMTs
-to a CAMAC Lecroy 4115 leading-edge discriminator followed by a CAEN
-V1290 TDC for time measurement and to a CAEN V1724 FADC for
+to: a CAMAC Lecroy 4115 leading-edge discriminator followed by a CAEN
+V1290 TDC for time measurement; and to a CAEN V1724 FADC for
 pulse-height measurement.
 A local readout trigger was issued if the signals from each of the two
 PMTs on a single slab crossed a specific threshold and overlapped.
@@ -96,38 +95,32 @@ data taking. \\
 The intensity of the scintillation light produced when a particle
 crossed the plastic scintillator rose rapidly, subsequently decaying
 with a characteristic time of 1.8\,ns. 
-The scintillation light propagated from the particle-crossing point to
+The scintillation light travels from the particle-crossing point to
 each end of the scintillator slab.
-The light-travel time was dependent on the distance of the particle
+The light-travel time depends on the distance of the particle
 crossing from the PMT.
-The largest difference between the time of arrival of the light at the
-two ends of a scintillator bar occurred when a particle crossed close
-to one end of the bar.
-The light-propagation speed was determined to be 13.5\,cm/ns, so that the maximum light-travel time differences
-for slabs in TOF0, TOF1, and TOF2 were approximately 3.0\,ns, 3.1\,ns,
-and 4.4\,ns respectively.
+The light-propagation speed in the slabs was determined to be 13.5\,cm/ns.
 
-The readout-trigger signal was distributed to all TDC boards and was
+The local readout-trigger signal was distributed to all TDC boards and was
 used as the reference time.
-As a result of the light-propagation effect the trigger time was
-dependent on the position at which the particle crossed the TOF
-station in which the trigger was generated.
-As a consequence, the reference time had a bias dependent on
-the position of the crossing, an effect referred to as the
+The time between a particle hit in a TOF slab and the time when the
+trigger is generated varies with the position of the hit along the slab.
+As a consequence, the reference time had an offset dependent on
+the crossing position, an effect referred to as the
 readout-trigger signal delay.
 To compensate for this, the final time measurement in each station was
-determined as an average of the times recorded for each channel above
+an average of the times recorded for each channel above
 threshold.
 
 Further delay was introduced by the signal-transit time of each PMT
 and of the cable that led the signal to the readout electronics.
 These signal-transit times were unique for each individual readout
-channel and were determined in dedicated measurements.
+channel and were determined by dedicated measurements.
 The use of a linear, leading-edge discriminator lead to a correlation
 between the total charge in the pulse and the time at which the
 discriminator fired.
 This correlation, referred to as the time-walk, introduced a
-systematic bias in the time recorded by the TDC dependent on the pulse
+systematic offset in the time recorded by the TDC dependent on the pulse
 height. 
 
 Precise determination of the TOF requires a calibration procedure that
@@ -146,7 +139,7 @@ The slab-crossing time was taken to be the average of the corrected
 PMT times.
 Two slabs were taken to have been produced by the passage of a
 particle if their slab-crossing times were within a 4\,ns window.
-The two matched slabs were used to define a pixel of area given by the
+These two \textit{matched} slabs were used to define a pixel of area given by the
 width of the slabs.
 The particle-crossing time was then determined as the average of the
 slab times and the approximate position of the particle crossing was
@@ -154,8 +147,8 @@ refined using the PMT signals in the two orthogonal slabs. \\
 
 \noindent\textbf{Performance} \\
 \noindent
-The difference, $\Delta T$, between the slab times for matched slabs
-was used to determine the intrinsic time resolution, $\sigma_T$. of the
+The difference, $\Delta T$, between the slab times for \textit{matched} slabs
+was used to determine the intrinsic time resolution, $\sigma_T$ of the
 TOF system.
 Assuming that the intrinsic resolution is the same in each of the
 planes that make up a particular TOF station, the $\Delta T$
@@ -165,12 +158,12 @@ Figure~\ref{fig:SlabDtAll} shows the distributions of $\Delta T$ for
 TOF0, TOF1, and TOF2 for a representative set of data taken in 2018.
 The RMS width of the distributions are 114\,ps, 126\,ps, and 108\,ps
 for TOF0, TOF1, and TOF2 respectively.
-The distributions are similar and the RMS of each distribution is
+The distributions are similar, and the RMS of each distribution is
 consistent with the measured intrinsic resolution of approximately
 60\,ps~\cite{2010NIMPA.615...14B}.
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.9\columnwidth]{07_overall_slab_dt_edited}
+    \includegraphics[width=0.9\columnwidth]{07_overall_slab_dt_edited.pdf}
   \end{center}
   \caption{
     Slab \DT{} distributions.
@@ -183,9 +176,9 @@ consistent with the measured intrinsic resolution of approximately
 
 Figure~\ref{fig:TOF_peaks} shows an example of distribution of the
 measured TOF between TOF0 and TOF1.
-The TOF peaks characteristic of positrons, muons, and pions are
+The TOF peaks characteristic of electrons, muons, and pions are
 clearly separated.
-The width of the positron peak is approximately~0.10\,ns,
+The width of the electron peak is approximately~0.10\,ns,
 consistent with the spread calculated from a naive quadrature addition
 of the timing resolution of the individual TOF stations.
 \begin{figure}
