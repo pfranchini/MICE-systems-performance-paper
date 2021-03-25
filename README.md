@@ -2,6 +2,10 @@
 MICE Systems Performance Paper
 ==============================
 
+Draft 4.3:
+ - comments from PK
+ - OK from AB and LT
+
 Draft 4.2:
  - edited by KL
  - comments from PK
