@@ -111,7 +111,7 @@ Particle species were characterised upstream of the EMR using the
 time-of-flight between TOF1 and TOF2.
 For each momentum setting, a fit was carried out to determine
 the position of the muon and electron time-of-flight peaks and events were
-selected accordingly, to form muon and electron-template samples.
+selected accordingly to form muon and electron-template samples.
 %For each momentum setting, a Gaussian fit was carried out to determine
 %the position of the muon and electron time-of-flight peaks.
 %Events which fell within {\color{red} XX standard deviations} of the
@@ -122,10 +122,10 @@ selected accordingly, to form muon and electron-template samples.
 Particles with a time-of-flight larger than the upper limit of the
 muon sample were either pions or slow muons and were rejected.
 
-To distinguish the muon tracks from the electron induced showers,
+To distinguish the muon tracks from the electron-induced showers,
 two particle-identification variables were defined based on these
 distinct characteristics.
-The first is the plane density, $\rho_p$
+The first is the plane density, $\rho_p$:
 \begin{equation}
   \rho_p = \frac{N_p}{Z_p+1},
 \end{equation}
@@ -133,13 +133,13 @@ where $N_p$ is the number of planes hit and $Z_p$ the number of the
 most downstream plane~\cite{2015JInst..10P2012A}.
 A muon deposits energy in every plane it crosses until it stops,
 producing a plane density close to one.
-A electron shower contains photons that may produce hits deep inside
+An electron shower contains photons that may produce hits deep inside
 the fiducial volume without leaving a trace on their path, reducing
 the plane density.
 The second variable is the normalised $\hat{\chi}^2$ of the fitted
 straight track given by
 \begin{equation}
-  \hat{\chi}^2=\frac{1}{N-4}\sum_{i=1}^{N}\frac{\text{res}_{x,i}^2+\text{res}_{y,i}^2}{\sigma_x^2+\sigma_y^2},
+  \hat{\chi}^2=\frac{1}{N-4}\sum_{i=1}^{N}\frac{\text{res}_{x,i}^2+\text{res}_{y,i}^2}{\sigma_x^2+\sigma_y^2};
 \end{equation}
 where $N$ is the number of space points (one per bar hit),
 $\text{res}_{q,i}$ the residual of the space point with respect to the
@@ -154,7 +154,7 @@ test on the particle hypothesis.
 Dense and narrow events will be tagged as muons while non-continuous
 and wide showers will not.  
 The quality of a test statistic may be characterised in terms of the
-fraction, $\alpha$, of the the muon sample that is rejected, and the 
+fraction, $\alpha$, of the muon sample that is rejected, and the 
 contamination, $\beta$, the fraction of the electron sample that is
 selected. 
 
@@ -171,8 +171,8 @@ Figure~\ref{fig:emr_pid_mom} shows the loss, $\alpha$, and the
 contamination, $\beta$, as a function of the momentum measured in
 TKD.
 $\alpha$ increases towards low muon momentum.
-This is due both: to an increase in the decay probability between TOF2
-and the EMR; and a decrease in the number of muons that cross the KL to
+This is due both to an increase in the decay probability between TOF2
+and the EMR and a decrease in the number of muons that cross the KL to
 reach the EMR. 
 \begin{figure}
   \begin{center}
