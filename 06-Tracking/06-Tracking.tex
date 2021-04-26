@@ -1,7 +1,7 @@
 \section{Tracking}
 \label{Sect:Tracking}
 
-The MICE instrumentation allowed particles to be tracked from TOF0 to
+The MICE instrumentation allowed individual particles to be tracked from TOF0 to
 the EMR, a distance of more than 15\,m.
 High-resolution particle tracking was provided by two
 scintillating-fibre trackers (section~\ref{SubSect:Tracker}).
@@ -38,7 +38,7 @@ stations is shown in figure~\ref{Figure:FullTracker}).
   \caption{
     Photograph of one of the MICE trackers, showing the five stations.
     Each station has three doublet planes of scintillating fibres, each plane
-    at 120$^\circ$ to the next (the central fibres of plane can
+    at 120$^\circ$ to the next (the central fibres of each plane can
     be seen as darker lines traversing the station).
     Bundles of seven 350\,$\mu$m fibres were grouped together, to be
     read out by 1\,mm light guides.
@@ -47,7 +47,7 @@ stations is shown in figure~\ref{Figure:FullTracker}).
 \end{figure}
 
 Each tracker station consisted of three doublet layers of 350\,$\mu$m
-scintillating fibres, these layers were arranged such that each was
+scintillating fibres; these layers were arranged such that each was
 set at an angle of 120$^\circ$ with respect to the next.
 This arrangement ensured that there were no inactive regions between
 adjacent fibres.
@@ -189,7 +189,7 @@ magnetic field (``helical'') and with the solenoids turned off
 The data shows that the efficiency was generally greater than 99.0\%.
 Water vapour ingress to the cold end of the VLPC cassettes caused the loss of
 channels and contributed to a reduction in the tracking efficiency.
-This was periodically recovered by warming and drying the VLPCs. \\
+This was recovered by warming and drying the VLPCs. \\
 \begin{figure}
   \begin{center}
     \includegraphics[width=0.80\textwidth]{historical_analysis_plot_logo.png}
@@ -198,6 +198,7 @@ This was periodically recovered by warming and drying the VLPCs. \\
     Evolution of the straight and helical track finding efficiencies
     over time for: the upstream (left); and downstream (right) trackers
     during the key periods of data taking since 2015.
+    Each dot represents a single data-taking run between 10 minutes and 3 hours long.
   }
   \label{fig:trackers:performance:historical} 
 \end{figure}
@@ -205,8 +206,8 @@ This was periodically recovered by warming and drying the VLPCs. \\
 
 \noindent\textbf{Track-fit performance} \\
 \noindent
-Monte Carlo simulation was used with realistic field and beam
-conditions to estimate the performance of the track fit.
+Monte Carlo simulation with realistic field
+and beam conditions was used to estimate the performance of the track fit.
 A beam centred at 140\,MeV/$c$ with 10\,mm nominal emittance,
 representing a typical data set, was used for the study.
 Results are presented in
@@ -228,10 +229,10 @@ The small bias in reconstructed momentum and transverse momentum did not give ri
     \end{tabular}
   \end{center}
   \caption{
-    Upstream tracker: from simulated data.
-    %Predicted momentum reconstruction resolution (left) and bias
-    %(right) for the total momentum (top) and transverse momentum
-    %component (bottom) in the upstream tracker.
+    %Upstream tracker: from simulated data.
+    Predicted momentum reconstruction resolution (left) and bias
+    (right) for the total momentum (top) and transverse momentum
+    component (bottom) in the upstream tracker.
   }
   \label{trackers:performance:resolutions:up}
 \end{figure}
@@ -245,10 +246,10 @@ The small bias in reconstructed momentum and transverse momentum did not give ri
     \end{tabular}
   \end{center}
   \caption{
-    Upstream tracker: from simulated data.
-    %Predicted momentum reconstruction resolution (left) and
-    %bias (right) for the total momentum (top) and transverse
-    %momentum component (bottom) in the downstream tracker.
+    %Upstream tracker: from simulated data.
+    Predicted momentum reconstruction resolution (left) and
+    bias (right) for the total momentum (top) and transverse
+    momentum component (bottom) in the downstream tracker.
   }
   \label{trackers:performance:resolutions:down}
 \end{figure}
@@ -279,21 +280,19 @@ The beam-based alignment was used to determine the azimuthal
 orientation of the trackers with a resolution of 6\,mrad/$\sqrt{N}$
 and their position transverse to the beamline with a resolution of
 20\,mm/$\sqrt{N}$, where $N$ is the number of tracks used in the
-analysis~\cite{2018arXiv1805.06623T}.
-The position of the trackers along the beam line was taken from the
-survey. \\
+analysis~\cite{2018arXiv1805.06623T}. \\
 
 \noindent\textbf{Analysis method} \\
 \label{SubSect:DA_Analysis}
 \noindent The position of each tracker in the MICE Hall coordinate
-system was specified using the location of its centre and a set of
+system was described using the location of its centre and a set of
 three angles corresponding to rotation about the $x$ axis ($\alpha$),
 the $y$ axis ($\beta$) and the $z$ axis ($\phi$).
 The rotation of the tracker about the $z$ axis has a negligible effect
 on the alignment since $\phi$ was determined precisely
 at installation.
-The position of each tracker along the beamline was determined from
-the survey.
+An initial estimate for the position of each tracker along the beamline
+had been inferred from the survey.
 The surveyed location of the TOFs was used as the reference for the
 tracker alignment.
 The line that joins the centre of TOF1 with the centre of TOF2 was
@@ -380,7 +379,7 @@ table~\ref{tab:201701_constants}.
     \end{minipage}
   \end{center}
   \caption{
-    Consistency of the alignment algorithm across runs acquired during
+    Consistency of the alignment algorithm results across runs acquired during
     the 2017/01 ISIS user cycle.
   }
   \label{fig:runtorun}

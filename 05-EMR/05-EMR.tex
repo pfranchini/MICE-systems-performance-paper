@@ -3,18 +3,15 @@
 \section{Electron Muon Ranger}
 \label{Sect:EMR}
 
-The main purpose of the Electron-Muon Ranger (EMR) was to identify
-electrons arising from muon decay within the apparatus.  
 The EMR was a fully-active scintillator
-detector~\cite{2016JInst..11T10007} with a granularity that allowed
-for track reconstruction.
+detector~\cite{2016JInst..11T10007} with a granularity that allowed track reconstruction.
 The EMR consisted of extruded triangular scintillator bars arranged in
 planes.
-One plane contained 59 bars and covered an area of 1.27\,m$^2$.
+Each plane contained 59 bars and covered an area of 1.27\,m$^2$.
 Figure~\ref{fig:EMR} shows the bar cross section and the arrangement of the
 bars in a plane.
 Triangular bars were chosen so that tracks moving parallel to the
-detector axis would not travel along the gaps between bars. 
+detector axis could not travel along the gaps between bars. 
 Planes were mounted such that the angle between successive planes was
 $90^{\circ}$ so that hits in neighbouring planes defined a position.
 A single ``X--Y module'' was a pair of orthogonal planes.
@@ -23,7 +20,7 @@ The scintillation light was collected using a wave-length shifting
 At each end, the WLS fibre was coupled to clear fibres that
 transported the light to a PMT.
 All the WLS fibres from one edge of a plane were read out using a
-single-anode PMT so that an integrated charge measurement could be
+single-anode PMT (SAPMT) so that an integrated charge measurement could be
 used to determine the energy deposited in the plane.
 The signals from the fibres emerging from the other edge of the plane
 were recorded individually using multi-anode PMTs (MAPMTs). 
@@ -98,9 +95,9 @@ that traversed the entire detector were used.
 Muons were selected which produced a hit in the most downstream plane.
 For these events a hit was expected in at least one bar in each plane
 on its path.
-In $3.26\pm0.02\,\%$ of cases a plane traversed by a muon did not
-produce a signal in the MAPMT, the mode of the hit-multiplicity
-distribution per plane was one, and the probability that the track was
+The mode of the hit-multiplicity distribution per plane was one,
+in $3.26\pm0.02\,\%$ of cases a plane traversed by a muon did not
+produce a signal in the MAPMT, and the probability that the track was
 not observed in the SAPMT was $1.88\pm0.01\,\%$. \\
 
 \noindent\textbf{Electron rejection} \\
@@ -123,8 +120,8 @@ Particles with a time-of-flight larger than the upper limit of the
 muon sample were either pions or slow muons and were rejected.
 
 To distinguish the muon tracks from the electron-induced showers,
-two particle-identification variables were defined based on these
-distinct characteristics.
+two particle-identification variables were defined based on the
+distinct characteristics of the two particle species.
 The first is the plane density, $\rho_p$:
 \begin{equation}
   \rho_p = \frac{N_p}{Z_p+1},

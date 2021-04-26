@@ -13,11 +13,11 @@ Three scintillator hodoscopes were used to measure the time of flight
 at which the particle crossed each of the detectors, and to provide
 the trigger for the experiment. 
 TOF0 and TOF1~\cite{NOTE145,NOTE241,2010NIMPA.615...14B} were
-placed upstream of the magnetic channel, while and TOF2~\cite{NOTE286}
+placed upstream of the magnetic channel, while TOF2~\cite{NOTE286}
 was located downstream of the channel, mounted in front of the KL
 pre-shower detector (see figure~\ref{fig:BL}).
-The range of particle momentum delivered to the experiment was
-determined by the settings of the two dipole magnets D1 and D2.
+%The range of particle momentum delivered to the experiment was
+%determined by the settings of the two dipole magnets D1 and D2.
 At 240\,MeV/$c$, the difference in the TOF for a muon and a
 pion between TOF0 and TOF1 was about 1.3\,ns.
 The system was therefore designed to measure the TOF with a
@@ -38,13 +38,12 @@ performed~\cite{Bogomilov:2012sr,Adams:2013lba,2015JInst..10P2012A,2016JInst..11
       MICE, top (a) and side (b) views, showing the full beam line
       starting from the target position on the proton synchrotron with the quadrupoles and dipoles (Q1 to Q9, D1, D2), the
       Decay Solenoid, and instrumented magnetic channel elements
-      (including the trackers upstream and downstream of the cooling
-      channel, placed inside superconducting solenoids) with all the
+      (including the trackers upstream, TKU, and downstream, TKD, of the cooling
+      channel, placed inside superconducting solenoids, respectively SSU and SSD) with all the
       other PID detectors (three TOF stations, two Ckov detectors, KL and
       the EMR).
       The cooling channel, defined by the liquid-hydrogen absorber
-      vessel inside the Focus Coil, is shown in
-      figure~\ref{Fig:AbsorberVessel:Diag}.
+      vessel inside the focus coil (FC), is shown in figure~\ref{Fig:AbsorberVessel:Diag}.
     }
     \label{fig:BL}
   \end{center}
@@ -52,7 +51,7 @@ performed~\cite{Bogomilov:2012sr,Adams:2013lba,2015JInst..10P2012A,2016JInst..11
 
 Each TOF station was made of two planes of 1\,inch thick scintillator
 bars oriented along the $x$ and $y$ directions. 
-The bars were made of BC-404 plastic scintillator.
+The bars of TOF0 (TO1, TOF2) were made of BC-404 (BC420) scintillators.
 A simple fishtail light-guide was used to attach each end of each bar
 to R4998 Hamamatsu fast photomultiplier tubes (PMTs).
 Each PMT was enclosed in an assembly that included the voltage divider
@@ -60,10 +59,10 @@ chain and a 1\,mm thick $\mu$-metal shield.
 The shield was required to reduce the stray magnetic field within the
 PMT to a negligible level~\cite{2010NIMPA.615...14B}.
 To increase the count-rate stability, active dividers were used.
-The TOF detector is illustrated in figure~\ref{fig:tof:schematic}.
+One TOF detector is illustrated in figure~\ref{fig:tof:schematic}.
 \begin{figure}[!htb]
   \begin{center}
-    \includegraphics[width=8cm]{tof_diagram2}
+    \includegraphics[width=8cm]{tof_diagram2-with_beam}
     \includegraphics[height=3cm]{slab_design2}
   \end{center}
   \caption{
@@ -74,6 +73,7 @@ The TOF detector is illustrated in figure~\ref{fig:tof:schematic}.
     The components of each slab are the central scintillator bar, two
     fishtail, clear plastic light-guides coupled to clear plastic
     matching pieces, and two PMTs.
+    The beam direction is represented by the blue arrow perpendicular to the slabs.
   }
   \label{fig:tof:schematic}
 \end{figure}
@@ -137,7 +137,7 @@ Signals from each PMT were corrected for time-walk, readout-trigger
 signal delay, and the channel-specific delays.
 The slab-crossing time was taken to be the average of the corrected
 PMT times.
-Two slabs were taken to have been produced by the passage of a
+Two slabs signals were taken to have been produced by the passage of a
 particle if their slab-crossing times were within a 4\,ns window.
 These two \textit{matched} slabs were used to define a pixel of area given by the
 width of the slabs.
@@ -155,7 +155,7 @@ planes that make up a particular TOF station, the $\Delta T$
 resolution, $\sigma_{\Delta T}$ will be given by
 $\sigma_{\Delta T}=2\sigma_T$.
 Figure~\ref{fig:SlabDtAll} shows the distributions of $\Delta T$ for
-TOF0, TOF1, and TOF2 for a representative set of data taken in 2018.
+TOF0, TOF1, and TOF2 for a representative set of data taken in 2017.
 The RMS width of the distributions are 114\,ps, 126\,ps, and 108\,ps
 for TOF0, TOF1, and TOF2 respectively.
 The distributions are similar, and the RMS of each distribution is
@@ -174,7 +174,7 @@ consistent with the measured intrinsic resolution of approximately
   \label{fig:SlabDtAll}
 \end{figure}
 
-Figure~\ref{fig:TOF_peaks} shows an example of distribution of the
+Figure~\ref{fig:TOF_peaks} shows an example distribution of the
 measured TOF between TOF0 and TOF1.
 The TOF peaks characteristic of electrons, muons, and pions are
 clearly separated.
