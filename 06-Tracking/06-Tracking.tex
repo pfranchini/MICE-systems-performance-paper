@@ -1,3 +1,5 @@
+
+
 \section{Tracking}
 \label{Sect:Tracking}
 
@@ -142,13 +144,15 @@ MICE data.
     trackers for 140\,MeV/$c$ and 200\,MeV/$c$ beams, and for 3, 6 and
     10\,mm nominal emittances.}
   \begin{center}
-    \begin{tabular}{c | c | c | c }
-      \textbf{Momentum} & \textbf{Nominal Emittance} & \textbf{Upstream Tracks Found} & \textbf{Downstream Tracks Found} \\ \hline
+    \begin{tabular}{| c | c | c | c |}
+      \hline 
+      \textbf{Momentum} & \textbf{Emittance} & \textbf{Upstream tracks found} & \textbf{Downstream tracks found} \\ \hline
         200 MeV/$c$ & 3\,mm  & 98.38\,\% & 99.19\,\% \\ %H36aa
         200 MeV/$c$ & 6\,mm  & 99.42\,\% & 96.07\,\% \\ %H25c 
         140 MeV/$c$ & 6\,mm  & 98.37\,\% & 99.16\,\% \\ %H36c
-        140 MeV/$c$ & 10\,mm & 98.47\,\% & 98.93\,\% \\ \hline \hline %H36d
-        \multicolumn{2}{c |}{Average} & 98.70\,\% & 98.21\,\%
+        140 MeV/$c$ & 10\,mm & 98.47\,\% & 98.93\,\% \\ \hline %H36d
+        \multicolumn{2}{| c |}{Average} & 98.70\,\% & 98.21\,\% \\
+        \hline
     \end{tabular}
   \end{center}
   \label{Table:tracker_efficiency_results}
@@ -160,13 +164,15 @@ MICE data.
     and 200\,MeV/$c$ beams, and for 3, 6 and 10\,mm nominal
     emittances.  }
   \begin{center}
-    \begin{tabular}{c | c | c | c }
-      \textbf{Momentum} & \textbf{Nominal Emittance} & \textbf{Upstream Spacepoints Found} & \textbf{Downstream Spacepoints Found} \\ \hline
+    \begin{tabular}{| c | c | c | c |}
+      \hline
+      \textbf{Momentum} & \textbf{Emittance} & \textbf{Upstream spacepoints found} & \textbf{Downstream spacepoints found} \\ \hline
         200 MeV/$c$ & 3\,mm  & 98.04\,\% & 97.41\,\% \\ %H36aa
         200 MeV/$c$ & 6\,mm  & 99.41\,\% & 94.63\,\% \\ %H25c 
         140 MeV/$c$ & 6\,mm  & 97.99\,\% & 99.16\,\% \\ %H36c
-        140 MeV/$c$ & 10\,mm & 98.07\,\% & 97.44\,\% \\ \hline \hline %H36d
-        \multicolumn{2}{c |}{Average} & 98.44\,\% & 97.01\,\%
+        140 MeV/$c$ & 10\,mm & 98.07\,\% & 97.44\,\% \\ \hline %H36d
+        \multicolumn{2}{| c |}{Average} & 98.44\,\% & 97.01\,\% \\
+        \hline
     \end{tabular}
   \end{center}
   \label{Table:tracker_spacepoint_efficiency_results}
@@ -215,7 +221,7 @@ figure~\ref{trackers:performance:resolutions:up} for the upstream
 tracker and figure~\ref{trackers:performance:resolutions:down} for the
 downstream tracker.
 The resolution in the total momentum and transverse momentum is
-observed to be $\sim 1.1$\,MeV/$c$ independent of momentum in the range
+observed to be $\sim1.1$\,MeV/$c$ independent of momentum in the range
 120\,MeV/$c$ to 160\,MeV/$c$.
 %The small bias in reconstructed momentum and transverse momentum is {\color{red} understood to be due to ...?}
 The small bias in reconstructed momentum and transverse momentum did not give rise to significant effects in the analysis and was considered in systematic error studies.
@@ -344,11 +350,13 @@ table~\ref{tab:201701_constants}.
     high-momentum straight-track data acquired during part of 2017
     data taking.  }
     \begin{center}
-    \begin{tabular}{l|c|c|c|c}
+    \begin{tabular}{|l|c|c|c|c|}
+  \hline
 	& \textbf{x [mm]} & \textbf{y [mm]} & \textbf{$\alpha$ [mrad]} & \textbf{$\beta$ [mrad]} \\
 	\hline
 	\textbf{TKU} & $-0.032\pm0.094$ & $-1.538\pm0.095$ & $ 3.382\pm0.030$ & $0.412\pm0.029$ \\
-	\textbf{TKD} & $-2.958\pm0.095$ & $ 2.921\pm0.096$ & $-0.036\pm0.030$ & $1.333\pm0.030$
+	\textbf{TKD} & $-2.958\pm0.095$ & $ 2.921\pm0.096$ & $-0.036\pm0.030$ & $1.333\pm0.030$ \\
+	\hline
     \end{tabular}
   \end{center}
   \label{tab:201701_constants}
