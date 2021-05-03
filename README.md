@@ -2,6 +2,12 @@
 MICE Systems Performance Paper
 ==============================
 
+Draft 6:
+ - Implemented first round of comments from collaboration
+ 
+Draft 5:
+ - Draft for collaboration review
+
 Draft 4.3:
  - comments from PK
  - OK from AB and LT
