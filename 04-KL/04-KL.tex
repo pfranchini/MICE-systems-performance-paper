@@ -25,7 +25,7 @@ A total of 7 slabs formed the whole detector, which had an active
 volume of 93\,cm$\times$93\,cm$\times$4\,cm.
 Scintillation light was guided from each slab into a total of six PMTs
 (three on each side).
-Iron shields were fitted to each photomultiplier to mitigate stray magnetic fields.
+Iron shields were fitted to each photomultiplier to mitigate the effect of stray magnetic fields.
 The signal from each PMT was sent to a shaping amplifier module
 that stretched the signal in time to match the sampling rate
 of the flash ADCs. \\
@@ -42,14 +42,14 @@ of the flash ADCs. \\
 \noindent\textbf{Performance} \\
 \noindent
 %The response of the KL to muons, pions, and electrons is shown for various beam momentum settings in~figure~\ref{fig:KL3}.
-For this analysis the particle momentum was determined from the
+To study the response of the KL, the particle momentum was determined from the
 measured time-of-flight between TOF0 and TOF1.
 To compensate for the effect of attenuation the performance was
 evaluated in terms of the ``ADC product'' given by:
 \begin{equation}
-  \text{ADC}_{\text{prod}} = 2 \times
-    \text{ADC}_{\text{left}} \times \text{ADC}_{\text{right}} /
-    (\text{ADC}_{\text{left}} + \text{ADC}_{\text{right}})\,;
+  \text{ADC}_{\text{prod}} = \frac{2 \times
+    \text{ADC}_{\text{left}} \times \text{ADC}_{\text{right}}}{
+    (\text{ADC}_{\text{left}} + \text{ADC}_{\text{right}})}\,;
 \end{equation}
 where ADC$_{\text{left}}$ and ADC$_{\text{right}}$ are the signals
 from the two ends of a slab and the factor of 2 is present for
@@ -59,7 +59,7 @@ focus coils at beam-momentum settings chosen to span the range of
 momenta used during MICE running.
 The resulting beam-momentum distributions were centred at 140, 170,
 200, 240, and 300\,MeV/$c$.
-The response of the KL to muons and pions is seen to increase with
+The response of the KL to muons and pions were observed to increase with
 beam momentum.
 %\begin{figure}
 %  \begin{center}
@@ -97,7 +97,7 @@ used for the MICE cooling measurements~\cite{2016JInst..11P3001A}.
     \includegraphics[width=0.45\columnwidth]{./04-KL/Figures/mu_vs_pi_vs_e_300MEV-edited.png}
   \end{center}
   \caption{
-    Comparison of ADC products of muons, pions and electrons at 140
+    Comparison of ADC products of muons (red), pions (blue) and electrons (green) at 140
     MeV/$c$ (top left), 170 MeV/$c$ (top right), 200 MeV/$c$ (middle
     left), 240 MeV/$c$ (middle right) and 300 MeV/$c$ (bottom).
   }

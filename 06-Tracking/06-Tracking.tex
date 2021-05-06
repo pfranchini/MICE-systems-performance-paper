@@ -147,11 +147,11 @@ MICE data.
     \begin{tabular}{| c | c | c | c |}
       \hline 
       \textbf{Momentum} & \textbf{Emittance} & \textbf{Upstream tracks found} & \textbf{Downstream tracks found} \\ \hline
-        200 MeV/$c$ & 3\,mm  & 98.38\,\% & 99.19\,\% \\ %H36aa
-        200 MeV/$c$ & 6\,mm  & 99.42\,\% & 96.07\,\% \\ %H25c 
-        140 MeV/$c$ & 6\,mm  & 98.37\,\% & 99.16\,\% \\ %H36c
-        140 MeV/$c$ & 10\,mm & 98.47\,\% & 98.93\,\% \\ \hline %H36d
-        \multicolumn{2}{| c |}{Average} & 98.70\,\% & 98.21\,\% \\
+        200 MeV/$c$ & 3\,mm  & 98.38\% & 99.19\% \\ %H36aa
+        200 MeV/$c$ & 6\,mm  & 99.42\% & 96.07\% \\ %H25c 
+        140 MeV/$c$ & 6\,mm  & 98.37\% & 99.16\% \\ %H36c
+        140 MeV/$c$ & 10\,mm & 98.47\% & 98.93\% \\ \hline %H36d
+        \multicolumn{2}{| c |}{Average} & 98.70\% & 98.21\% \\
         \hline
     \end{tabular}
   \end{center}
@@ -167,11 +167,11 @@ MICE data.
     \begin{tabular}{| c | c | c | c |}
       \hline
       \textbf{Momentum} & \textbf{Emittance} & \textbf{Upstream spacepoints found} & \textbf{Downstream spacepoints found} \\ \hline
-        200 MeV/$c$ & 3\,mm  & 98.04\,\% & 97.41\,\% \\ %H36aa
-        200 MeV/$c$ & 6\,mm  & 99.41\,\% & 94.63\,\% \\ %H25c 
-        140 MeV/$c$ & 6\,mm  & 97.99\,\% & 99.16\,\% \\ %H36c
-        140 MeV/$c$ & 10\,mm & 98.07\,\% & 97.44\,\% \\ \hline %H36d
-        \multicolumn{2}{| c |}{Average} & 98.44\,\% & 97.01\,\% \\
+        200 MeV/$c$ & 3\,mm  & 98.04\% & 97.41\% \\ %H36aa
+        200 MeV/$c$ & 6\,mm  & 99.41\% & 94.63\% \\ %H25c 
+        140 MeV/$c$ & 6\,mm  & 97.99\% & 99.16\% \\ %H36c
+        140 MeV/$c$ & 10\,mm & 98.07\% & 97.44\% \\ \hline %H36d
+        \multicolumn{2}{| c |}{Average} & 98.44\% & 97.01\% \\
         \hline
     \end{tabular}
   \end{center}
@@ -209,8 +209,6 @@ This was recovered by warming and drying the VLPCs. \\
   \label{fig:trackers:performance:historical} 
 \end{figure}
 
-\newpage
-
 \noindent\textbf{Track-fit performance} \\
 \noindent
 Monte Carlo simulation with realistic field
@@ -225,7 +223,7 @@ The resolution in the total momentum and transverse momentum is
 observed to be $\sim1.1$\,MeV/$c$ independent of momentum in the range
 120\,MeV/$c$ to 160\,MeV/$c$.
 %The small bias in reconstructed momentum and transverse momentum is {\color{red} understood to be due to ...?}
-The small bias in reconstructed momentum and transverse momentum did not give rise to significant effects in the analysis and was considered in systematic error studies.
+The small bias in the transverse and the total momentum did not give rise to significant effects in the analysis and was considered in systematic error studies.
 \begin{figure}
   \begin{center}
     \begin{tabular}{cc}
@@ -237,7 +235,7 @@ The small bias in reconstructed momentum and transverse momentum did not give ri
   \end{center}
   \caption{
     %Upstream tracker: from simulated data.
-    Predicted momentum reconstruction resolution (left) and bias
+    Momentum reconstruction resolution (left) and bias
     (right) for the total momentum (top) and transverse momentum
     component (bottom) in the upstream tracker.
   }
@@ -254,7 +252,7 @@ The small bias in reconstructed momentum and transverse momentum did not give ri
   \end{center}
   \caption{
     %Upstream tracker: from simulated data.
-    Predicted momentum reconstruction resolution (left) and
+    Momentum reconstruction resolution (left) and
     bias (right) for the total momentum (top) and transverse
     momentum component (bottom) in the downstream tracker.
   }
@@ -328,7 +326,7 @@ TOF1 and TOF2.
 If the beam was not perfectly centred, particles preferentially
 scraped out on one side of the magnet bore, anisotropically truncating
 the tail of the residual distribution. 
-A fiducial cut is applied to the upstream sample in order to remove
+A fiducial cut was applied to the upstream sample in order to remove
 this effect.
 
 Data were recorded with the superconducting magnets turned off.
@@ -340,7 +338,7 @@ each run during a specific data taking period.
 The measurements are in good agreement with one another and show no
 significant discrepancy: an agreement between the independent fits
 guaranteed an unbiased measurement of the alignment constants.
-The constant fit $\chi^2/\text{ndf}$ was close to unity for each fit,
+The constant-fit $\chi^2/\text{ndf}$ was close to unity for each fit,
 indicating that there were no additional sources of significant
 uncertainty.
 The optimal parameters are summarised in
@@ -388,8 +386,8 @@ table~\ref{tab:201701_constants}.
     \end{minipage}
   \end{center}
   \caption{
-    Consistency of the alignment algorithm results across runs acquired during
-    the 2017/01 ISIS user cycle.
+    Consistency of the alignment algorithm results for upstream (blue) and downstream (red) trackers  across runs acquired during
+    the 2017/01 ISIS user cycle. The quantities $x$, $y$, $\alpha$, and $\beta$ are defined in the text.
   }
   \label{fig:runtorun}
 \end{figure}
