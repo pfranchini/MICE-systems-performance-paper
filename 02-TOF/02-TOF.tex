@@ -34,9 +34,9 @@ performed~\cite{Bogomilov:2012sr,Adams:2013lba,2015JInst..10P2012A,2016JInst..11
 
 Each TOF station was made of two planes of 1\,inch thick scintillator
 bars oriented along the $x$ and $y$ directions. 
-The bars of TOF0 (TO1, TOF2) were made of BC-404 (BC420) scintillators.
-A simple fishtail light-guide was used to attach each end of each bar
-to R4998 Hamamatsu fast photomultiplier tubes (PMTs).
+The bars of TOF0 (TOF1, TOF2) were made of BC-404 (BC-420) scintillators.
+A simple fishtails light-guide was used to attach each end of each bar
+to Hamamatsu R4998 fast photomultiplier tubes (PMTs).
 Each PMT was enclosed in an assembly that included the voltage divider
 chain and a 1\,mm thick $\mu$-metal shield.
 The shield was required to reduce the stray magnetic field within the
@@ -65,8 +65,8 @@ The active areas of the three hodoscopes were 40$\times$40\,cm$^2$
 (TOF0), 42$\times$42\,cm$^2$ (TOF1), and 60$\times$60\,cm$^2$ (TOF2).
 Each of the planes in TOF0 and TOF2 had 10 slabs while those in TOF1 had 7.
 A passive splitter was used to take the signal from each of the PMTs
-to: a CAMAC Lecroy 4115 leading-edge discriminator followed by a CAEN
-V1290 TDC for time measurement; and to a CAEN V1724 FADC for
+to a CAMAC LeCroy 4115 leading-edge discriminator followed by a CAEN
+V1290 TDC for time measurement and to a CAEN V1724 FADC for
 pulse-height measurement.
 A local readout trigger was issued if the signals from each of the two
 PMTs on a single slab crossed a specific threshold and overlapped.
@@ -76,9 +76,9 @@ data taking. \\
 \noindent\textbf{Calibration} \\
 \noindent
 The intensity of the scintillation light produced when a particle
-crossed the plastic scintillator rose rapidly, subsequently decaying
+crossed the plastic scintillator rose rapidly before decaying
 with a characteristic time of 1.8\,ns. 
-The scintillation light travels from the particle-crossing point to
+The scintillation light travelled from the particle-crossing point to
 each end of the scintillator slab.
 The light-travel time depends on the distance of the particle
 crossing from the PMT.
@@ -106,8 +106,8 @@ This correlation, referred to as the time-walk, introduced a
 systematic offset in the time recorded by the TDC that was dependent on the pulse
 height. 
 
-Precise determination of the TOF requires a calibration procedure that
-allows channel-by-channel variations in the response of the system to
+Precise determination of the TOF required a calibration procedure that
+allowed channel-by-channel variations in the response of the system to
 be accounted for.
 The calibration procedure described in~\cite{NOTE251} accounted for
 each of the effects identified above. \\
@@ -125,15 +125,15 @@ particle if their slab-crossing times were within a 4\,ns window.
 These two \textit{matched} slabs were used to define a pixel of area given by the
 width of the slabs.
 The particle-crossing time was then determined as the average of the
-slab times and the approximate position of the particle crossing was
+slab-crossing times and the approximate position of the particle crossing was
 refined using the PMT signals in the two orthogonal slabs. \\
 
 \noindent\textbf{Performance} \\
 \noindent
-The difference, $\Delta t$, between the slab times for \textit{matched} slabs
+The difference, $\Delta t$, between the slab-crossin times for \textit{matched} slabs
 was used to determine the intrinsic time resolution, $\sigma_t$ of the
 TOF system.
-The $\Delta t$ resolution, $\sigma_{\Delta t}$, will be given by $\sigma_{\Delta t}=2\sigma_t$,
+The $\Delta t$ resolution, $\sigma_{\Delta t}$, is given by $\sigma_{\Delta t}=2\sigma_t$,
 assuming that the intrinsic resolution is the same in each of the planes that make up a particular TOF station.
 Figure~\ref{fig:SlabDtAll} shows the distributions of $\Delta t$ for
 TOF0, TOF1, and TOF2 for a representative set of data taken in 2017.
