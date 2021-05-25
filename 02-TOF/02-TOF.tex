@@ -25,7 +25,7 @@ precision of 100\,ps.
 This allowed the TOF between the first pair of TOF stations 
 to be used to discriminate between pions, muons, and electrons
 contained within the beam with near 100\% efficiency~\cite{2016JInst..11P3001A}.
-In addition, by assuming a particular mass for each particle, the
+In addition, by assuming a mass hypothesis for each particle, the
 TOF measurement was used to infer the particle
 momentum.
 The TOF detectors, which operated smoothly during the running periods,
@@ -34,11 +34,13 @@ performed~\cite{Bogomilov:2012sr,Adams:2013lba,2015JInst..10P2012A,2016JInst..11
 
 Each TOF station was made of two planes of 1\,inch thick scintillator
 bars oriented along the $x$ and $y$ directions. 
-The bars of TOF0 (TOF1, TOF2) were made of BC-404 (BC-420) scintillators.
+The bars of TOF0 (TOF1, TOF2) were made of Bricon BC-404 (BC-420) plastic scintillators.
 A simple fishtails light-guide was used to attach each end of each bar
 to Hamamatsu R4998 fast photomultiplier tubes (PMTs).
 Each PMT was enclosed in an assembly that included the voltage divider
 chain and a 1\,mm thick $\mu$-metal shield.
+For TOF1 and TOF2 an additional soft iron (ARMCO) local shield was
+also used~\cite{Bonesini_2012,NOTE455}.
 The shield was required to reduce the stray magnetic field within the
 PMT to a negligible level~\cite{2010NIMPA.615...14B}.
 To increase the count-rate stability, active dividers were used.
@@ -65,7 +67,7 @@ The active areas of the three hodoscopes were 40$\times$40\,cm$^2$
 (TOF0), 42$\times$42\,cm$^2$ (TOF1), and 60$\times$60\,cm$^2$ (TOF2).
 Each of the planes in TOF0 and TOF2 had 10 slabs while those in TOF1 had 7.
 A passive splitter was used to take the signal from each of the PMTs
-to a CAMAC LeCroy 4115 leading-edge discriminator followed by a CAEN
+to a LeCroy 4115 leading-edge discriminator followed by a CAEN
 V1290 TDC for time measurement and to a CAEN V1724 FADC for
 pulse-height measurement.
 A local readout trigger was issued if the signals from each of the two
@@ -80,9 +82,8 @@ crossed the plastic scintillator rose rapidly before decaying
 with a characteristic time of 1.8\,ns. 
 The scintillation light travelled from the particle-crossing point to
 each end of the scintillator slab.
-The light-travel time depends on the distance of the particle
-crossing from the PMT.
-The light-propagation speed in the slabs was determined to be 13.5\,cm/ns.
+The light's travel time depended on the distance of the particle crossing from the PMT.
+The propagation speed of the light pulse along the slabs was determined to be 13.5\,cm/ns.
 
 The local readout-trigger signal was distributed to all TDC boards and was
 used as the reference time.
@@ -130,7 +131,7 @@ refined using the PMT signals in the two orthogonal slabs. \\
 
 \noindent\textbf{Performance} \\
 \noindent
-The difference, $\Delta t$, between the slab-crossin times for \textit{matched} slabs
+The difference, $\Delta t$, between the slab-crossing times for \textit{matched} slabs
 was used to determine the intrinsic time resolution, $\sigma_t$ of the
 TOF system.
 The $\Delta t$ resolution, $\sigma_{\Delta t}$, is given by $\sigma_{\Delta t}=2\sigma_t$,
@@ -144,7 +145,7 @@ consistent with the measured intrinsic resolution of approximately
 60\,ps~\cite{2010NIMPA.615...14B}.
 \begin{figure}[htb]
   \begin{center}
-    \includegraphics[width=0.9\columnwidth]{07_overall_slab_dt_edited2.pdf}
+    \includegraphics[width=0.99\columnwidth]{07_overall_slab_dt_edited2.pdf}
   \end{center}
   \caption{
     Slab \Dt{} distributions.
@@ -164,7 +165,7 @@ consistent with the spread calculated from a naive quadrature addition
 of the timing resolution of the individual TOF stations.
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.6\columnwidth]{TOF_peaks.pdf}
+    \includegraphics[width=0.75\columnwidth]{TOF_peaks.pdf}
   \end{center}
   \caption{
     Time of flight between TOF0 and TOF1 after all corrections have

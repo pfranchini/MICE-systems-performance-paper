@@ -21,7 +21,7 @@ The length along the central axis, between the
 two domes of the end windows, was 350\,mm~\cite{1748-0221-13-09-T09008}.
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.75\textwidth]{AFC-drwng.pdf}
+    \includegraphics[width=0.80\textwidth]{AFC-drwng-edited.pdf}
   \end{center}
   \caption{
     Left panel: Drawing of the focus coil (FC) module
@@ -29,7 +29,7 @@ two domes of the end windows, was 350\,mm~\cite{1748-0221-13-09-T09008}.
     Right panel: detail of the liquid hydrogen absorber vessel~\cite{1748-0221-13-09-T09008}.
   }
   \label{Fig:AbsorberVessel:Diag}
-\end{figure}
+\end{figure} \\
 
 \noindent\textbf{Variation of the density of liquid hydrogen due to
     varying temperature and pressure} \\
@@ -39,7 +39,8 @@ absorber depends on the path length and on
 the density of the liquid hydrogen. The density of liquid hydrogen is
 a function of temperature and pressure.  
 The temperature of the vessel was measured by eight LakeShore Cernox
-1050 SD sensors recorded at a resolution of 0.1\,K.
+1050 SD sensors, but with the values truncated for storage
+at a granularity of 0.1\,K.
 Four of the sensors were used solely as temperature sensors, while the
 other four were also used as level sensors to ensure the
 liquid hydrogen reached the top of the vessel. 
@@ -52,11 +53,11 @@ final two at at the bottom of the vessel.
 Cooldown and liquefaction were completed slowly over eight days at a
 pressure of 1105\,mbar after which the vessel's pressure was lowered to
 1085\,mbar~\cite{1748-0221-13-09-T09008}.
-The vessel then remained in this steady state during the 21 day period of data-taking, after which the vessel was vented. For the venting process,
+The vessel then remained in this steady state during the 21 day period of data taking, after which the vessel was vented. For the venting process,
 the cryocooler used to liquefy hydrogen was
 switched off and heaters were switched on to deliver a nominal power
 of 50\,W to the absorber vessel.
-This resulted in an increase in pressure and temperature until the
+This resulted in an increase in pressure to 1505\,mbar until the
 temperature stabilised at the boiling point.
 A rapid increase in temperature was observed once all the
 liquid hydrogen had boiled off. 
@@ -71,7 +72,8 @@ These uncertainties were quoted by the manufacturer of the sensors.
 Magnetic fields caused reversible calibration shifts on the temperature
 measurements.
 To reduce the uncertainty in the liquid hydrogen density a calibration
-procedure was devised that used the boiling point.
+procedure was devised that used the boiling point, as observed
+during the venting process.
 A correction to the observed temperature reading was obtained by
 applying a cut-off correction, a correction for the effect of the
 magnetic field based on the current in the focus coil and its
@@ -84,10 +86,12 @@ stability, 8\,mK magnetic).
 The deviation from the non-linearity of the sensors~\cite{TemperatureMeasurement} added, on average,
 0.03\,K to the uncertainty.
 The temperature scaling and magnet-current correction factors also
-had an associated uncertainty as they were derived based on the 0.1\,K resolution of the stored values.
+had an associated uncertainty as
+they were derived based on the 0.1\,K resolution of the retrieved, truncated, values.
 For example, a calibrated sensor at boiling temperature and 1505\,mbar
-should read 21.692\,K, but could only read 21.65\,K (21.6\,K cut-off
-plus 0.05 cut-off correction) i.e. it was off by 0.042\,K.
+should read 21.692\,K, but we can only retrieve a value of
+21.65\,K (21.6\,K truncated plus 0.05 K cut-off correction~\cite{NOTE524}) i.e.
+off by 0.042\,K.
 The pressure sensors had an uncertainty of $\mathrm{\pm}$\,5\,mbar
 which equated to $\mathrm{\pm}$\,0.016\,K during steady state.
 The pressure uncertainty ($\mathrm{\pm}$\,5\,mbar) added another
