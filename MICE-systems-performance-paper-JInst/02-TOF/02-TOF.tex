@@ -1,0 +1,176 @@
+\graphicspath{{02-TOF/Figures/}}
+
+\newcommand{\Tzero}{\ensuremath{T0}}
+\newcommand{\Gauss}{\ensuremath{\text{G}}}
+\newcommand{\Dt}{\ensuremath{\Delta t}}
+\newcommand{\us}{\ensuremath{\mu\text{s}}}
+
+\section{Time-of-flight detectors}
+\label{Sect:TOF}
+
+Three scintillator hodoscopes were used:
+to measure the time of flight (TOF) of the particles that made up the beam;
+to measure the transverse position at which the particle crossed each of the detectors;
+and to provide the trigger for the experiment. 
+TOF0 and TOF1~\cite{NOTE145,NOTE241,2010NIMPA.615...14B} were
+placed upstream of the magnetic channel, while TOF2~\cite{NOTE286}
+was located downstream of the channel, mounted in front of the KL
+pre-shower detector (see figure~\ref{fig:BL}).
+%The range of particle momentum delivered to the experiment was
+%determined by the settings of the two dipole magnets D1 and D2.
+At 240\,MeV/$c$, the difference in the TOF for a muon and a
+pion between TOF0 and TOF1 was about 1.3\,ns.
+The system was therefore designed to measure the TOF with a
+precision of 100\,ps. 
+This allowed the TOF between the first pair of TOF stations 
+to be used to discriminate between pions, muons, and electrons,
+contained within the beam, with near 100\% efficiency~\cite{2016JInst..11P3001A}.
+In addition, by assuming a mass hypothesis for each particle, the
+TOF measurement was used to infer the particle
+momentum.
+The TOF detectors, which operated smoothly during the running periods,
+were essential for all the measurements that were
+performed~\cite{Bogomilov:2012sr,Adams:2013lba,2015JInst..10P2012A,2016JInst..11P3001A,Adams:2018qhj,Bogomilov:2019kfj}.
+
+Each TOF station was made of two planes of 1\,inch thick scintillator
+bars oriented along the $x$ and $y$ directions. 
+The bars of TOF0 (TOF1, TOF2) were made of Bricon BC-404 (BC-420) plastic scintillators.
+A simple fishtail light-guide was used to attach each end of each bar
+to Hamamatsu R4998 fast photomultiplier tubes (PMTs).
+Each PMT was enclosed in an assembly that included the voltage divider
+chain and a 1\,mm thick $\mu$-metal shield.
+For TOF1 and TOF2 an additional soft iron (ARMCO) local shield was
+also used~\cite{Bonesini_2012,NOTE455}.
+The shield was required to reduce the stray magnetic field within the
+PMT to a negligible level~\cite{2010NIMPA.615...14B}.
+To increase the count-rate stability, active dividers were used.
+One TOF detector is illustrated in figure~\ref{fig:tof:schematic}.
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=7.4cm]{tof_diagram2-with_beam}
+    \includegraphics[height=2.8cm]{slab_design2}
+  \end{center}
+  \caption{
+    The structure of the time-of-flight
+    detectors~\cite{2010NIMPA.615...14B,NOTE145} showing the
+    horizontal and vertical layers of slabs (left) and an exploded
+    view of each slab (right). 
+    The components of each slab are the central scintillator bar, two
+    fishtail, clear plastic light-guides coupled to clear plastic
+    matching pieces, and two PMTs.
+    The beam direction is represented by the blue arrow perpendicular to the slabs.
+  }
+  \label{fig:tof:schematic}
+\end{figure}
+
+The active areas of the three hodoscopes were 40$\times$40\,cm$^2$
+(TOF0), 42$\times$42\,cm$^2$ (TOF1), and 60$\times$60\,cm$^2$ (TOF2).
+Each of the planes in TOF0 and TOF2 had 10 slabs while those in TOF1 had 7.
+A passive splitter was used to take the signal from each of the PMTs
+to a LeCroy 4115 leading-edge discriminator followed by a CAEN
+V1290 TDC for time measurement and to a CAEN V1724 FADC for
+pulse-height measurement.
+A local readout trigger was issued if the signals from each of the two
+PMTs on a single slab crossed a specific threshold and overlapped.
+TOF1 was used to trigger the readout of the experiment for most of the
+data taking. \\
+
+\noindent\textbf{Calibration} \\
+\noindent
+The intensity of the scintillation light produced when a particle
+crossed the plastic scintillator rose rapidly before decaying
+with a characteristic time of 1.8\,ns. 
+The scintillation light travelled from the particle-crossing point to
+each end of the scintillator slab.
+The light's travel time depended on the distance of the particle crossing from the PMT.
+The propagation speed of the light pulse along the slabs was determined to be 13.5\,cm/ns.
+
+The local readout-trigger signal was distributed to all TDC boards and was
+used as the reference time.
+The time between a particle hit in a TOF slab and the time when the
+trigger was generated varied with the position of the hit along the slab.
+As a consequence, the reference time had an offset dependent on
+the crossing position, an effect referred to as the
+readout-trigger signal delay.
+To compensate for this, the final time measurement in each station was
+an average of the times recorded for each channel above
+threshold.
+
+Further delay was introduced by the signal-transit time of each PMT
+and of the cable that led the signal to the readout electronics.
+These signal-transit times were unique for each individual readout
+channel and were determined by dedicated measurements.
+The use of a linear, leading-edge discriminator led to a correlation
+between the total charge in the pulse and the time at which the
+discriminator fired.
+This correlation, referred to as the time-walk, introduced a
+systematic offset in the time recorded by the TDC that was dependent on the pulse
+height. 
+
+Precise determination of the TOF required a calibration procedure that
+allowed channel-by-channel variations in the response of the system to
+be accounted for.
+The calibration procedure described in~\cite{NOTE251} accounted for
+each of the effects identified above. \\
+
+\noindent\textbf{Reconstruction} \\
+\noindent
+A particle crossing a TOF station passed through two orthogonal
+slabs.
+Signals from each PMT were corrected for time-walk, readout-trigger
+signal delay, and the channel-specific delays.
+The slab-crossing time was taken to be the average of the corrected
+PMT times.
+Two slab signals were taken to have been produced by the passage of a
+particle if their slab-crossing times were within a 4\,ns window.
+These two \textit{matched} slabs were used to define a pixel of area given by the
+width of the slabs.
+The particle-crossing time was then determined as the average of the
+slab-crossing times and the approximate position of the particle crossing was
+refined using the PMT signals in the two orthogonal slabs. \\
+
+\noindent\textbf{Performance} \\
+\noindent
+The difference, $\Delta t$, between the slab-crossing times for \textit{matched} slabs
+was used to determine the intrinsic time resolution, $\sigma_t$ of the
+TOF system.
+The $\Delta t$ resolution, $\sigma_{\Delta t}$, is given by $\sigma_{\Delta t}=2\sigma_t$,
+assuming that the intrinsic resolution is the same in each of the planes that make up a particular TOF station.
+Figure~\ref{fig:SlabDtAll} shows the distributions of $\Delta t$ for
+TOF0, TOF1, and TOF2 for a representative set of data taken in 2017.
+The RMS width of the distributions are 114\,ps, 126\,ps, and 108\,ps
+for TOF0, TOF1, and TOF2 respectively.
+The distributions are similar, and the RMS of each distribution is
+consistent with the measured intrinsic resolution of approximately
+60\,ps~\cite{2010NIMPA.615...14B}.
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=0.99\columnwidth]{07_overall_slab_dt_edited2.pdf}
+  \end{center}
+  \caption{
+    Slab \Dt{} distributions.
+    Total width of the distribution is due to the resolution of the
+    individual channels and due to the offsets in their \Dt{}
+    distributions.
+  }
+  \label{fig:SlabDtAll}
+\end{figure}
+
+Figure~\ref{fig:TOF_peaks} shows an example distribution of the
+measured TOF between TOF0 and TOF1.
+The TOF peaks characteristic of electrons, muons, and pions are
+clearly separated.
+The width of the electron peak is approximately~0.10\,ns,
+consistent with the spread calculated from a naive quadrature addition
+of the timing resolution of the individual TOF stations.
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.75\columnwidth]{TOF_peaks.pdf}
+  \end{center}
+  \caption{
+    Time of flight between TOF0 and TOF1 after all corrections have
+    been applied.
+    The electron (left-most peak, shown in red), the muon (central peak, shown in green), and the pion (right-most peak, shown in blue) peaks are clearly separated.
+    } 
+  \label{fig:TOF_peaks}
+\end{figure}
