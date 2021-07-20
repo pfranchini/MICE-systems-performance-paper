@@ -1,0 +1,51 @@
+\documentclass{99-Styles/MICE}
+\input 99-Styles/GetPackages
+
+%\linenumbers
+\modulolinenumbers[5]
+
+\begin{document}
+
+\input{00a-Top-matter/00a-Top-matter-preprint}
+
+\makeatletter
+
+\input{99-Styles/MICE-defs}
+
+\parindent 10pt
+\pagestyle{plain}
+\pagenumbering{arabic}                   
+\setcounter{page}{1}
+
+\begin{quotation}
+\begin{center}
+\textbf{Abstract}
+\end{center}
+
+\noindent
+\input 00b-Abstract/00b-Abstract
+\end{quotation}
+
+%\tableofcontents
+
+\input 01-Introduction/01-Introduction
+\input 02-TOF/02-TOF
+\input 03-Ckov/03-Ckov
+\input 04-KL/04-KL 
+\input 05-EMR/05-EMR
+\input 06-Tracking/06-Tracking
+\input 07-Absorber/07-Absorber
+\input 08-Conclusions/08-Conclusions
+\section{Acknowledgements}
+\label{Sect:Acknowledgements}
+\input acknowledgements
+
+\clearpage
+\bibliographystyle{99-Styles/utphys}
+\bibliography{Concatenated-bibliography}
+
+\newpage
+\appendix
+\input AuthorList.tex
+
+\end{document}

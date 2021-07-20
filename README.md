@@ -2,6 +2,14 @@
 MICE Systems Performance Paper
 ==============================
 
+MICE-systems-performance-paper-JInst: (final) JInst version
+MICE-systems-performance-paper-arXiv: arXiv preprint (https://arxiv.org/abs/2106.05813)
+MICE-systems-performance-paper-Draft: the last draft version before the arXiv preprint and the JInst submission. Corresponds to the RAL preprint (https://epubs.stfc.ac.uk/work/49687698). Sub-folders include unused plots and source code. RAL preprint to be updated...
+
+
+Draft versions
+==============
+
 Draft 7:
  - Implemented second round of comments from the collaboration
 
@@ -66,8 +74,6 @@ v0.3.1: full EMR section from Francois
 v0.4: Ckov plots
 
 v0.5: liquid hydrogen absorber included
-
-==================================================
     
 v0.9:
 - all contributions apart from:
