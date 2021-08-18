@@ -2,11 +2,11 @@
 MICE Systems Performance Paper
 ==============================
 
-MICE-systems-performance-paper-JInst: final JInst version (before the JInst typesetting).
+MICE-systems-performance-paper-JInst: last submitted JInst version (before the JInst typesetting). Final paper https://doi.org/10.1088/1748-0221/16/08/P08046.
 
-MICE-systems-performance-paper-arXiv: arXiv preprint (https://arxiv.org/abs/2106.05813), updated according to the JInst one.
+MICE-systems-performance-paper-arXiv: arXiv preprint (https://arxiv.org/abs/2106.05813), v2 updated according to the JInst one.
 
-MICE-systems-performance-paper-Draft: the last draft version before the arXiv preprint and the JInst submission. Corresponds to the RAL preprint (https://epubs.stfc.ac.uk/work/49687698). Sub-folders include unused plots and source code. RAL preprint to be updated...
+MICE-systems-performance-paper-Draft: the last draft version before the arXiv preprint and the JInst submission. Corresponds to the RAL preprint (https://epubs.stfc.ac.uk/work/49687698). Sub-folders include unused plots, source code and obsolete drafts. RAL preprint to be updated...
 
 
 Draft versions
